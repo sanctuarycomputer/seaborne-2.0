@@ -1,0 +1,172 @@
+html {
+  font-size: 16px;
+}
+
+$be-vietnam: 'Be Vietnam', sans-serif;
+$steinbeck: 'Steinbeck', sans-serif;
+
+.be-vietnam {
+  font-family: $be-vietnam;
+}
+
+.steinbeck {
+  font-family: $steinbeck;
+}
+
+em {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: 500;
+}
+
+.font-800 {
+  font-weight: 800;
+}
+
+.font-700 {
+  font-weight: 700;
+}
+
+.font-600 {
+  font-weight: 600;
+}
+
+.font-500 {
+  font-weight: 500;
+}
+
+.font-300 {
+  font-weight: 300;
+}
+
+.text-button,
+.text-body,
+.text-eyebrow,
+.text-body-sm,
+.text-footer,
+.nav-button {
+  font-family: $be-vietnam;
+}
+
+.text-header,
+.text-header-sm,
+.text-subheader {
+  font-family: $steinbeck;
+}
+
+.text-header {
+  font-size: 2.25rem;
+  line-height: 2.9375rem;
+
+  @include media('md-up') {
+    font-size: 4.5rem;
+    line-height: 5rem;
+  }
+}
+
+.text-header-sm {
+  font-size: 1.375rem;
+  line-height: 1.8125rem;
+
+  @include media('md-up') {
+    font-size: 3.796875rem;
+    line-height: 4.1875rem;
+  }
+}
+
+.text-subheader {
+  font-size: 1.375rem;
+  line-height: 1.8125rem;
+
+  @include media('sm-up') {
+    font-size: 1.875rem;
+    line-height: 2.4375rem;
+  }
+
+  @include media('md-up') {
+    font-size: 3rem;
+    line-height: 3.75rem;
+  }
+}
+
+.text-button {
+  font-size: 0.875rem;
+  font-weight: 500;
+
+  @include media('md-up') {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+  }
+}
+
+.text-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.text-body {
+  font-size: 1rem;
+  font-weight: 300;
+
+  @include media('md-up') {
+    font-size: 1.3125rem;
+    line-height: 1.9375rem;
+  }
+}
+
+.text-body-sm {
+  font-size: 0.75rem;
+  line-height: 1.375rem;
+  font-weight: 400;
+
+  @include media('sm-up') {
+    font-size: 0.875rem;
+    line-height: 1.4rem;
+  }
+
+  @include media('md-up') {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+.text-footer {
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+
+  @include media('md-up') {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  a {
+    &:hover {
+      color: color('gray-darker');
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+span,
+a,
+img {
+  &::selection {
+    color: color('white');
+    background-color: color('blue');
+  }
+}

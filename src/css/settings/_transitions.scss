@@ -1,0 +1,72 @@
+$transition-duration-shorter: 0.18s;
+$transition-duration-short: 0.4s;
+$transition-duration-medium: 0.5s;
+$transition-duration-medium-long: 850ms;
+$transition-duration-long: 950ms;
+$transition-duration-longer: 1.5s;
+$transition-easing: ease-in-out;
+$transition-cubic-bezier: cubic-bezier(0.15, 0.85, 0.45, 1);
+$transition: $transition-duration-short $transition-easing;
+
+.transition-shortest,
+%transition-shortest {
+  transition: all 0.05s $transition-easing;
+}
+
+.transition-shorter,
+%transition-shorter {
+  transition: all $transition-duration-shorter $transition-easing;
+}
+
+.transition-short,
+%transition-short {
+  transition: all $transition-duration-short $transition-easing;
+}
+
+.transition,
+%transition {
+  transition: all $transition-duration-medium $transition-cubic-bezier;
+}
+
+.transition-long,
+%transition-long {
+  transition: all $transition-duration-long $transition-cubic-bezier;
+}
+
+.transition-longer,
+%transition-longer {
+  transition: all $transition-duration-medium-long $transition-cubic-bezier;
+}
+
+@keyframes animation-fade-in {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 0.75rem, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0rem, 0);
+  }
+}
+
+@keyframes animation-fade-in-down {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -0.5rem, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0rem, 0);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+
+  &.visible {
+    animation: $transition-duration-medium-long $transition-easing 0s 1 normal forwards
+      animation-fade-in;
+  }
+}

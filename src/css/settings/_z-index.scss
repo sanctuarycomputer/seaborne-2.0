@@ -1,0 +1,20 @@
+$z: (
+  'below': -1,
+  '0': 0,
+  '1': 1,
+  '2': 2,
+  '3': 3,
+  '4': 4,
+  '5': 5,
+  'overlay': 1000,
+);
+
+@function z($index) {
+  @return map-get($z, $index);
+}
+
+@each $name, $z-index in $z {
+  .z-#{$name} {
+    z-index: #{$z-index};
+  }
+}
