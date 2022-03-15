@@ -32,31 +32,31 @@ button {
 .button--style-primary {
   @extend %transition-shorter;
   text-decoration: none;
-  height: 2.375rem;
-  border-radius: 0.625rem;
+  // height: 2.375rem;
+  border-radius: 0.3125rem;
   line-height: 1rem;
 }
 
 .button--style-primary {
   background-color: color('blue');
   color: color('white');
-  width: 10.0625rem;
-  padding: 1.5rem;
+  width: 9.25rem;
+  padding: 7px 46.5px;
 
   &:hover {
     background-color: color('blue-darker');
   }
 
   @include media('md-up') {
-    width: 12.0625rem;
+    width: 11.75rem;
   }
 }
 
 .button--style-blue-border {
   background-color: transparent;
-  border: 1px solid color('blue');
+  border: 1px solid rgba(color('blue'), 0.2);
   color: color('blue');
-  padding: 0.75rem 1.25rem;
+  padding: 0.25rem 1rem;
 
   &:hover {
     background-color: color('blue');
