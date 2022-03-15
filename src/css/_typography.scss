@@ -57,90 +57,87 @@ em {
 }
 
 .text-header {
-  font-size: 2.25rem;
-  line-height: 2.9375rem;
+  font-size: 1.75rem;
+  line-height: 2.275rem;
 
-  @include media('md-up') {
+  @include media('sm-up') {
     font-size: 4.5rem;
     line-height: 5rem;
   }
 }
 
 .text-header-sm {
-  font-size: 1.375rem;
-  line-height: 1.8125rem;
+  font-size: 1.75rem;
+  line-height: 2.275rem;
 
-  @include media('md-up') {
-    font-size: 3.796875rem;
-    line-height: 4.1875rem;
+  @include media('sm-up') {
+    font-size: 2.25rem;
+    line-height: 2.925rem;
   }
 }
 
 .text-subheader {
-  font-size: 1.375rem;
-  line-height: 1.8125rem;
+  font-size: 1rem;
+  line-height: 1.6rem;
 
   @include media('sm-up') {
-    font-size: 1.875rem;
-    line-height: 2.4375rem;
-  }
-
-  @include media('md-up') {
-    font-size: 3rem;
-    line-height: 3.75rem;
+    font-size: 1.75rem;
+    line-height: 2.275rem;
   }
 }
 
 .text-button {
-  font-size: 0.875rem;
-  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.6rem;
 
-  @include media('md-up') {
-    font-size: 1.125rem;
-    line-height: 1.625rem;
+  @include media('sm-up') {
+    font-size: 1.3125rem;
+    line-height: 1.9175rem;
   }
 }
 
 .text-eyebrow {
   text-transform: uppercase;
-  letter-spacing: 0.6px;
-  font-size: 12px;
   font-weight: 500;
+  letter-spacing: 0.05em;
+  font-size: 0.625rem;
+  line-height: 1rem;
+
+  @include media('sm-up') {
+    font-size: 0.75rem;
+    line-height: 1.2rem;
+  }
+  
+  @include media('md-up') {
+    font-size: 0.875rem;
+    line-height: 1.4rem;
+  }
 }
 
 .text-body {
+  font-weight: 400;
   font-size: 1rem;
-  font-weight: 300;
+  line-height: 1.6rem;
 
-  @include media('md-up') {
+  @include media('sm-up') {
+    font-weight: 300;
     font-size: 1.3125rem;
-    line-height: 1.9375rem;
+    line-height: 1.9175rem;
   }
 }
 
 .text-body-sm {
-  font-size: 0.75rem;
-  line-height: 1.375rem;
-  font-weight: 400;
-
-  @include media('sm-up') {
-    font-size: 0.875rem;
-    line-height: 1.4rem;
-  }
-
-  @include media('md-up') {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
+  font-size: 1rem;
+  line-height: 1.6rem;
 }
 
 .text-footer {
   font-size: 0.75rem;
-  line-height: 1.125rem;
+  line-height: 1.095625rem;
 
   @include media('md-up') {
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 0.875rem;
+    line-height: 1.278125rem;
   }
 
   a {
@@ -152,6 +149,12 @@ em {
 
 a {
   text-decoration: none;
+}
+
+// text link
+p a {
+  color: color('blue');
+  border-bottom: 1px solid color('blue');
 }
 
 h1,
