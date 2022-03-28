@@ -6,7 +6,7 @@ export default function Home() {
           className="main-hero-text opacity-0 flex flex-col items-center text-center site-padding-x inner-content-max-width mxauto z-5"
         >
           <p className="text-body color-gray pb2 sm:pb1_75 md:pb2_5">Hi, we're Seaborne.</p>
-          <h1 className="text-header color-black pb3 sm:pb1_75 md:pb2_5 md:col-8">
+          <h1 className="text-header color-black pb3 sm:pb1_75 md:pb2_5 md:col-10">
             We're your guides to sustainable business practices.
           </h1>
           <a
@@ -17,7 +17,7 @@ export default function Home() {
             Get in touch
           </a>
         </div>
-        <div className="hero-illustration-container opacity-0">
+        <div className="hero-illustration-container opacity-0 flex justify-center">
           <img
             className="hero-illustration w100 site-padding-x z-3 r0 l0 inner-content-max-width mxauto"
             alt="Illustration of people doing outdoor activities in the mountains"
