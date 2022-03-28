@@ -82,10 +82,16 @@ button {
 .header {
   animation: $transition-duration-longer $transition-cubic-bezier 0s 1 normal forwards
     animation-fade-in-down;
-  padding-bottom: 6.4375rem;
+  border-bottom: 1px solid color('cloud');
+  margin-bottom: 2.75rem;
 
   @include media('md-up') {
-    padding-bottom: 10.125rem;
+    margin-bottom: 5.875rem;
+    padding-right: 1.125rem;
+  }
+
+  @include media('lg-up') {
+    margin-bottom: 12.4375rem;
   }
 }
 

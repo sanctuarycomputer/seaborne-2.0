@@ -1,7 +1,7 @@
 export default function Header() {
   return (
     <header
-      className="header site-padding-x inner-content-max-width mxauto flex justify-between items-center flex-row pt1"
+      className="header mxauto flex justify-between items-center flex-row pt1 px1_5 py1_5 md:py2"
     >
       <img className="Seaborne logo" src="/img/seaborne-logo.svg" alt="Seaborne logo" />
       <a
