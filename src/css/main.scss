@@ -161,6 +161,32 @@ button {
   }
 }
 
+//Offerings Section
+.offerings-section {
+  // min-height: 51.375rem;
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+
+  @include media('md-up') {
+    padding-top: 8.5rem;
+    padding-bottom: 8.5rem;
+  }
+}
+
+.offerings-columns-container {
+  padding-top: 4.3125rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 2rem;
+  grid-row-gap: 3.5rem;
+
+  @include media('md-up') {
+    padding-top: 8.4375rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1.75rem;
+  }
+}
+
 //Impact Section
 .impact-section {
   @include media('md-up') {
@@ -175,31 +201,6 @@ button {
   @include media('md-up') {
     padding-bottom: 11.4375rem;
   }
-}
-
-//Offerings Section
-.offerings-columns-container {
-  padding-top: 4.9375rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 2rem;
-  grid-row-gap: 3.5rem;
-
-  @include media('sm-up') {
-    padding-top: 7.375rem;
-    grid-column-gap: 3rem;
-    grid-row-gap: 7.875rem;
-  }
-
-  @include media('md-up') {
-    padding-top: 8.4375rem;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 1.75rem;
-  }
-}
-
-.offerings-section {
-  min-height: 51.375rem;
 }
 
 .pink-background-bottom-shape {

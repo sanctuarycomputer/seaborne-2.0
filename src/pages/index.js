@@ -94,17 +94,17 @@ export default function Home() {
       <section
         className="offerings-section bg-color-powder items-center justify-center flex flex-col relative bg-color-pink py4_5 fade-in"
       >
-        <div className="inner-content-max-width mxauto z-3 sm:py4 md:py6 sm:col-9">
+        <div className="inner-content-max-width mxauto z-3">
           <div className="site-padding-x mxauto">
             <div className="flex flex-col items-center text-center">
-              <p className="text-body color-gray">What we offer.</p>
-              <p className="text-subheader color-black pt2 sm:pt2_5 md:pt3_5 sm:px3">
+              <p className="text-body color-gray">What we offer</p>
+              <p className="text-header-sm color-black pt1_5">
                 Our unique set of services that help companies of all sizes.
               </p>
             </div>
 
-            <div className="offerings-columns-container flex flex-wrap flex-row">
-              <div className="flex flex-col items-start text-body-sm">
+            <div className="offerings-columns-container flex flex-wrap flex-row text-center">
+              <div className="flex flex-col items-center text-body-sm">
                 <img className="pb_75 sm:pb1_75 md:pb1" src="img/suitcase-icon.svg" alt="Suitcase" />
                 <p className="bold color-black md:pb1_75">Corporate Assessment</p>
                 <p className="color-gray">
@@ -113,7 +113,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="flex flex-col items-start text-body-sm">
+              <div className="flex flex-col items-center text-body-sm">
                 <img
                   className="pb_75 sm:pb1_75 md:pb1"
                   src="img/supply-chain-icon.svg"
@@ -126,7 +126,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="flex flex-col items-start text-body-sm">
+              <div className="flex flex-col items-center text-body-sm">
                 <img
                   className="pb_75 sm:pb1_75 md:pb1"
                   src="img/goal-setting-icon.svg"
@@ -139,7 +139,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="flex flex-col items-start text-body-sm">
+              <div className="flex flex-col items-center text-body-sm">
                 <img
                   className="pb_75 sm:pb1_75 md:pb1"
                   src="img/web-icon.svg"
