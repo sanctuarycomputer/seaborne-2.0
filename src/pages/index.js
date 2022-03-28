@@ -1,6 +1,7 @@
 export default function Home() {
   return (
     <main>
+      {/* Hero section */}
       <section className="flex flex-col">
         <div
           className="main-hero-text opacity-0 flex flex-col items-center text-center site-padding-x inner-content-max-width mxauto z-5"
@@ -26,6 +27,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Case studies section */}
       <section className="studies-section flex flex-col mt4">
         <div className="text-center">
           <p className="text-body color-gray pb2 sm:pb1_75 md:pb1_5">Latest updates from our company</p>
@@ -86,11 +88,10 @@ export default function Home() {
               </a>
             </article>
           </div>
-
-
         </div>
       </section>
 
+      {/* Offerings section */}
       <section
         className="offerings-section bg-color-powder items-center justify-center flex flex-col relative bg-color-pink py4_5 fade-in"
       >
@@ -156,6 +157,19 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Pricing section */}
+      <section className="pricing-section text-center md:col-10 lg:col-8 mxauto site-padding-x">
+          <p className="text-body color-gray pb2 sm:pb1_75 md:pb1_5">We keep our pricing simple</p>
+          <h2 className="text-header-sm ">All of our services are $90/hour to get you started on your journey</h2>
+
+          <img 
+            className="separator-arrow"
+            alt="Section separator"
+            src="img/squiggle-arrow.svg"
+          />
+      </section>
+
+      {/* Impact section */}
       <section
         className="impact-section flex flex-col sm:flex-row justify-between items-center inner-content-max-width site-padding-x mxauto fade-in pb6"
       >

@@ -186,6 +186,29 @@ button {
   }
 }
 
+//Pricing section
+.pricing-section {
+  padding-top: 4.25rem;
+  padding-bottom: 5.625rem;
+
+  @include media('md-up') {
+    padding-top: 8.125rem;
+    padding-bottom: 10rem;
+  }
+
+  .text-header-sm {
+    margin-bottom: 4rem;
+
+    @include media('md-up') {
+      margin-bottom: 3rem;
+    }
+    
+    @include media('lg-up') {
+      margin-bottom: 6.5rem;
+    }
+  }
+}
+
 //Impact Section
 .impact-section {
   @include media('md-up') {
