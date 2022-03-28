@@ -93,6 +93,24 @@ button {
   @include media('lg-up') {
     margin-bottom: 12.4375rem;
   }
+
+  nav {
+    a:not(:last-of-type) {
+      margin-right: 2.4375rem;
+    }
+  }
+
+  .nav-toggle {
+    span {
+      width: 20px;
+      height: 1px;
+      background-color: color('black');
+
+      &:not(:last-of-type) {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
 }
 
 .nav-button {
