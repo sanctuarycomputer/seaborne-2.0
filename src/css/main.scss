@@ -116,6 +116,24 @@ button {
     animation-fade-in;
 }
 
+// Case Studies Section
+
+.studies-section {
+  padding-top: 3.4375rem;
+  padding-bottom: 3.4375rem;
+  
+  @include media('md-up') {
+    padding-top: 10.75rem;
+    padding-bottom: 8.375rem;  
+  }
+  
+  @include media('lg-up') {
+    padding-top: 8.375rem;
+    padding-bottom: 8.375rem;  
+  }
+  
+}
+
 //Impact Section
 .impact-section {
   @include media('md-up') {

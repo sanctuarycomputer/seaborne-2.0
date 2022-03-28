@@ -26,6 +26,10 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="studies-section flex flex-col">
+        <p className="text-body color-gray pb2 sm:pb1_75 md:pb2_5">Hi, we're Seaborne.</p>
+      </section>
+
       <section
         className="offerings-section items-center justify-center flex flex-col relative bg-color-pink py6 fade-in"
       >
