@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <main>
-      <section className="flex flex-col pb8 sm:pb10">
+      <section className="flex flex-col">
         <div
           className="main-hero-text opacity-0 flex flex-col items-center text-center site-padding-x inner-content-max-width mxauto z-5"
         >
