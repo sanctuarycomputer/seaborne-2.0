@@ -171,13 +171,13 @@ export default function Home() {
 
       {/* Impact section */}
       <section
-        className="impact-section flex flex-col sm:flex-row justify-between items-center inner-content-max-width site-padding-x mxauto fade-in pb6"
+        className="impact-section flex flex-col md:flex-row flex-col-reverse md:items=between justify-between items-center inner-content-max-width site-padding-x mxauto fade-in pb6"
       >
-        <div className="flex flex-col sm:col-4 pb3 sm:pb0">
-          <h2 className="text-subheader color-black pb2 sm:pb1_75 md:pb2_5">
+        <div className="flex flex-col pb3 sm:pb0 px1 md:px0 md:col-5">
+          <h2 className="text-subheader color-black mt2 mb1_5 lg:mb3">
             We'll help you understand your impact.
           </h2>
-          <p className="text-body color-gray pb2 sm:pb1_75 md:pb2_5">
+          <p className="text-body color-gray mb1_5">
             We are a team of strategists, designers, and technologists who help founders run more
             sustainable businesses. We want your business to do good to the environment.
           </p>
@@ -191,7 +191,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="impact-image sm:col-6">
+        <div className="impact-image md:col-7 md:pl2_5">
           <img
             className="w100"
             src="img/impact-illustration.svg"

@@ -214,6 +214,11 @@ button {
   @include media('md-up') {
     padding-bottom: 15.6875rem;
   }
+
+  .text-subheader {
+    font-size: 1.75rem;
+    line-height: 1.3;
+  }
 }
 
 //Journey Section
