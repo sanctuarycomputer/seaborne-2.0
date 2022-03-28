@@ -7,15 +7,20 @@
 }
 
 .site-padding-x {
-  padding-left: $site-padding-x-mobile;
-  padding-right: $site-padding-x-mobile;
+  padding-left: $site-padding-x-small-mobile;
+  padding-right: $site-padding-x-small-mobile;
 
-  @include media('sm-up') {
+  @include media ('sm-up') {
+    padding-left: $site-padding-x-mobile;
+    padding-right: $site-padding-x-mobile;
+  }
+  
+  @include media('md-up') {
     padding-left: $site-padding-x-tablet;
     padding-right: $site-padding-x-tablet;
   }
 
-  @include media('md-up') {
+  @include media('lg-up') {
     padding-left: $site-padding-x-desktop;
     padding-right: $site-padding-x-desktop;
   }
