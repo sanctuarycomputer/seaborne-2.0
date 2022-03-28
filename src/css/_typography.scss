@@ -60,7 +60,7 @@ em {
   font-size: 1.75rem;
   line-height: 2.275rem;
 
-  @include media('sm-up') {
+  @include media('md-up') {
     font-size: 4.5rem;
     line-height: 5rem;
   }
@@ -70,7 +70,7 @@ em {
   font-size: 1.75rem;
   line-height: 2.275rem;
 
-  @include media('sm-up') {
+  @include media('md-up') {
     font-size: 2.25rem;
     line-height: 2.925rem;
   }
@@ -80,7 +80,7 @@ em {
   font-size: 1rem;
   line-height: 1.6rem;
 
-  @include media('sm-up') {
+  @include media('md-up') {
     font-size: 1.75rem;
     line-height: 2.275rem;
   }
@@ -90,7 +90,7 @@ em {
   font-size: 1rem;
   line-height: 1.6rem;
 
-  @include media('sm-up') {
+  @include media('md-up') {
     font-size: 1.3125rem;
     line-height: 1.9175rem;
   }
@@ -103,12 +103,12 @@ em {
   font-size: 0.625rem;
   line-height: 1rem;
 
-  @include media('sm-up') {
+  @include media('md-up') {
     font-size: 0.75rem;
     line-height: 1.2rem;
   }
   
-  @include media('md-up') {
+  @include media('lg-up') {
     font-size: 0.875rem;
     line-height: 1.4rem;
   }
@@ -119,7 +119,7 @@ em {
   font-size: 1rem;
   line-height: 1.6rem;
 
-  @include media('sm-up') {
+  @include media('md-up') {
     font-weight: 300;
     font-size: 1.3125rem;
     line-height: 1.9175rem;
