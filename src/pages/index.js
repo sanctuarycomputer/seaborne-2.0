@@ -23,12 +23,6 @@ export default function Home() {
             alt="Illustration of people doing outdoor activities in the mountains"
             src="img/hero-illustration.svg"
           />
-          {/* <img
-            className="relative hero-illustration-background w100"
-            alt=""
-            role="presentation"
-            src="img/hero-blue-background.svg"
-          /> */}
         </div>
       </section>
 
