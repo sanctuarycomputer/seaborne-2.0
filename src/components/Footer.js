@@ -43,7 +43,7 @@ export default function Footer() {
       </div> */}
 
       <section
-        className="contact-section flex flex-col sm:flex-row justify-between items-center inner-content-max-width mxauto py8 sm:pt4 sm:pb5 site-padding-x fade-in"
+        className="contact-section flex flex-col justify-between items-center inner-content-max-width mxauto py8 sm:pt4 sm:pb5 site-padding-x fade-in"
       >
         <div className="flex flex-col col-12 sm:col-5 items-center sm:items-start">
           <p className="text-body color-gray pb2 sm:pb1_75 md:pb2_5">Ready to use less?</p>
@@ -59,17 +59,17 @@ export default function Footer() {
       </section>
 
       <section
-        className="nav-section flex flex-col sm:flex-row justify-between items-center inner-content-max-width mxauto py8 sm:pt4 sm:pb5 site-padding-x fade-in"
+        className="nav-section flex flex-col md:flex-row justify-between items-center inner-content-max-width mxauto pb2 site-padding-x"
       >
-        <p className="pb2 text-footer">Seaborne is a sister company to 
+        <p className="pb2 text-footer color-gray">
+          Seaborne is a sister company to 
           <a
             aria-label="Visit Sanctuary Computer"
             href="http://www.sanctuary.computer"
             className="color-gray"
             target="_blank"
             rel="noopener noreferrer"
-          >
-            Sanctuary Computer
+          > Sanctuary Computer
           </a>
         </p>
         <nav>
@@ -79,7 +79,7 @@ export default function Footer() {
           <a
             aria-label="Visit Seaborne's Twitter"
             href="https://twitter.com/seaborne_nyc"
-            className="text-footer underline"
+            className="text-footer color-gray underline"
             target="_blank"
             rel="noopener noreferrer"
             >Twitter</a
