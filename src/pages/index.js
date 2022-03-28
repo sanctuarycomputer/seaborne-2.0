@@ -26,8 +26,69 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="studies-section flex flex-col">
-        <p className="text-body color-gray pb2 sm:pb1_75 md:pb2_5">Hi, we're Seaborne.</p>
+      <section className="studies-section flex flex-col mt4">
+        <div className="text-center">
+          <p className="text-body color-gray pb2 sm:pb1_75 md:pb1_5">Latest updates from our company</p>
+          <h2 className="text-header-sm mb1_5 md:mb5">See how we're making a difference</h2>
+
+          <img 
+            className="separator-arrow"
+            alt="Section separator"
+            src="img/squiggle-arrow.svg"
+          />
+        </div>
+
+        <div className="case-study-container site-padding-x mt4 md:col-10 mxauto">
+
+          <div className="case-study-card flex flex-row justify-between mxauto mb1_5 md:mb3">
+            <figure className="bg-cover" 
+              style={{
+                backgroundImage: `url('img/studies/light-two/hero.jpg')`
+            }}>
+            </figure>
+
+            <article className="case-study-details flex-1 flex flex-col ml_75 md:ml2">
+              <p className="case-study-type text-eyebrow mb_25 md:mb_75">Case Study</p>
+              <h3 className="case-study-title text-subheader md:mb_5">The Light Phone</h3>
+              <p className="case-study-excerpt text-body color-gray">
+              Investigating the climate impacts of a mobile phone. Building a novel checkout feature to invite customers into the sustainability conversation.
+              </p>
+              <a className="case-study-link text-body arrow-link color-blue pt_5 md:pt1_5" href="#">
+              <img 
+                className="mr_5"
+                alt="Section separator"
+                src="img/squiggle-arrow-right.svg"
+              />
+                View Case Study
+              </a>
+            </article>
+          </div>
+          <div className="case-study-card flex flex-row justify-between mxauto">
+            <figure className="bg-cover" 
+              style={{
+                backgroundImage: `url('img/studies/light-two/hero.jpg')`
+            }}>
+            </figure>
+
+            <article className="case-study-details flex-1 flex flex-col ml_75 md:ml2">
+              <p className="case-study-type text-eyebrow mb_25 md:mb_75">Case Study</p>
+              <h3 className="case-study-title text-subheader md:mb_5">The Light Phone</h3>
+              <p className="case-study-excerpt text-body color-gray">
+              Investigating the climate impacts of a mobile phone. Building a novel checkout feature to invite customers into the sustainability conversation.
+              </p>
+              <a className="case-study-link text-body arrow-link color-blue pt_5 md:pt1_5" href="#">
+              <img 
+                className="mr_5"
+                alt="Section separator"
+                src="img/squiggle-arrow-right.svg"
+              />
+                View Case Study
+              </a>
+            </article>
+          </div>
+
+
+        </div>
       </section>
 
       <section

@@ -130,8 +130,52 @@ button {
   @include media('lg-up') {
     padding-top: 8.375rem;
     padding-bottom: 8.375rem;  
+  } 
+}
+
+.case-study-card {
+  border: 1px solid color('cloud');
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  max-width: 45rem;
+
+  figure {
+    width: 6.25rem;
+    height: 6.25rem;
+
+    @include media('md-up') {
+      width: 11.875rem;
+      height: 11.875rem;
+    }
   }
-  
+
+  article {
+    // .case-study-type {
+    //   margin-bottom: 0.25rem;
+
+    //   @include media('md-up') {
+    //     margin-bottom: 0.75rem;
+    //   }
+    // }
+
+    .case-study-title {
+      // margin-bottom: 0.1rem;
+      
+      // @include media('md-up') {
+      //   margin-bottom: 0.5rem;
+      // }
+    }
+
+    .case-study-excerpt, .case-study-link {
+      font-size: 0.75rem;
+      line-height: 1.6;
+
+      @include media('md-up') {
+        font-size: 1rem;
+      }
+    }
+
+  }
 }
 
 //Impact Section
@@ -177,12 +221,6 @@ button {
 
 .pink-background-bottom-shape {
   bottom: -1%;
-}
-
-.case-study-card {
-  border: 1px solid color('gray-lighter');
-  border-radius: 20px;
-  padding: 24px;
 }
 
 //Contact Section
