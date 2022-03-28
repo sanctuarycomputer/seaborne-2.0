@@ -169,7 +169,7 @@ export default function Home() {
         className="contact-section flex flex-col sm:flex-row justify-between items-center inner-content-max-width mxauto contact-page sm:pt4 sm:pb5 site-padding-x fade-in"
       >
         <div className="flex flex-col col-12 sm:col-5 pb3 pt6 sm:pb0 items-center sm:items-start">
-          <p className="text-body color-gray pb2 sm:pb1_75 md:pb2_5">Ready to use less?</p>
+          <p className="text-body color-gray pb1_5 sm:pb1_75 md:pb2_5">Ready to use less?</p>
           <p className="text-subheader color-black pb2 sm:pb1_75 md:pb2_5">hello@seaborne.nyc</p>
           <a
             aria-label="Get in touch with Seaborne"
