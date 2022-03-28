@@ -150,22 +150,6 @@ button {
   }
 
   article {
-    // .case-study-type {
-    //   margin-bottom: 0.25rem;
-
-    //   @include media('md-up') {
-    //     margin-bottom: 0.75rem;
-    //   }
-    // }
-
-    .case-study-title {
-      // margin-bottom: 0.1rem;
-      
-      // @include media('md-up') {
-      //   margin-bottom: 0.5rem;
-      // }
-    }
-
     .case-study-excerpt, .case-study-link {
       font-size: 0.75rem;
       line-height: 1.6;
@@ -174,7 +158,6 @@ button {
         font-size: 1rem;
       }
     }
-
   }
 }
 

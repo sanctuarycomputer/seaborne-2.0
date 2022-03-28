@@ -92,16 +92,8 @@ export default function Home() {
       </section>
 
       <section
-        className="offerings-section items-center justify-center flex flex-col relative bg-color-pink py6 fade-in"
+        className="offerings-section bg-color-powder items-center justify-center flex flex-col relative bg-color-pink py4_5 fade-in"
       >
-        <div className="absolute t0 w100">
-          <img className="w100" src="img/pink-background-shape-1.svg" alt="" role="presentation" />
-        </div>
-
-        <div className="pink-background-bottom-shape absolute w100">
-          <img className="w100" src="img/pink-background-shape-2.svg" alt="" />
-        </div>
-
         <div className="inner-content-max-width mxauto z-3 sm:py4 md:py6 sm:col-9">
           <div className="site-padding-x mxauto">
             <div className="flex flex-col items-center text-center">
