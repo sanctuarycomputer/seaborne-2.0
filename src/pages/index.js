@@ -96,17 +96,17 @@ export default function Home() {
       >
         <div className="inner-content-max-width mxauto z-3">
           <div className="site-padding-x mxauto">
-            <div className="flex flex-col items-center text-center">
+            <div className="flex flex-col items-center text-center md:col-10 lg:col-8 mxauto">
               <p className="text-body color-gray">What we offer</p>
               <p className="text-header-sm color-black pt1_5">
                 Our unique set of services that help companies of all sizes.
               </p>
             </div>
 
-            <div className="offerings-columns-container flex flex-wrap flex-row text-center">
+            <div className="offerings-columns-container flex flex-wrap flex-row text-center md:col-10 mxauto">
               <div className="flex flex-col items-center text-body-sm">
-                <img className="pb_75 sm:pb1_75 md:pb1" src="img/suitcase-icon.svg" alt="Suitcase" />
-                <p className="bold color-black md:pb1_75">Corporate Assessment</p>
+                <img className="mb1_5" src="img/suitcase-icon.svg" alt="Suitcase" />
+                <p className="bold color-black">Corporate Assessment</p>
                 <p className="color-gray">
                   Calculate your business’s carbon footprint by understanding the ins and outs of
                   your business and operations.
@@ -115,11 +115,11 @@ export default function Home() {
 
               <div className="flex flex-col items-center text-body-sm">
                 <img
-                  className="pb_75 sm:pb1_75 md:pb1"
+                  className="mb1_5"
                   src="img/supply-chain-icon.svg"
                   alt="Arrows rotating in a circle and surrounding a box"
                 />
-                <p className="bold color-black md:pb1_75">Supply Chain Assessment</p>
+                <p className="bold color-black">Supply Chain Assessment</p>
                 <p className="color-gray">
                   Calculate your product’s carbon footprint. Know the impact of your supply chain
                   and manufacturing processes.
@@ -128,11 +128,11 @@ export default function Home() {
 
               <div className="flex flex-col items-center text-body-sm">
                 <img
-                  className="pb_75 sm:pb1_75 md:pb1"
+                  className="mb1_5"
                   src="img/goal-setting-icon.svg"
                   alt="Target with an arrow in the center"
                 />
-                <p className="bold color-black md:pb1_75">Goal Setting</p>
+                <p className="bold color-black">Goal Setting</p>
                 <p className="color-gray">
                   Set sustainability goals so that your organization builds sustainability into its
                   DNA.
@@ -141,11 +141,11 @@ export default function Home() {
 
               <div className="flex flex-col items-center text-body-sm">
                 <img
-                  className="pb_75 sm:pb1_75 md:pb1"
+                  className="mb1_5"
                   src="img/web-icon.svg"
                   alt="Browser with an arrow pointing towards it"
                 />
-                <p className="bold color-black md:pb1_75">Web Presence</p>
+                <p className="bold color-black">Web Presence</p>
                 <p className="color-gray">
                   Share the story of how your business became more sustainable. We’ll help shape
                   your narrative and build your case study site.
