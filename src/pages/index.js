@@ -3,7 +3,7 @@ export default function Home() {
     <main>
       <section className="flex flex-col pb8 sm:pb10">
         <div
-          className="main-hero-text opacity-0 flex flex-col site-padding-x inner-content-max-width mxauto z-5"
+          className="main-hero-text opacity-0 flex flex-col items-center text-center site-padding-x inner-content-max-width mxauto z-5"
         >
           <p className="text-body color-gray pb2 sm:pb1_75 md:pb2_5">Hi, we're Seaborne.</p>
           <h1 className="text-header color-black pb2 sm:pb1_75 md:pb2_5 sm:col-8 md:col-12">
