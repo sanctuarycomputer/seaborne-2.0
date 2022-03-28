@@ -6,7 +6,7 @@ export default function Home() {
           className="main-hero-text opacity-0 flex flex-col items-center text-center site-padding-x inner-content-max-width mxauto z-5"
         >
           <p className="text-body color-gray pb2 sm:pb1_75 md:pb2_5">Hi, we're Seaborne.</p>
-          <h1 className="text-header color-black pb2 sm:pb1_75 md:pb2_5 sm:col-8 md:col-12">
+          <h1 className="text-header color-black pb3 sm:pb1_75 md:pb2_5 md:col-8">
             We're your guides to sustainable business practices.
           </h1>
           <a
@@ -19,16 +19,16 @@ export default function Home() {
         </div>
         <div className="hero-illustration-container opacity-0">
           <img
-            className="hero-illustration absolute w100 z-3 r0 l0 inner-content-max-width mxauto"
+            className="hero-illustration w100 site-padding-x z-3 r0 l0 inner-content-max-width mxauto"
             alt="Illustration of people doing outdoor activities in the mountains"
             src="img/hero-illustration.svg"
           />
-          <img
+          {/* <img
             className="relative hero-illustration-background w100"
             alt=""
             role="presentation"
             src="img/hero-blue-background.svg"
-          />
+          /> */}
         </div>
       </section>
 
