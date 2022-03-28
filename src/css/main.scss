@@ -41,13 +41,14 @@ button {
   background-color: color('blue');
   color: color('white');
   width: 9.25rem;
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
 
   &:hover {
     background-color: color('blue-darker');
   }
 
   @include media('md-up') {
+    padding: 1rem 2rem;
     width: 11.75rem;
   }
 }
