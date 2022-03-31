@@ -200,6 +200,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Journey section */}
       <section
         className="journey-section flex flex-col-reverse sm:flex-row justify-between items-center inner-content-max-width site-padding-x mxauto fade-in"
       >

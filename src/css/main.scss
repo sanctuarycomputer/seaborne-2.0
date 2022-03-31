@@ -158,6 +158,19 @@ button {
         font-size: 1rem;
       }
     }
+
+    .case-study-excerpt {
+
+      overflow: hidden;
+      white-space: normal;
+      max-height: 2.375rem;
+      width: 100%;
+      text-overflow: ellipsis;
+
+      @include media('md-up') {
+        max-height: none;
+      }
+    }
   }
 }
 
