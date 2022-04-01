@@ -191,13 +191,6 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="impact-image md:col-7 md:pl2_5 lg:col-6 lg:pl0">
-          <img
-            className="w100"
-            src="img/impact-illustration.svg"
-            alt="Illustration of person holding a flower at the beach"
-          />
-        </div>
       </section>
 
       {/* Journey section */}
@@ -230,6 +223,18 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+        <div className="flex flex-col col-12 sm:col-5 pb3 pt6 sm:pb0 items-center sm:items-start">
+          <p className="text-body color-gray pb1_5 sm:pb1_75 md:pb2_5">Ready to use less?</p>
+          <p className="text-subheader color-black pb2 sm:pb1_75 md:pb2_5">hello@seaborne.nyc</p>
+          <a
+            aria-label="Get in touch with Seaborne"
+            className="event-contact-us button--style-primary text-button flex items-center justify-center"
+            href="mailto:hello@seaborne.nyc"
+          >
+            Get in touch
+          </a>
+        </div>
 
     </main>
   );
