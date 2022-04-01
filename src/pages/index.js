@@ -29,7 +29,7 @@ export default function Home() {
 
       {/* Case studies section */}
       <section className="studies-section flex flex-col mt4">
-        <div className="text-center">
+        <div className="text-center site-padding-x">
           <p className="text-body color-gray pb2 sm:pb1_75 md:pb1_5">Latest updates from our company</p>
           <h2 className="text-header-sm mb1_5 md:mb5 lg:mb4">See how we're making a difference</h2>
 
