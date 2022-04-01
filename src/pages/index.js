@@ -175,7 +175,7 @@ export default function Home() {
       >
         <div className="flex flex-col px1 md:px0 md:col-5 lg:col-4">
           <h2 className="text-subheader color-black mt2 mb1_5 lg:mb3">
-            We'll help you understand your impact.
+            We help you understand your impact.
           </h2>
           <p className="text-body color-gray mb1_5">
             We are a team of strategists, designers, and technologists who help founders run more
@@ -190,6 +190,13 @@ export default function Home() {
               businesses.
             </p>
           </div>
+        </div>
+        <div className="impact-image md:col-7 md:pl2_5 lg:col-6 lg:pl0">
+          <img
+            className="w100"
+            src="img/impact-illustration.svg"
+            alt="Illustration of person holding a flower at the beach."
+          />
         </div>
       </section>
 
@@ -206,7 +213,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col px1 md:px0 md:col-5 lg:col-4">
           <h2 className="text-subheader color-black mt2 mb1_5 lg:mb3">
-            Let’s start on your journey.
+            We'll get you started on your journey.
           </h2>
           <p className="text-body color-gray mb1_5">
             We use research-backed methods to create clear and informative insights. We don’t
@@ -223,18 +230,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-        <div className="flex flex-col col-12 sm:col-5 pb3 pt6 sm:pb0 items-center sm:items-start">
-          <p className="text-body color-gray pb1_5 sm:pb1_75 md:pb2_5">Ready to use less?</p>
-          <p className="text-subheader color-black pb2 sm:pb1_75 md:pb2_5">hello@seaborne.nyc</p>
-          <a
-            aria-label="Get in touch with Seaborne"
-            className="event-contact-us button--style-primary text-button flex items-center justify-center"
-            href="mailto:hello@seaborne.nyc"
-          >
-            Get in touch
-          </a>
-        </div>
 
     </main>
   );
