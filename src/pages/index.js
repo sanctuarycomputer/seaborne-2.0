@@ -31,7 +31,7 @@ export default function Home() {
       <section className="studies-section flex flex-col mt4">
         <div className="text-center">
           <p className="text-body color-gray pb2 sm:pb1_75 md:pb1_5">Latest updates from our company</p>
-          <h2 className="text-header-sm mb1_5 md:mb5">See how we're making a difference</h2>
+          <h2 className="text-header-sm mb1_5 md:mb5 lg:mb4">See how we're making a difference</h2>
 
           <img 
             className="separator-arrow"
@@ -53,7 +53,7 @@ export default function Home() {
               <p className="case-study-type text-eyebrow mb_25 md:mb_75">Case Study</p>
               <h3 className="case-study-title text-subheader md:mb_5">The Light Phone</h3>
               <p className="case-study-excerpt text-body color-gray">
-              Investigating the climate impacts of a mobile phone. Building a novel checkout feature to invite customers into the sustainability conversation.
+                Investigating the climate impacts of a mobile phone. Building a novel checkout feature to invite customers into the sustainability conversation.
               </p>
               <a className="case-study-link text-body arrow-link color-blue pt_5 md:pt1_5" href="#">
               <img 
@@ -73,10 +73,10 @@ export default function Home() {
             </figure>
 
             <article className="case-study-details flex-1 flex flex-col ml_75 md:ml2">
-              <p className="case-study-type text-eyebrow mb_25 md:mb_75">Case Study</p>
-              <h3 className="case-study-title text-subheader md:mb_5">The Light Phone</h3>
+              <p className="case-study-type text-eyebrow mb_25 md:mb_75">Blog Post</p>
+              <h3 className="case-study-title text-subheader md:mb_5">Trends of the Industry</h3>
               <p className="case-study-excerpt text-body color-gray">
-              Investigating the climate impacts of a mobile phone. Building a novel checkout feature to invite customers into the sustainability conversation.
+                Luctus justo, in lectus bibendum. Ultrices sed enim, at sit egestas cursus cursus cursus. Vitae, viverra ut turpis congue sit. Cras nibh sed commodo, leo arcu amet. Cras.
               </p>
               <a className="case-study-link text-body arrow-link color-blue pt_5 md:pt1_5" href="#">
               <img 
@@ -173,7 +173,7 @@ export default function Home() {
       <section
         className="impact-section flex flex-col md:flex-row flex-col-reverse md:items=between justify-between items-center inner-content-max-width site-padding-x mxauto fade-in pb6"
       >
-        <div className="flex flex-col pb3 sm:pb0 px1 md:px0 md:col-5">
+        <div className="flex flex-col px1 md:px0 md:col-5 lg:col-4">
           <h2 className="text-subheader color-black mt2 mb1_5 lg:mb3">
             We'll help you understand your impact.
           </h2>
@@ -191,7 +191,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="impact-image md:col-7 md:pl2_5">
+        <div className="impact-image md:col-7 md:pl2_5 lg:col-6 lg:pl0">
           <img
             className="w100"
             src="img/impact-illustration.svg"
@@ -202,20 +202,20 @@ export default function Home() {
 
       {/* Journey section */}
       <section
-        className="journey-section flex flex-col-reverse sm:flex-row justify-between items-center inner-content-max-width site-padding-x mxauto fade-in"
+        className="journey-section flex flex-col md:flex-row flex-col md:items=between justify-between items-center inner-content-max-width site-padding-x mxauto fade-in"
       >
-        <div className="journey-image sm:col-6">
+        <div className="journey-image md:col-7 md:pr2_5 lg:col-6 lg:pr0">
           <img
             className="w100"
             src="img/journey-illustration.svg"
             alt="Illustration of two people in nature."
           />
         </div>
-        <div className="flex flex-col sm:col-4 pb3 sm:pb0">
-          <h2 className="text-subheader color-black pb2 sm:pb1_75 md:pb2_5">
+        <div className="flex flex-col px1 md:px0 md:col-5 lg:col-4">
+          <h2 className="text-subheader color-black mt2 mb1_5 lg:mb3">
             Let’s start on your journey.
           </h2>
-          <p className="text-body color-gray sm:pb1_75 md:pb2_5">
+          <p className="text-body color-gray mb1_5">
             We use research-backed methods to create clear and informative insights. We don’t
             believe jargon or academic writing—we believe in taking action.
           </p>
