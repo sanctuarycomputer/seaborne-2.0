@@ -32,7 +32,6 @@ export default function Home() {
         <div className="text-center site-padding-x">
           <p className="text-body color-gray pb2 sm:pb1_75 md:pb1_5">Latest updates from our company</p>
           <h2 className="text-header-sm mb1_5 md:mb5 lg:mb4">See how we're making a difference</h2>
-
           <img 
             className="separator-arrow"
             alt="Section separator"
@@ -41,14 +40,12 @@ export default function Home() {
         </div>
 
         <div className="case-study-container site-padding-x mt4 md:col-10 mxauto">
-
           <div className="case-study-card flex flex-row justify-between mxauto mb1_5 md:mb3">
             <figure className="bg-cover" 
               style={{
                 backgroundImage: `url('img/studies/light-two/hero.jpg')`
             }}>
             </figure>
-
             <article className="case-study-details flex-1 flex flex-col ml_75 md:ml2">
               <p className="case-study-type text-eyebrow mb_25 md:mb_75">Case Study</p>
               <h3 className="case-study-title text-subheader md:mb_5">The Light Phone</h3>
@@ -71,7 +68,6 @@ export default function Home() {
                 backgroundImage: `url('img/studies/light-two/hero.jpg')`
             }}>
             </figure>
-
             <article className="case-study-details flex-1 flex flex-col ml_75 md:ml2">
               <p className="case-study-type text-eyebrow mb_25 md:mb_75">Blog Post</p>
               <h3 className="case-study-title text-subheader md:mb_5">Trends of the Industry</h3>
@@ -161,7 +157,6 @@ export default function Home() {
       <section className="pricing-section text-center md:col-10 lg:col-8 mxauto site-padding-x">
           <p className="text-body color-gray pb2 sm:pb1_75 md:pb1_5">We keep our pricing simple</p>
           <h2 className="text-header-sm ">All of our services are $90/hour to get you started on your journey</h2>
-
           <img 
             className="separator-arrow"
             alt="Section separator"

@@ -1,29 +1,64 @@
-export default function Header() {
-  return (
-    <header
-      className="header mxauto flex justify-between items-center flex-row pt1 px1_5 py1_5 md:py2"
-    >
-      <a href="/">
-        <img className="Seaborne logo" src="/img/seaborne-logo.svg" alt="Seaborne logo" />
-      </a>
-      
-      <button className="nav-toggle flex flex-col md:none bg-color-transparent">
-        <span></span>
-        <span></span>
-      </button>
+import {useState} from "react";
 
-      <nav className="none md:flex flex-row items-center text-body-sm">
-        <a href="/about" className="color-gray">How we work</a>
-        <a href="/studies" className="color-gray">Case Study</a>
-        <a href="/studies" className="color-gray">View Blog</a>
-        <a
-          aria-label="Get in touch with Seaborne"
-          href="mailto:hello@seaborne.nyc"
-          className="event-contact-us button--style-blue-border nav-button flex items-center"
-        >
-          Get in touch
+export default function Header() {
+  const [isMobileNavActive, setMobileNavActive] = useState(false);
+
+  const handleMobileNavToggle = () => {
+    setMobileNavActive(!isMobileNavActive);
+  };
+
+  return (
+    // <header
+    //   className="header mxauto flex justify-between items-center flex-row pt1 px1_5 py1_5 md:py2"
+    // >
+    <header
+      className="header z-overlay relative"
+    >
+      <div className="desktop-nav-container mxauto flex justify-between items-center flex-row pt1 px1_5 py1_5 md:py2">
+        <a href="/">
+          <img className="Seaborne logo" src="/img/seaborne-logo.svg" alt="Seaborne logo" />
         </a>
-      </nav>
+        
+        <button 
+          className={`nav-toggle flex flex-col md:none bg-color-transparent ${isMobileNavActive ? "mobile-nav-active" : ""}`}
+          onClick={handleMobileNavToggle}
+        >
+          <span className="transition"></span>
+          <span className="transition"></span>
+        </button>
+
+        <nav 
+          className="desktop-nav none md:flex flex-row items-center text-body-sm"
+          // className={`none md:flex flex-row items-center text-body-sm ${isMobileNavActive ? "mobile-nav-active" : ""}`}
+        >
+          <a href="/about" className="color-gray">How we work</a>
+          <a href="/studies" className="color-gray">Case Studies &amp; Blog Posts</a>
+          <a
+            aria-label="Get in touch with Seaborne"
+            href="mailto:hello@seaborne.nyc"
+            className="event-contact-us button--style-blue-border nav-button flex items-center"
+          >
+            Get in touch
+          </a>
+        </nav>
+      </div>
+
+      <div className="mobile-nav-container">
+        <nav 
+          className={`mobile-nav absolute pt3 px1_5 bg-color-white w100 transition none flex-col text-header-sm ${isMobileNavActive ? "active" : ""}`}
+        >
+          <a href="/about" className="color-gray">How we work</a>
+          <a href="/studies" className="color-gray">Case Studies &amp; Blog Posts</a>
+          <a
+            aria-label="Get in touch with Seaborne"
+            href="mailto:hello@seaborne.nyc"
+            className="color-blue"
+          >
+            Get in touch
+          </a>
+        </nav>
+      </div>
+      
     </header>
   );
 }

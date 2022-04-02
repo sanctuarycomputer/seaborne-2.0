@@ -100,6 +100,10 @@ button {
     margin-bottom: 12.4375rem;
   }
 
+  .desktop-nav {
+    // border-bottom: 1px solid color('cloud');
+  }
+
   nav {
     a:not(:last-of-type) {
       margin-right: 2.4375rem;
@@ -111,10 +115,36 @@ button {
       width: 20px;
       height: 1px;
       background-color: color('black');
+      transform-origin: center;
 
       &:not(:last-of-type) {
         margin-bottom: 0.5rem;
       }
+    }
+
+    &.mobile-nav-active {
+      span:first-of-type {
+        margin-bottom: 0;
+        transform: rotate(45deg);
+      }
+      span:last-of-type {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  .mobile-nav {
+    &.active {
+      display: flex;
+      height: calc(100vh - 58px);
+      // animation: $transition-duration-longer $transition-cubic-bezier 0.25s 1 normal forwards animation-fade-in;
+
+    }
+
+    a {
+      font-size: 2.25rem;
+      line-height: 1.3;
+      margin-bottom: 0.25rem;
     }
   }
 }

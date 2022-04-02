@@ -34,8 +34,7 @@ export default function Footer() {
         </p>
         <nav>
           <a className="text-footer color-gray underline" aria-label="Our Process" href="/about">Our Process</a>
-          <a className="text-footer color-gray underline" aria-label="Case Study" href="/studies">Case Study</a>
-          <a className="text-footer color-gray underline" aria-label="View Blogs" href="/studies">View Blog</a>
+          <a className="text-footer color-gray underline" aria-label="Case Study" href="/studies">Case Studies &amp; Blog Posts</a>
           <a
             aria-label="Visit Seaborne's Twitter"
             href="https://twitter.com/seaborne_nyc"
