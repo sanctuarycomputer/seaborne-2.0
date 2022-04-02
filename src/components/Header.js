@@ -1,4 +1,4 @@
-import {useState} from "react";
+import {useState, useEffect} from "react";
 
 export default function Header() {
   const [isMobileNavActive, setMobileNavActive] = useState(false);
@@ -7,10 +7,16 @@ export default function Header() {
     setMobileNavActive(!isMobileNavActive);
   };
 
+  useEffect(function mount() {
+    if (isMobileNavActive) {
+      // When mobile nav is active, body becomes fixed
+      document.body.style.position = 'fixed';  
+    } else {
+      document.body.style.position = null;
+    }
+  });
+  
   return (
-    // <header
-    //   className="header mxauto flex justify-between items-center flex-row pt1 px1_5 py1_5 md:py2"
-    // >
     <header
       className="header z-overlay relative"
     >
@@ -27,10 +33,7 @@ export default function Header() {
           <span className="transition"></span>
         </button>
 
-        <nav 
-          className="desktop-nav none md:flex flex-row items-center text-body-sm"
-          // className={`none md:flex flex-row items-center text-body-sm ${isMobileNavActive ? "mobile-nav-active" : ""}`}
-        >
+        <nav className="desktop-nav none md:flex flex-row items-center text-body-sm">
           <a href="/about" className="color-gray">How we work</a>
           <a href="/studies" className="color-gray">Case Studies &amp; Blog Posts</a>
           <a
@@ -43,9 +46,9 @@ export default function Header() {
         </nav>
       </div>
 
-      <div className="mobile-nav-container">
+      <div className="mobile-nav-container absolute pt3 px1_5 bg-color-white w100 transition">
         <nav 
-          className={`mobile-nav absolute pt3 px1_5 bg-color-white w100 transition none flex-col text-header-sm ${isMobileNavActive ? "active" : ""}`}
+          className={`none mobile-nav flex-col text-header-sm ${isMobileNavActive ? "active" : ""}`}
         >
           <a href="/about" className="color-gray">How we work</a>
           <a href="/studies" className="color-gray">Case Studies &amp; Blog Posts</a>
