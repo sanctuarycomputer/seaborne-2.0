@@ -101,16 +101,6 @@ em {
   }
 }
 
-.text-button {
-  font-size: 1rem;
-  line-height: 1.6rem;
-
-  @include media('md-up') {
-    font-size: 1.3125rem;
-    line-height: 1.9175rem;
-  }
-}
-
 .text-eyebrow {
   text-transform: uppercase;
   font-weight: 500;
@@ -130,7 +120,16 @@ em {
 }
 
 .text-body {
-  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6rem;
+
+  @include media('md-up') {
+    font-size: 1.3125rem;
+    line-height: 1.9175rem;
+  }
+}
+
+.text-body-light {
   font-size: 1rem;
   line-height: 1.6rem;
 

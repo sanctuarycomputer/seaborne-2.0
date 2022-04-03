@@ -10,7 +10,7 @@ export default function Footer() {
           <p className="text-subheader email-link color-black pb2 sm:pb1_75 md:pb2_5">hello@seaborne.nyc</p>
           <a
             aria-label="Get in touch with Seaborne"
-            className="event-contact-us button--style-primary text-button flex items-center justify-center"
+            className="event-contact-us button--style-primary text-body flex items-center justify-center"
             href="mailto:hello@seaborne.nyc"
           >
             Get in touch

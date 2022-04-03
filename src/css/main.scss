@@ -37,7 +37,6 @@ button {
 .button--style-primary {
   @extend %transition-shorter;
   text-decoration: none;
-  // height: 2.375rem;
   border-radius: 0.3125rem;
   line-height: 1rem;
 }
@@ -45,16 +44,16 @@ button {
 .button--style-primary {
   background-color: color('blue');
   color: color('white');
-  width: 9.25rem;
+  min-width: 9.25rem;
   padding: 1rem 1.5rem;
-
-  &:hover {
-    background-color: color('blue-darker');
-  }
 
   @include media('md-up') {
     padding: 1rem 2rem;
-    width: 11.75rem;
+    min-width: 11.75rem;
+  }
+
+  &:hover {
+    background-color: color('blue-darker');
   }
 }
 
