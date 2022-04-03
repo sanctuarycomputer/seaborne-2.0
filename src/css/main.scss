@@ -133,7 +133,8 @@ button {
     &.active {
       display: flex;
       height: calc(100vh - 58px);
-      animation: $transition-duration-short $transition-cubic-bezier 0.25s 1 normal forwards animation-fade-in;
+      animation: $transition-duration-short $transition-cubic-bezier 0.25s 1 0.5s normal forwards animation-fade-in;
+      // animation: name duration timing-function delay iteration-count direction fill-mode;
     }
 
     a {
