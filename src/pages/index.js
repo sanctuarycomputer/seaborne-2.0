@@ -166,7 +166,7 @@ export default function Home() {
 
       {/* Impact section */}
       <section
-        className="impact-section flex flex-col md:flex-row flex-col-reverse md:items=between justify-between items-center inner-content-max-width site-padding-x mxauto fade-in pb6"
+        className="impact-section flex flex-col md:flex-row flex-col-reverse md:items-between justify-between items-center inner-content-max-width site-padding-x mxauto fade-in pb6"
       >
         <div className="flex flex-col px1 md:px0 md:col-5 lg:col-4">
           <h2 className="text-subheader color-black mt2 mb1_5 lg:mb3">
@@ -197,7 +197,7 @@ export default function Home() {
 
       {/* Journey section */}
       <section
-        className="journey-section flex flex-col md:flex-row flex-col md:items=between justify-between items-center inner-content-max-width site-padding-x mxauto fade-in"
+        className="journey-section flex flex-col md:flex-row flex-col md:items-between justify-between items-center inner-content-max-width site-padding-x mxauto fade-in"
       >
         <div className="journey-image md:col-7 md:pr2_5 lg:col-6 lg:pr0">
           <img
