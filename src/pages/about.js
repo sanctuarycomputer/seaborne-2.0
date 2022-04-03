@@ -1,12 +1,12 @@
 export default function About() {
   return (
     <main>
-      <section className="about-hero">
+      <section className="about-hero-section site-padding-x">
         <p className="text-body">
           How we work
         </p>
 
-        <h1 className="text-header">
+        <h1 className="text-header about-hero-headline">
           We work with companies that want to take meaningful action on contemporary social and environmental issues, guiding them through each step of the way from strategy to storytelling. 
         </h1>
 
