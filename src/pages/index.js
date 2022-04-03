@@ -6,16 +6,16 @@ export default function Home() {
         <div
           className="main-hero-text opacity-0 flex flex-col items-center text-center site-padding-x inner-content-max-width mxauto z-5"
         >
-          <p className="text-body color-gray pb2 sm:pb1_75 md:pb2_5">Hi, we're Seaborne.</p>
+          <p className="text-body color-gray pb2 sm:pb1_75 md:pb2_5">Hi, we're Seaborne</p>
           <h1 className="text-header color-black pb3 sm:pb1_75 md:pb2_5 md:col-10">
             We're your guides to sustainable business practices.
           </h1>
           <a
-            aria-label="Get in touch with Seaborne"
-            className="event-contact-us button--style-primary text-button flex items-center justify-center font-500"
-            href="mailto:hello@seaborne.nyc"
+            aria-label="See how we work"
+            className="event-contact-us button--style-primary text-body flex items-center justify-center font-500"
+            href="/about"
           >
-            Get in touch
+            How we work
           </a>
         </div>
         <div className="hero-illustration-container opacity-0 flex justify-center">
@@ -94,7 +94,7 @@ export default function Home() {
         <div className="inner-content-max-width mxauto z-3">
           <div className="site-padding-x mxauto">
             <div className="flex flex-col items-center text-center md:col-10 lg:col-8 mxauto">
-              <p className="text-body color-gray">What we offer</p>
+              <p className="text-body-light color-gray md:font-300">What we offer</p>
               <p className="text-header-sm color-black pt1_5">
                 Our unique set of services that help companies of all sizes.
               </p>
@@ -155,7 +155,7 @@ export default function Home() {
 
       {/* Pricing section */}
       <section className="pricing-section text-center md:col-10 lg:col-8 mxauto site-padding-x">
-          <p className="text-body color-gray pb2 sm:pb1_75 md:pb1_5">We keep our pricing simple</p>
+          <p className="text-body-light color-gray pb2 sm:pb1_75 md:pb1_5">We keep our pricing simple</p>
           <h2 className="text-header-sm ">All of our services are $90/hour to get you started on your journey</h2>
           <img 
             className="separator-arrow"

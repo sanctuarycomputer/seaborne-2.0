@@ -6,11 +6,11 @@ export default function Footer() {
         className="contact-section flex flex-col justify-between items-center inner-content-max-width mxauto py8 site-padding-x fade-in"
       >
         <div className="flex flex-col col-12 sm:col-5 items-center">
-          <p className="text-body color-gray pb2 sm:pb1_75 md:pb2_5">Ready to use less?</p>
+          <p className="text-body-light color-gray pb2 sm:pb1_75 md:pb2_5">Ready to use less?</p>
           <p className="text-subheader email-link color-black pb2 sm:pb1_75 md:pb2_5">hello@seaborne.nyc</p>
           <a
             aria-label="Get in touch with Seaborne"
-            className="event-contact-us button--style-primary text-button flex items-center justify-center"
+            className="event-contact-us button--style-primary text-body flex items-center justify-center"
             href="mailto:hello@seaborne.nyc"
           >
             Get in touch
