@@ -46,9 +46,11 @@ export default function Header() {
         </nav>
       </div>
 
-      <div className="mobile-nav-container absolute pt3 px1_5 bg-color-white w100 transition">
+      <div 
+        className={`mobile-nav-container absolute pt3 px1_5 bg-color-white w100 transition-longer opacity-0 hidden z-0 ${isMobileNavActive ? "active" : ""}`}
+      >
         <nav 
-          className={`none mobile-nav flex-col text-header-sm ${isMobileNavActive ? "active" : ""}`}
+          className={`none mobile-nav flex-col text-header-sm transition-longer ${isMobileNavActive ? "active" : ""}`}
         >
           <a href="/about" className="color-gray">How we work</a>
           <a href="/studies" className="color-gray">Case Studies &amp; Blog Posts</a>
