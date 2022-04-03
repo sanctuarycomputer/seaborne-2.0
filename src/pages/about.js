@@ -82,14 +82,9 @@ export default function About() {
         </div>
       </section>
 
-      <section className="about-pricing-section bg-color-powder text-center md:col-10 lg:col-8 mxauto site-padding-x">
-          <p className="text-body-light color-gray pb2 sm:pb1_75 md:pb1_5">We keep our pricing simple</p>
-          <h2 className="text-header-sm ">All of our services are $90/hour to get you started on your journey</h2>
-          <img 
-            className="separator-arrow"
-            alt="Section separator"
-            src="img/squiggle-arrow.svg"
-          />
+      <section className="about-pricing-section bg-color-powder text-center mxauto site-padding-x flex flex-col items-center">
+          <p className="col-12 md:col-10 lg:col-8 text-body-light color-gray mb1_5">We keep our pricing simple</p>
+          <h2 className="col-12 md:col-10 lg:col-8 text-subheader-alt ">All of our services are $90/hour to get you started on your journey</h2>
       </section>
     </main>
   );

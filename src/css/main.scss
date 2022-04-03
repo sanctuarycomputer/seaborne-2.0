@@ -379,3 +379,18 @@ button {
 .callout-card {
   border: 1px solid color('cloud');
 }
+
+.about-pricing-section {
+  padding-top: 7.875rem;
+  padding-bottom: 7.875rem;
+
+  @include media('md-up') {
+    padding-top: 12.25rem;
+    padding-bottom: 12.25rem;
+  }
+
+  @include media('lg-up') {
+    padding-top: 16.8125rem;
+    padding-bottom: 16.8125rem;
+  }
+}
