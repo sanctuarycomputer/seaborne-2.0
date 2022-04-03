@@ -94,7 +94,7 @@ export default function Home() {
         <div className="inner-content-max-width mxauto z-3">
           <div className="site-padding-x mxauto">
             <div className="flex flex-col items-center text-center md:col-10 lg:col-8 mxauto">
-              <p className="text-body color-gray md:font-300">What we offer</p>
+              <p className="text-body-light color-gray md:font-300">What we offer</p>
               <p className="text-header-sm color-black pt1_5">
                 Our unique set of services that help companies of all sizes.
               </p>
@@ -155,7 +155,7 @@ export default function Home() {
 
       {/* Pricing section */}
       <section className="pricing-section text-center md:col-10 lg:col-8 mxauto site-padding-x">
-          <p className="text-body color-gray pb2 sm:pb1_75 md:pb1_5">We keep our pricing simple</p>
+          <p className="text-body-light color-gray pb2 sm:pb1_75 md:pb1_5">We keep our pricing simple</p>
           <h2 className="text-header-sm ">All of our services are $90/hour to get you started on your journey</h2>
           <img 
             className="separator-arrow"
