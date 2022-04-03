@@ -89,15 +89,9 @@ button {
   animation: $transition-duration-longer $transition-cubic-bezier 0s 1 normal forwards
     animation-fade-in-down;
   border-bottom: 1px solid color('cloud');
-  margin-bottom: 2.75rem;
 
   @include media('md-up') {
-    margin-bottom: 5.875rem;
     padding-right: 1.125rem;
-  }
-
-  @include media('lg-up') {
-    margin-bottom: 12.4375rem;
   }
 
   nav {
@@ -149,6 +143,16 @@ button {
 .main-hero-text {
   animation: $transition-duration-longer $transition-cubic-bezier 0.25s 1 normal forwards
     animation-fade-in;
+  margin-top: 2.75rem;
+
+  @include media('md-up') {
+    margin-top: 5.875rem;
+  }
+
+  @include media('lg-up') {
+    margin-top: 12.4375rem;
+  }
+
 }
 
 .hero-illustration-container {
