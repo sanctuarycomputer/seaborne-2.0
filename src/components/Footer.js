@@ -1,7 +1,6 @@
 export default function Footer() {
   return (
     <footer className="footer">
-
       <section
         className="contact-section flex flex-col justify-between items-center inner-content-max-width mxauto py8 site-padding-x fade-in"
       >
@@ -44,8 +43,7 @@ export default function Footer() {
             >Twitter</a
             >
         </nav>
-      </section>      
-      
+      </section>
     </footer>
   );
 }

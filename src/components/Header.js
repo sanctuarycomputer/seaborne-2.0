@@ -21,7 +21,11 @@ export default function Header() {
       className="header z-overlay relative"
     >
       <div className="desktop-nav-container mxauto flex justify-between items-center flex-row pt1 px1_5 py1_5 md:py2">
-        <a href="/">
+        <a 
+          href="/"
+          rel="noopener noreferrer"
+          aria-label="Link to homepage"
+        >
           <img className="Seaborne logo" src="/img/seaborne-logo.svg" alt="Seaborne logo" />
         </a>
         
@@ -63,7 +67,6 @@ export default function Header() {
           </a>
         </nav>
       </div>
-      
     </header>
   );
 }
