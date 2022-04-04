@@ -260,12 +260,6 @@ button {
   }
 
   .text-header-sm {
-    margin-bottom: 4rem;
-
-    @include media('md-up') {
-      margin-bottom: 3rem;
-    }
-    
     @include media('lg-up') {
       margin-bottom: 6.5rem;
     }
