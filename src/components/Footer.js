@@ -18,7 +18,7 @@ export default function Footer() {
       </section>
 
       <section
-        className="nav-section flex flex-col md:flex-row justify-between md:justify-center items-center inner-content-max-width mxauto pb2 md:pb2_5 site-padding-x"
+        className="nav-section flex flex-col md:flex-row justify-between md:justify-center items-center inner-content-max-width mxauto pb2 md:pb2_5 site-padding-x text-center"
       >
         <p className="pb2 md:pb0 md:mr2 text-footer color-gray">
           Seaborne is a sister company to 
