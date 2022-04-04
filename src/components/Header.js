@@ -9,7 +9,7 @@ export default function Header() {
 
   useEffect(function mount() {
     if (isMobileNavActive) {
-      // When mobile nav is active, body becomes fixed
+      // When mobile nav is active, body becomes fixed to avoid scrolling
       document.body.style.position = 'fixed';  
     } else {
       document.body.style.position = null;
