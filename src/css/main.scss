@@ -310,18 +310,6 @@ button {
   }
 }
 
-//Contact Section
-.contact-section {
-  @include media('sm-up') {
-    padding-bottom: 6.25rem;
-  }
-
-  @include media('md-up') {
-    padding-top: 7.8125rem;
-    padding-bottom: 7.375rem;
-  }
-}
-
 //Footer
 .footer {
   
