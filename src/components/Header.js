@@ -20,7 +20,7 @@ export default function Header() {
     <header
       className="header z-overlay relative"
     >
-      <div className="desktop-nav-container mxauto flex justify-between items-center flex-row pt1 px1_5 py1_5 md:py2">
+      <div className="desktop-nav-container mxauto flex justify-between items-center flex-row pt1 px1_5 py1_5">
         <a 
           href="/"
           rel="noopener noreferrer"
