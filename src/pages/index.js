@@ -155,13 +155,13 @@ export default function Home() {
 
       {/* Pricing section */}
       <section className="pricing-section text-center md:col-10 lg:col-8 mxauto site-padding-x">
-          <p className="text-body-light color-gray pb2 sm:pb1_75 md:pb1_5">We keep our pricing simple</p>
-          <h2 className="text-header-sm mb4 md:mb3">All of our services are $90/hour to get you started on your journey</h2>
-          <img 
-            className="separator-arrow"
-            alt="Section separator"
-            src="img/squiggle-arrow.svg"
-          />
+        <p className="text-body-light color-gray pb2 sm:pb1_75 md:pb1_5">We keep our pricing simple</p>
+        <h2 className="text-header-sm mb4 md:mb3">All of our services are $90/hour to get you started on your journey</h2>
+        <img 
+          className="separator-arrow"
+          alt="Section separator"
+          src="img/squiggle-arrow.svg"
+        />
       </section>
 
       {/* Impact section */}

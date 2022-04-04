@@ -312,7 +312,6 @@ button {
 
 //Footer
 .footer {
-  
   // Footer > Contact Section
   .contact-section {
     border-top: 1px solid color('cloud');
@@ -327,7 +326,7 @@ button {
         line-height: 1.3;
 
         @include media('md-up') {
-        font-size: 2.625rem; 
+          font-size: 2.625rem; 
         }
     }
   }
