@@ -11,7 +11,7 @@ export default function Home() {
             We're your guides to sustainable business practices.
           </h1>
           <a
-            aria-label="See how we work"
+            aria-label="Read more about how we work"
             className="event-contact-us button--style-primary text-body flex items-center justify-center font-500"
             href="/about"
           >
@@ -21,7 +21,7 @@ export default function Home() {
         <div className="hero-illustration-container opacity-0 flex justify-center">
           <img
             className="hero-illustration w100 site-padding-x z-3 r0 l0 inner-content-max-width mxauto"
-            alt="Illustration of people doing outdoor activities in the mountains"
+            alt="People doing outdoor activities in the mountains"
             src="img/hero-illustration.svg"
           />
         </div>
@@ -34,7 +34,7 @@ export default function Home() {
           <h2 className="text-header-sm mb1_5 md:mb5 lg:mb4">See how we're making a difference</h2>
           <img 
             className="separator-arrow"
-            alt="Section separator"
+            alt=""
             src="img/squiggle-arrow.svg"
           />
         </div>
@@ -55,7 +55,7 @@ export default function Home() {
               <a className="case-study-link text-body arrow-link color-blue pt_5 md:pt1_5" href="#">
               <img 
                 className="mr_5"
-                alt="Section separator"
+                alt=""
                 src="img/squiggle-arrow-right.svg"
               />
                 View Case Study
@@ -77,7 +77,7 @@ export default function Home() {
               <a className="case-study-link text-body arrow-link color-blue pt_5 md:pt1_5" href="#">
               <img 
                 className="mr_5"
-                alt="Section separator"
+                alt=""
                 src="img/squiggle-arrow-right.svg"
               />
                 View Case Study
@@ -159,7 +159,7 @@ export default function Home() {
         <h2 className="text-header-sm mb4 md:mb3">All of our services are $90/hour to get you started on your journey</h2>
         <img 
           className="separator-arrow"
-          alt="Section separator"
+          alt=""
           src="img/squiggle-arrow.svg"
         />
       </section>
@@ -178,7 +178,7 @@ export default function Home() {
           </p>
           <div className="none md:flex flex-row">
             <div className="flex items-start">
-              <img className="arrow pr2" src="img/arrow.svg" alt="Blue arrow on a light blue circle" />
+              <img className="arrow pr2" src="img/arrow.svg" alt="" />
             </div>
             <p className="text-body-sm color-gray mt1">
               We are using our product experience to help founders launch responsible products and
@@ -190,7 +190,7 @@ export default function Home() {
           <img
             className="w100"
             src="img/impact-illustration.svg"
-            alt="Illustration of person holding a flower at the beach."
+            alt="Person holding a flower at the beach."
           />
         </div>
       </section>
@@ -203,7 +203,7 @@ export default function Home() {
           <img
             className="w100"
             src="img/journey-illustration.svg"
-            alt="Illustration of two people in nature."
+            alt="Two people in nature."
           />
         </div>
         <div className="flex flex-col px1 md:px0 md:col-5 lg:col-4">
@@ -216,7 +216,7 @@ export default function Home() {
           </p>
           <div className="none md:flex flex-row">
             <div className="flex items-start">
-              <img className="arrow pr2" src="img/arrow.svg" alt="Blue arrow on a light blue circle" />
+              <img className="arrow pr2" src="img/arrow.svg" alt="" />
             </div>
             <p className="text-body-sm color-gray mt1">
               We use a different type of communication to our clients to help them understand their

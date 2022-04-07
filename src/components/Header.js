@@ -24,7 +24,7 @@ export default function Header() {
         <a 
           href="/"
           rel="noopener noreferrer"
-          aria-label="Link to homepage"
+          aria-label="Homepage"
         >
           <img className="Seaborne logo" src="/img/seaborne-logo.svg" alt="Seaborne logo" />
         </a>
