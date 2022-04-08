@@ -337,6 +337,10 @@ button {
         &:not(:last-of-type) {
           margin-right: 1.25rem;
         }
+
+        &:hover {
+          color: color('gray-darker');
+        }
       }
     }
   }

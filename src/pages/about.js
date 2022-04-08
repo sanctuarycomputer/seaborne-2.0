@@ -62,13 +62,13 @@ export default function About() {
           </div>
 
           <div className="none lg:block lg:col-3 lg:pl3">
-            <div className="callout-card p2">
+            <div className="about-content-section__callout-card callout-card p2">
               <p className="text-eyebrow mb_25 md:mb_75">CTA to Link</p>
               <p className="text-body-light mb1_5">
                 <span className="color-black">Click here to find out more. </span>
                 <span className="color-gray">Praesent nibh egestas egestas.</span>
               </p>
-              <a className="text-body arrow-link color-blue pt_5 md:pt1_5" href="#">
+              <a className="text-body-sm arrow-link color-blue pt_5 md:pt1_5" href="#">
                 <img 
                   className="mr_5"
                   alt="Section separator"
