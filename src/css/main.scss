@@ -159,13 +159,11 @@ button {
 
 }
 
-.hero-illustration-container {
-  margin-top: 2.125rem;
-}
-
-.hero-illustration-container {
-  animation: $transition-duration-longer $transition-cubic-bezier 0.45s 1 normal forwards
-    animation-fade-in;
+.hero-section {
+  &__illustration-container {
+    margin-top: 2.125rem;
+    animation: $transition-duration-longer $transition-cubic-bezier 0.45s 1 normal forwards animation-fade-in;
+  }
 }
 
 // Case Studies Section
@@ -191,7 +189,7 @@ button {
   padding: 1.5rem;
   max-width: 45rem;
 
-  figure {
+  &__image {
     width: 6.25rem;
     height: 6.25rem;
 
@@ -201,8 +199,8 @@ button {
     }
   }
 
-  article {
-    .case-study-excerpt, .case-study-link {
+  &__details {
+    &__excerpt, &__link {
       font-size: 0.75rem;
       line-height: 1.6;
 
@@ -211,7 +209,7 @@ button {
       }
     }
 
-    .case-study-excerpt {
+    &__excerpt {
       // trunctating with ellipsis on mobile
       @include media('sm-down') {
         display: -webkit-box;
@@ -233,19 +231,19 @@ button {
     padding-top: 8.5rem;
     padding-bottom: 8.5rem;
   }
-}
 
-.offerings-columns-container {
-  padding-top: 4.3125rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-row-gap: 7rem;
-
-  @include media('md-up') {
-    padding-top: 8.4375rem;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 3rem;
-    grid-row-gap: 6rem;
+  &__offerings-columns-container {
+    padding-top: 4.3125rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 7rem;
+  
+    @include media('md-up') {
+      padding-top: 8.4375rem;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 3rem;
+      grid-row-gap: 6rem;
+    }
   }
 }
 
@@ -259,7 +257,7 @@ button {
     padding-bottom: 10rem;
   }
 
-  .text-header-sm {
+  &__heading {
     @include media('lg-up') {
       margin-bottom: 6.5rem;
     }
@@ -312,16 +310,17 @@ button {
 
 //Footer
 .footer {
+  border-top: 1px solid color('cloud');
   // Footer > Contact Section
-  .contact-section {
-    border-top: 1px solid color('cloud');
+  &__contact-section {
+    // border-top: 1px solid color('cloud');
 
     @include media('md-up') {
       padding-top: 13.625rem;
       padding-bottom: 14.875rem;
     }
 
-    .email-link {
+    &__email-link {
         font-size: 1.75rem;
         line-height: 1.3;
 
@@ -332,8 +331,8 @@ button {
   }
   
   // Footer > Bottom Nav
-  .nav-section {
-    nav {
+  &__nav-section {
+    &__nav {
       a {
         &:not(:last-of-type) {
           margin-right: 1.25rem;

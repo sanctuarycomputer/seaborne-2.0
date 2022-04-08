@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <main>
       {/* Hero section */}
-      <section className="flex flex-col">
+      <section className="flex flex-col hero-section">
         <div
           className="main-hero-text opacity-0 flex flex-col items-center text-center site-padding-x inner-content-max-width mxauto z-5"
         >
@@ -18,7 +18,7 @@ export default function Home() {
             How we work
           </a>
         </div>
-        <div className="hero-illustration-container opacity-0 flex justify-center">
+        <div className="hero-section__illustration-container opacity-0 flex justify-center">
           <img
             className="hero-illustration w100 site-padding-x z-3 r0 l0 inner-content-max-width mxauto"
             alt="People doing outdoor activities in the mountains"
@@ -39,47 +39,47 @@ export default function Home() {
           />
         </div>
 
-        <div className="case-study-container site-padding-x mt4 md:col-10 mxauto">
-          <div className="case-study-card flex flex-row justify-between mxauto mb1_5 md:mb3">
-            <figure className="bg-cover" 
+        <div className="studies-section__case-study-container site-padding-x mt4 md:col-10 mxauto">
+          <div className="studies-section__case-study-container__case-study-card case-study-card flex flex-row justify-between mxauto mb1_5 md:mb3">
+            <figure className="case-study-card__image bg-cover" 
               style={{
                 backgroundImage: `url('img/studies/light-two/hero.jpg')`
             }}>
             </figure>
-            <article className="case-study-details flex-1 flex flex-col ml_75 md:ml2">
-              <p className="case-study-type text-eyebrow mb_25 md:mb_75">Case Study</p>
-              <h3 className="case-study-title text-subheader md:mb_5">The Light Phone</h3>
-              <p className="case-study-excerpt text-body color-gray">
+            <article className="case-study-card__details flex-1 flex flex-col ml_75 md:ml2">
+              <p className="case-study-card__details__type text-eyebrow mb_25 md:mb_75">Case Study</p>
+              <h3 className="case-study-card__details__title text-subheader md:mb_5">The Light Phone</h3>
+              <p className="case-study-card__details__excerpt text-body color-gray">
                 Investigating the climate impacts of a mobile phone. Building a novel checkout feature to invite customers into the sustainability conversation.
               </p>
-              <a className="case-study-link text-body arrow-link color-blue pt_5 md:pt1_5" href="#">
-              <img 
-                className="mr_5"
-                alt=""
-                src="img/squiggle-arrow-right.svg"
-              />
+              <a className="case-study-card__details__link text-body arrow-link color-blue pt_5 md:pt1_5" href="#">
+                <img 
+                  className="mr_5"
+                  alt=""
+                  src="img/squiggle-arrow-right.svg"
+                />
                 View Case Study
               </a>
             </article>
           </div>
-          <div className="case-study-card flex flex-row justify-between mxauto">
-            <figure className="bg-cover" 
+          <div className="studies-section__case-study-container__case-study-card case-study-card flex flex-row justify-between mxauto">
+            <figure className="case-study-card__image bg-cover" 
               style={{
                 backgroundImage: `url('img/studies/light-two/hero.jpg')`
             }}>
             </figure>
-            <article className="case-study-details flex-1 flex flex-col ml_75 md:ml2">
-              <p className="case-study-type text-eyebrow mb_25 md:mb_75">Blog Post</p>
-              <h3 className="case-study-title text-subheader md:mb_5">Trends of the Industry</h3>
-              <p className="case-study-excerpt text-body color-gray">
+            <article className="case-study-card__details flex-1 flex flex-col ml_75 md:ml2">
+              <p className="case-study-card__details__type text-eyebrow mb_25 md:mb_75">Blog Post</p>
+              <h3 className="case-study-card__details__title text-subheader md:mb_5">Trends of the Industry</h3>
+              <p className="case-study-card__details__excerpt text-body color-gray">
                 Luctus justo, in lectus bibendum. Ultrices sed enim, at sit egestas cursus cursus cursus. Vitae, viverra ut turpis congue sit. Cras nibh sed commodo, leo arcu amet. Cras.
               </p>
-              <a className="case-study-link text-body arrow-link color-blue pt_5 md:pt1_5" href="#">
-              <img 
-                className="mr_5"
-                alt=""
-                src="img/squiggle-arrow-right.svg"
-              />
+              <a className="case-study-card__details__link text-body arrow-link color-blue pt_5 md:pt1_5" href="#">
+                <img 
+                  className="mr_5"
+                  alt=""
+                  src="img/squiggle-arrow-right.svg"
+                />
                 View Case Study
               </a>
             </article>
@@ -100,7 +100,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="offerings-columns-container flex flex-wrap flex-row text-center md:col-10 mxauto">
+            <div className="offerings-section__offerings-columns-container flex flex-wrap flex-row text-center md:col-10 mxauto">
               <div className="flex flex-col items-center text-body-sm">
                 <img className="mb1_5" src="img/suitcase-icon.svg" alt="Suitcase" />
                 <p className="bold color-black">Corporate Assessment</p>
@@ -156,8 +156,8 @@ export default function Home() {
       {/* Pricing section */}
       <section className="pricing-section text-center md:col-10 lg:col-8 mxauto site-padding-x">
         <p className="text-body-light color-gray pb2 sm:pb1_75 md:pb1_5">We keep our pricing simple</p>
-        <h2 className="text-header-sm mb4 md:mb3">All of our services are $90/hour to get you started on your journey</h2>
-        <img 
+        <h2 className="pricing-section__heading text-header-sm mb4 md:mb3">All of our services are $90/hour to get you started on your journey</h2>
+        <img
           className="separator-arrow"
           alt=""
           src="img/squiggle-arrow.svg"
@@ -186,7 +186,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="impact-image md:col-7 md:pl2_5 lg:col-6 lg:pl0">
+        <div className="impact-section__image md:col-7 md:pl2_5 lg:col-6 lg:pl0">
           <img
             className="w100"
             src="img/impact-illustration.svg"
@@ -199,7 +199,7 @@ export default function Home() {
       <section
         className="journey-section flex flex-col md:flex-row flex-col md:items-between justify-between items-center inner-content-max-width site-padding-x mxauto fade-in"
       >
-        <div className="journey-image md:col-7 md:pr2_5 lg:col-6 lg:pr0">
+        <div className="journey-section__image md:col-7 md:pr2_5 lg:col-6 lg:pr0">
           <img
             className="w100"
             src="img/journey-illustration.svg"
