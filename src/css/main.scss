@@ -93,13 +93,13 @@ button {
     padding-right: 1.125rem;
   }
 
-  nav {
+  &__nav--desktop {
     a:not(:last-of-type) {
       margin-right: 2.4375rem;
     }
   }
 
-  .nav-toggle {
+  &__nav-toggle {
     span {
       width: 20px;
       height: 1px;
@@ -122,14 +122,14 @@ button {
     }
   }
 
-  .mobile-nav-container {
+  &__nav-container--mobile {
     &.active {
       visibility: visible;
       opacity: 1;
     }
   }
 
-  .mobile-nav {
+  &__nav--mobile {
     &.active {
       display: flex;
       height: calc(100vh - 58px);
