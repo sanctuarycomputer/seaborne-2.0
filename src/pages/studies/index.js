@@ -2,9 +2,20 @@ import matter from 'gray-matter';
 import Link from 'next/link';
 
 export default function StudyIndex(props) {
-  return props.studies.map(s => {
-    return (<Link key={s.slug} href={`/studies/${s.slug}`}>{s.frontmatter.title}</Link>)
-  });
+
+
+  // return props.studies.map(s => {
+  //   return (<Link key={s.slug} href={`/studies/${s.slug}`}>{s.frontmatter.title}</Link>)
+  // });
+
+  return (
+    <main className="study-index">
+      <h1 className="text-header">something big</h1>
+      <p>
+        random aosndnsa odjaso udj aosudjaosudj aosuhdjoasujdoasijdoiasjd oiasjd oiasj 
+      </p>
+    </main>
+  );
 }
 
 export async function getStaticProps() {
