@@ -20,7 +20,7 @@ export default function StudyIndex(props) {
               backgroundImage: `url('img/studies/light-two/hero.jpg')`
           }}>
           </figure>
-          <article className="case-study-card__details flex-1 flex flex-col ml_75 md:ml2">
+          <article className="flex-1 flex flex-col ml_75 md:ml2">
             <p className="case-study-card__type text-eyebrow mb_25 md:mb_75">Case Study</p>
             <h3 className="case-study-card__title text-subheader md:mb_5">The Light Phone</h3>
             <p className="case-study-card__excerpt text-body color-gray">
@@ -42,7 +42,7 @@ export default function StudyIndex(props) {
               backgroundImage: `url('img/studies/light-two/hero.jpg')`
           }}>
           </figure>
-          <article className="case-study-card__details flex-1 flex flex-col ml_75 md:ml2">
+          <article className="flex-1 flex flex-col ml_75 md:ml2">
             <p className="case-study-card__type text-eyebrow mb_25 md:mb_75">Blog Post</p>
             <h3 className="case-study-card__title text-subheader md:mb_5">Trends of the Industry</h3>
             <p className="case-study-card__excerpt text-body color-gray">
@@ -64,7 +64,7 @@ export default function StudyIndex(props) {
               backgroundImage: `url('img/studies/light-two/hero.jpg')`
           }}>
           </figure>
-          <article className="case-study-card__details flex-1 flex flex-col ml_75 md:ml2">
+          <article className="flex-1 flex flex-col ml_75 md:ml2">
             <p className="case-study-card__type text-eyebrow mb_25 md:mb_75">Case Study</p>
             <h3 className="case-study-card__title text-subheader md:mb_5">The Light Phone</h3>
             <p className="case-study-card__excerpt text-body color-gray">
@@ -86,7 +86,7 @@ export default function StudyIndex(props) {
               backgroundImage: `url('img/studies/light-two/hero.jpg')`
           }}>
           </figure>
-          <article className="case-study-card__details flex-1 flex flex-col ml_75 md:ml2">
+          <article className="flex-1 flex flex-col ml_75 md:ml2">
             <p className="case-study-card__type text-eyebrow mb_25 md:mb_75">Case Study</p>
             <h3 className="case-study-card__title text-subheader md:mb_5">The Light Phone</h3>
             <p className="case-study-card__excerpt text-body color-gray">
