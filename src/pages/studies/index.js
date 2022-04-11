@@ -1,5 +1,5 @@
 import matter from 'gray-matter';
-import Link from 'next/link';
+// import Link from 'next/link';
 
 export default function StudyIndex(props) {
   // Listing all posts under content/studies
