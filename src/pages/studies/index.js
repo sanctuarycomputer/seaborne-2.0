@@ -2,8 +2,7 @@ import matter from 'gray-matter';
 import Link from 'next/link';
 
 export default function StudyIndex(props) {
-
-
+  // Listing all posts under content/studies
   // return props.studies.map(s => {
   //   return (<Link key={s.slug} href={`/studies/${s.slug}`}>{s.frontmatter.title}</Link>)
   // });

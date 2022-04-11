@@ -340,6 +340,7 @@ button {
 // Case Study Index Page
 
 .study-index {
+  // Case Study Index > Heading
   &__heading {
     @include media('md-up') {
       padding-top: 9rem;
@@ -352,6 +353,7 @@ button {
     }
   }
 
+  // Case Study Index > Posts List
   &__studies {
     padding-bottom: 3.25rem;
 
@@ -405,6 +407,7 @@ button {
   }
 }
 
+// Callout card (about & blog post page)
 .callout-card {
   border: 1px solid color('cloud');
 }
