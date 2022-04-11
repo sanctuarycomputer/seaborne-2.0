@@ -337,6 +337,34 @@ button {
   }
 }
 
+// Case Study Index Page
+
+.study-index {
+  &__heading {
+    @include media('md-up') {
+      padding-top: 9rem;
+      padding-bottom: 6.75rem;
+    }
+    
+    @include media('lg-up') {
+      padding-top: 10.25rem;
+      padding-bottom: 10.25rem;
+    }
+  }
+
+  &__studies {
+    padding-bottom: 3.25rem;
+
+    @include media('md-up') {
+     padding-bottom: 9rem;
+    }
+    
+    @include media('md-up') {
+      padding-bottom: 8rem;
+    }
+  }
+}
+
 // Extra/Re-usable classes
 
 // Case study card (home & case study index page)

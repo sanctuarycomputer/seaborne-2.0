@@ -10,10 +10,100 @@ export default function StudyIndex(props) {
 
   return (
     <main className="study-index">
-      <h1 className="text-header">something big</h1>
-      <p>
-        random aosndnsa odjaso udj aosudjaosudj aosuhdjoasujdoasijdoiasjd oiasjd oiasj 
-      </p>
+      <section className="study-index__heading pt5 pb4">
+        <h1 className="text-header-sm text-center">Case Studies</h1>
+      </section>
+
+      <section className="study-index__studies site-padding-x">
+        <div className="study-index-case-study-card case-study-card flex flex-row justify-between mxauto mb1_5 md:mb3">
+          <figure className="case-study-card__image bg-cover" 
+            style={{
+              backgroundImage: `url('img/studies/light-two/hero.jpg')`
+          }}>
+          </figure>
+          <article className="case-study-card__details flex-1 flex flex-col ml_75 md:ml2">
+            <p className="case-study-card__type text-eyebrow mb_25 md:mb_75">Case Study</p>
+            <h3 className="case-study-card__title text-subheader md:mb_5">The Light Phone</h3>
+            <p className="case-study-card__excerpt text-body color-gray">
+              Investigating the climate impacts of a mobile phone. Building a novel checkout feature to invite customers into the sustainability conversation.
+            </p>
+            <a className="case-study-card__link text-body arrow-link color-blue pt_5 md:pt1_5" href="#">
+              <img 
+                className="mr_5"
+                alt=""
+                src="img/squiggle-arrow-right.svg"
+              />
+              View Case Study
+            </a>
+          </article>
+        </div>
+        <div className="study-index-case-study-card case-study-card flex flex-row justify-between mxauto mb1_5 md:mb3">
+          <figure className="case-study-card__image bg-cover" 
+            style={{
+              backgroundImage: `url('img/studies/light-two/hero.jpg')`
+          }}>
+          </figure>
+          <article className="case-study-card__details flex-1 flex flex-col ml_75 md:ml2">
+            <p className="case-study-card__type text-eyebrow mb_25 md:mb_75">Blog Post</p>
+            <h3 className="case-study-card__title text-subheader md:mb_5">Trends of the Industry</h3>
+            <p className="case-study-card__excerpt text-body color-gray">
+            Luctus justo, in lectus bibendum. Ultrices sed enim, at sit egestas cursus cursus cursus. Vitae, viverra ut turpis congue sit. Cras nibh sed commodo, leo arcu amet. Cras.
+            </p>
+            <a className="case-study-card__link text-body arrow-link color-blue pt_5 md:pt1_5" href="#">
+              <img 
+                className="mr_5"
+                alt=""
+                src="img/squiggle-arrow-right.svg"
+              />
+              View Case Study
+            </a>
+          </article>
+        </div>
+        <div className="study-index-case-study-card case-study-card flex flex-row justify-between mxauto mb1_5 md:mb3">
+          <figure className="case-study-card__image bg-cover" 
+            style={{
+              backgroundImage: `url('img/studies/light-two/hero.jpg')`
+          }}>
+          </figure>
+          <article className="case-study-card__details flex-1 flex flex-col ml_75 md:ml2">
+            <p className="case-study-card__type text-eyebrow mb_25 md:mb_75">Case Study</p>
+            <h3 className="case-study-card__title text-subheader md:mb_5">The Light Phone</h3>
+            <p className="case-study-card__excerpt text-body color-gray">
+              Investigating the climate impacts of a mobile phone. Building a novel checkout feature to invite customers into the sustainability conversation.
+            </p>
+            <a className="case-study-card__link text-body arrow-link color-blue pt_5 md:pt1_5" href="#">
+              <img 
+                className="mr_5"
+                alt=""
+                src="img/squiggle-arrow-right.svg"
+              />
+              View Case Study
+            </a>
+          </article>
+        </div>
+        <div className="study-index-case-study-card case-study-card flex flex-row justify-between mxauto">
+          <figure className="case-study-card__image bg-cover" 
+            style={{
+              backgroundImage: `url('img/studies/light-two/hero.jpg')`
+          }}>
+          </figure>
+          <article className="case-study-card__details flex-1 flex flex-col ml_75 md:ml2">
+            <p className="case-study-card__type text-eyebrow mb_25 md:mb_75">Case Study</p>
+            <h3 className="case-study-card__title text-subheader md:mb_5">The Light Phone</h3>
+            <p className="case-study-card__excerpt text-body color-gray">
+              Investigating the climate impacts of a mobile phone. Building a novel checkout feature to invite customers into the sustainability conversation.
+            </p>
+            <a className="case-study-card__link text-body arrow-link color-blue pt_5 md:pt1_5" href="#">
+              <img 
+                className="mr_5"
+                alt=""
+                src="img/squiggle-arrow-right.svg"
+              />
+              View Case Study
+            </a>
+          </article>
+        </div>
+      </section>
     </main>
   );
 }
