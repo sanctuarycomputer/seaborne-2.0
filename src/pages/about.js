@@ -1,7 +1,9 @@
 export default function About() {
   return (
-    <main>
-      <section className="about-hero-section site-padding-x flex pb4_5 md:pb8 lg:pb10 inner-content-max-width mxauto">
+    <main className="about">
+
+      {/* Hero section */}
+      <section className="about__hero-section site-padding-x flex pb4_5 md:pb8 lg:pb10 inner-content-max-width mxauto">
         <div className="col-12 md:col-10 mxauto">
           <p className="text-body color-gray mb1_5 md:mb2">
             How we work
@@ -19,7 +21,8 @@ export default function About() {
         </div>
       </section>
 
-      <section className="about-content-section site-padding-x md:pb2_5 lg:mb5_75 inner-content-max-width mxauto">
+      {/* Main content section */}
+      <section className="about__content-section site-padding-x md:pb2_5 lg:mb5_75 inner-content-max-width mxauto">
         <div className="flex justify-center">
 
           <div className="col-12 md:col-10 lg:col-7">
@@ -62,7 +65,7 @@ export default function About() {
           </div>
 
           <div className="none lg:block lg:col-3 lg:pl3">
-            <div className="about-content-section__callout-card callout-card p2">
+            <div className="about__content-section-callout-card p2">
               <p className="text-eyebrow mb_25 md:mb_75">CTA to Link</p>
               <p className="text-body-light mb1_5">
                 <span className="color-black">Click here to find out more. </span>
@@ -82,7 +85,8 @@ export default function About() {
         </div>
       </section>
 
-      <section className="about-pricing-section bg-color-powder text-center mxauto site-padding-x flex flex-col items-center">
+      {/* Pricing section */}
+      <section className="about__pricing-section bg-color-powder text-center mxauto site-padding-x flex flex-col items-center">
           <p className="col-12 md:col-10 lg:col-8 text-body-light color-gray mb1_5">We keep our pricing simple</p>
           <h2 className="col-12 md:col-10 lg:col-8 text-subheader-alt ">All of our services are $90/hour to get you started on your journey</h2>
       </section>
