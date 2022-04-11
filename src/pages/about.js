@@ -7,7 +7,7 @@ export default function About() {
             How we work
           </p>
 
-          <h2 className="text-subheader-alt about-hero-headline mb1_5 md:mb4 lg:mb12 color-black">
+          <h2 className="text-subheader-alt mb1_5 md:mb4 lg:mb12 color-black">
             We work with companies that want to take meaningful action on contemporary social and environmental issues, guiding them through each step of the way from strategy to storytelling. 
           </h2>
 
