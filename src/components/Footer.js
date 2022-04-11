@@ -40,8 +40,8 @@ export default function Footer() {
             className="text-footer color-gray underline"
             target="_blank"
             rel="noopener noreferrer"
-            >Twitter</a
-            >
+            >Twitter
+          </a>
         </nav>
       </section>
     </footer>

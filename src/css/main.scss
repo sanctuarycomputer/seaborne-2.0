@@ -26,7 +26,7 @@
   }
 }
 
-//Buttons
+// Buttons
 
 a,
 button {
@@ -83,7 +83,7 @@ button {
   }
 }
 
-//Header
+// Header
 .header {
   animation: $transition-duration-longer $transition-cubic-bezier 0s 1 normal forwards
     animation-fade-in-down;
@@ -143,170 +143,173 @@ button {
   }
 }
 
-//Main Hero
-.main-hero-text {
-  animation: $transition-duration-longer $transition-cubic-bezier 0.25s 1 normal forwards
-    animation-fade-in;
-  margin-top: 2.75rem;
+// Homepage
+.home {
 
-  @include media('md-up') {
-    margin-top: 5.875rem;
-  }
+  // Homepage > Hero Section
+  &__hero-section {
 
-  @include media('lg-up') {
-    margin-top: 12.4375rem;
-  }
-
-}
-
-.hero-section {
-  &__illustration-container {
-    margin-top: 2.125rem;
-    animation: $transition-duration-longer $transition-cubic-bezier 0.45s 1 normal forwards animation-fade-in;
-  }
-}
-
-// Case Studies Section
-
-.studies-section {
-  padding-top: 3.4375rem;
-  padding-bottom: 3.4375rem;
-  
-  @include media('md-up') {
-    padding-top: 10.75rem;
-    padding-bottom: 8.375rem;  
-  }
-  
-  @include media('lg-up') {
-    padding-top: 8.375rem;
-    padding-bottom: 8.375rem;  
-  } 
-}
-
-.case-study-card {
-  border: 1px solid color('cloud');
-  border-radius: 0.75rem;
-  padding: 1.5rem;
-  max-width: 45rem;
-
-  &__image {
-    width: 6.25rem;
-    height: 6.25rem;
-
-    @include media('md-up') {
-      width: 11.875rem;
-      height: 11.875rem;
-    }
-  }
-
-  &__details {
-    &__excerpt, &__link {
-      font-size: 0.75rem;
-      line-height: 1.6;
+    &-text {
+      animation: $transition-duration-longer $transition-cubic-bezier 0.25s 1 normal forwards animation-fade-in;
+      margin-top: 2.75rem;
 
       @include media('md-up') {
-        font-size: 1rem;
+        margin-top: 5.875rem;
+      }
+
+      @include media('lg-up') {
+        margin-top: 12.4375rem;
       }
     }
 
-    &__excerpt {
-      // trunctating with ellipsis on mobile
-      @include media('sm-down') {
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
-        word-break: break-word;
-        overflow: hidden;
-      }
+    &-illustration-container {
+      margin-top: 2.125rem;
+      animation: $transition-duration-longer $transition-cubic-bezier 0.45s 1 normal forwards animation-fade-in;
     }
   }
-}
 
-//Offerings Section
-.offerings-section {
-  padding-top: 4.5rem;
-  padding-bottom: 4.5rem;
-
-  @include media('md-up') {
-    padding-top: 8.5rem;
-    padding-bottom: 8.5rem;
-  }
-
-  &__offerings-columns-container {
-    padding-top: 4.3125rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-row-gap: 7rem;
+  // Homepage > Case Studies Section
+  &__studies-section {
+    padding-top: 3.4375rem;
+    padding-bottom: 3.4375rem;
   
     @include media('md-up') {
-      padding-top: 8.4375rem;
-      grid-template-columns: repeat(2, 1fr);
-      grid-column-gap: 3rem;
-      grid-row-gap: 6rem;
+      padding-top: 10.75rem;
+      padding-bottom: 8.375rem;  
     }
-  }
-}
-
-//Pricing section
-.pricing-section {
-  padding-top: 4.25rem;
-  padding-bottom: 5.625rem;
-
-  @include media('md-up') {
-    padding-top: 8.125rem;
-    padding-bottom: 10rem;
-  }
-
-  &__heading {
+    
     @include media('lg-up') {
-      margin-bottom: 6.5rem;
+      padding-top: 8.375rem;
+      padding-bottom: 8.375rem;  
     }
-  }
-}
-
-//Impact Section
-.impact-section {
-  padding-bottom: 7.75rem;
-
-  @include media('md-up') {
-    padding-bottom: 9.68755rem;
-  }
+    
+    &-case-study-card {
+      border: 1px solid color('cloud');
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      max-width: 45rem;
+    
+      &-image {
+        width: 6.25rem;
+        height: 6.25rem;
+    
+        @include media('md-up') {
+          width: 11.875rem;
+          height: 11.875rem;
+        }
+      }
+    
+      &-excerpt, &-link {
+        font-size: 0.75rem;
+        line-height: 1.6;
   
-  @include media('lg-up') {
-    padding-bottom: 15.6875rem;
-  }
-}
-
-//Journey Section
-.journey-section {
-  padding-bottom: 5.125rem;
-
-  @include media('md-up') {
-    padding-bottom: 6.5rem;
-  }
+        @include media('md-up') {
+          font-size: 1rem;
+        }
+      }
   
-  @include media('lg-up') {
-    padding-bottom: 9.6875rem;
-  }
-}
-
-// specific text styling for impact & journey sections
-.impact-section, .journey-section {
-  .text-subheader {
-    font-size: 1.75rem;
-    line-height: 1.3;
-
-    @include media('lg-up') {
-      font-size: 2.25rem;
+      &-excerpt {
+        // trunctating with ellipsis on mobile
+        @include media('sm-down') {
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          word-break: break-word;
+          overflow: hidden;
+        }
+      }
     }
   }
 
-  .text-body {
-    @include media('lg-up') {
-      font-weight: 300;
+  // Homepage > Offerings section
+  &__offerings-section {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  
+    @include media('md-up') {
+      padding-top: 8.5rem;
+      padding-bottom: 8.5rem;
+    }
+  
+    &-columns-container {
+      padding-top: 4.3125rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-row-gap: 7rem;
+    
+      @include media('md-up') {
+        padding-top: 8.4375rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 3rem;
+        grid-row-gap: 6rem;
+      }
     }
   }
+
+  // Homepage > Pricing section
+  &__pricing-section {
+    padding-top: 4.25rem;
+    padding-bottom: 5.625rem;
+  
+    @include media('md-up') {
+      padding-top: 8.125rem;
+      padding-bottom: 10rem;
+    }
+  
+    &-heading {
+      @include media('lg-up') {
+        margin-bottom: 6.5rem;
+      }
+    }
+  }
+
+  // Homepage > Impact Section
+  &__impact-section {
+    padding-bottom: 7.75rem;
+
+    @include media('md-up') {
+      padding-bottom: 9.68755rem;
+    }
+    
+    @include media('lg-up') {
+      padding-bottom: 15.6875rem;
+    }
+  }
+
+  // Homepage > Journey Section
+  &__journey-section {
+    padding-bottom: 5.125rem;
+
+    @include media('md-up') {
+      padding-bottom: 6.5rem;
+    }
+    
+    @include media('lg-up') {
+      padding-bottom: 9.6875rem;
+    }
+  }
+
+  // specific text styling for impact & journey sections
+  &__impact-section, &__journey-section {
+    .text-subheader {
+      font-size: 1.75rem;
+      line-height: 1.3;
+
+      @include media('lg-up') {
+        font-size: 2.25rem;
+      }
+    }
+
+    .text-body {
+      @include media('lg-up') {
+        font-weight: 300;
+      }
+    }
+  }
+
 }
+
+
 
 //Footer
 .footer {
