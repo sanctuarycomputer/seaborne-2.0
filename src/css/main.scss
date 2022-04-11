@@ -313,8 +313,6 @@ button {
   border-top: 1px solid color('cloud');
   // Footer > Contact Section
   &__contact-section {
-    // border-top: 1px solid color('cloud');
-
     @include media('md-up') {
       padding-top: 13.625rem;
       padding-bottom: 14.875rem;
@@ -332,15 +330,13 @@ button {
   
   // Footer > Bottom Nav
   &__nav-section {
-    &__nav {
-      a {
-        &:not(:last-of-type) {
-          margin-right: 1.25rem;
-        }
+    a {
+      &:not(:last-of-type) {
+        margin-right: 1.25rem;
+      }
 
-        &:hover {
-          color: color('gray-darker');
-        }
+      &:hover {
+        color: color('gray-darker');
       }
     }
   }

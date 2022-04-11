@@ -18,7 +18,7 @@ export default function Footer() {
       </section>
 
       <section
-        className="footer__nav-section flex flex-col md:flex-row justify-between md:justify-center items-center inner-content-max-width mxauto pb2 md:pb2_5 site-padding-x text-center"
+        className="flex flex-col md:flex-row justify-between md:justify-center items-center inner-content-max-width mxauto pb2 md:pb2_5 site-padding-x text-center"
       >
         <p className="pb2 md:pb0 md:mr2 text-footer color-gray">
           Seaborne is a sister company to 
@@ -31,7 +31,7 @@ export default function Footer() {
           > Sanctuary Computer
           </a>
         </p>
-        <nav className="footer__nav-section__nav">
+        <nav className="footer__nav-section">
           <a className="text-footer color-gray underline" aria-label="Our Process" href="/about">Our Process</a>
           <a className="text-footer color-gray underline" aria-label="Case Study" href="/studies">Case Studies &amp; Blog Posts</a>
           <a
