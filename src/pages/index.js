@@ -40,19 +40,19 @@ export default function Home() {
         </div>
 
         <div className="site-padding-x mt4 md:col-10 mxauto">
-          <div className="home__studies-section-case-study-card flex flex-row justify-between mxauto mb1_5 md:mb3">
-            <figure className="home__studies-section-case-study-card-image bg-cover" 
+          <div className="home__studies-section-case-study-card case-study-card flex flex-row justify-between mxauto mb1_5 md:mb3">
+            <figure className="case-study-card__image bg-cover" 
               style={{
                 backgroundImage: `url('img/studies/light-two/hero.jpg')`
             }}>
             </figure>
-            <article className="home__studies-section-case-study-card-details flex-1 flex flex-col ml_75 md:ml2">
-              <p className="home__studies-section-case-study-card-type text-eyebrow mb_25 md:mb_75">Case Study</p>
-              <h3 className="home__studies-section-case-study-card-title text-subheader md:mb_5">The Light Phone</h3>
-              <p className="home__studies-section-case-study-card-excerpt text-body color-gray">
+            <article className="case-study-card__details flex-1 flex flex-col ml_75 md:ml2">
+              <p className="case-study-card__type text-eyebrow mb_25 md:mb_75">Case Study</p>
+              <h3 className="case-study-card__title text-subheader md:mb_5">The Light Phone</h3>
+              <p className="case-study-card__excerpt text-body color-gray">
                 Investigating the climate impacts of a mobile phone. Building a novel checkout feature to invite customers into the sustainability conversation.
               </p>
-              <a className="home__studies-section-case-study-card-link text-body arrow-link color-blue pt_5 md:pt1_5" href="#">
+              <a className="case-study-card__link text-body arrow-link color-blue pt_5 md:pt1_5" href="#">
                 <img 
                   className="mr_5"
                   alt=""
@@ -62,19 +62,19 @@ export default function Home() {
               </a>
             </article>
           </div>
-          <div className="home__studies-section-case-study-card flex flex-row justify-between mxauto">
-            <figure className="home__studies-section-case-study-card-image bg-cover" 
+          <div className="home__studies-section-case-study-card case-study-card flex flex-row justify-between mxauto">
+            <figure className="case-study-card__image bg-cover" 
               style={{
                 backgroundImage: `url('img/studies/light-two/hero.jpg')`
             }}>
             </figure>
-            <article className="home__studies-section-case-study-card-details flex-1 flex flex-col ml_75 md:ml2">
-              <p className="home__studies-section-case-study-card-type text-eyebrow mb_25 md:mb_75">Blog Post</p>
-              <h3 className="home__studies-section-case-study-card-title text-subheader md:mb_5">Trends of the Industry</h3>
-              <p className="home__studies-section-case-study-card-excerpt text-body color-gray">
+            <article className="case-study-card__details flex-1 flex flex-col ml_75 md:ml2">
+              <p className="case-study-card__type text-eyebrow mb_25 md:mb_75">Blog Post</p>
+              <h3 className="case-study-card__title text-subheader md:mb_5">Trends of the Industry</h3>
+              <p className="case-study-card__excerpt text-body color-gray">
                 Luctus justo, in lectus bibendum. Ultrices sed enim, at sit egestas cursus cursus cursus. Vitae, viverra ut turpis congue sit. Cras nibh sed commodo, leo arcu amet. Cras.
               </p>
-              <a className="home__studies-section-case-study-card-link text-body arrow-link color-blue pt_5 md:pt1_5" href="#">
+              <a className="case-study-card__link text-body arrow-link color-blue pt_5 md:pt1_5" href="#">
                 <img 
                   className="mr_5"
                   alt=""
