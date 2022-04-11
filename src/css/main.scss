@@ -7,21 +7,26 @@
 }
 
 .site-padding-x {
-  padding-left: $site-padding-x-mobile;
-  padding-right: $site-padding-x-mobile;
+  padding-left: $site-padding-x-small-mobile;
+  padding-right: $site-padding-x-small-mobile;
 
   @include media('sm-up') {
+    padding-left: $site-padding-x-mobile;
+    padding-right: $site-padding-x-mobile;
+  }
+  
+  @include media('md-up') {
     padding-left: $site-padding-x-tablet;
     padding-right: $site-padding-x-tablet;
   }
 
-  @include media('md-up') {
+  @include media('lg-up') {
     padding-left: $site-padding-x-desktop;
     padding-right: $site-padding-x-desktop;
   }
 }
 
-//Buttons
+// Buttons
 
 a,
 button {
@@ -32,31 +37,31 @@ button {
 .button--style-primary {
   @extend %transition-shorter;
   text-decoration: none;
-  height: 2.375rem;
-  border-radius: 0.625rem;
+  border-radius: 0.3125rem;
   line-height: 1rem;
 }
 
 .button--style-primary {
   background-color: color('blue');
   color: color('white');
-  width: 10.0625rem;
-  padding: 1.5rem;
+  min-width: 9.25rem;
+  padding: 1rem 1.5rem;
+
+  @include media('md-up') {
+    padding: 1rem 2rem;
+    min-width: 11.75rem;
+  }
 
   &:hover {
     background-color: color('blue-darker');
-  }
-
-  @include media('md-up') {
-    width: 12.0625rem;
   }
 }
 
 .button--style-blue-border {
   background-color: transparent;
-  border: 1px solid color('blue');
+  border: 1px solid rgba(color('blue'), 0.2);
   color: color('blue');
-  padding: 0.75rem 1.25rem;
+  padding: 0.75rem 1rem;
 
   &:hover {
     background-color: color('blue');
@@ -78,110 +83,300 @@ button {
   }
 }
 
-//Header
+// Header
 .header {
   animation: $transition-duration-longer $transition-cubic-bezier 0s 1 normal forwards
     animation-fade-in-down;
-  padding-bottom: 6.4375rem;
+  border-bottom: 1px solid color('cloud');
 
   @include media('md-up') {
-    padding-bottom: 10.125rem;
-  }
-}
-
-.nav-button {
-  font-size: 0.875rem;
-  font-weight: 500;
-  line-height: 0.75rem;
-}
-
-//Main Hero
-.main-hero-text {
-  animation: $transition-duration-longer $transition-cubic-bezier 0.25s 1 normal forwards
-    animation-fade-in;
-}
-
-.hero-illustration {
-  top: -9%;
-}
-
-.hero-illustration-container {
-  animation: $transition-duration-longer $transition-cubic-bezier 0.45s 1 normal forwards
-    animation-fade-in;
-}
-
-//Impact Section
-.impact-section {
-  @include media('md-up') {
-    padding-bottom: 15.6875rem;
-  }
-}
-
-//Journey Section
-.journey-section {
-  padding-bottom: 4.3125rem;
-
-  @include media('md-up') {
-    padding-bottom: 11.4375rem;
-  }
-}
-
-//Offerings Section
-.offerings-columns-container {
-  padding-top: 4.9375rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 2rem;
-  grid-row-gap: 3.5rem;
-
-  @include media('sm-up') {
-    padding-top: 7.375rem;
-    grid-column-gap: 3rem;
-    grid-row-gap: 7.875rem;
+    padding-right: 1.125rem;
   }
 
-  @include media('md-up') {
-    padding-top: 8.4375rem;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 1.75rem;
-  }
-}
-
-.offerings-section {
-  min-height: 51.375rem;
-}
-
-.pink-background-bottom-shape {
-  bottom: -1%;
-}
-
-.case-study-card {
-  border: 1px solid color('gray-lighter');
-  border-radius: 20px;
-  padding: 24px;
-}
-
-//Contact Section
-.contact-section {
-  @include media('sm-up') {
-    padding-bottom: 6.25rem;
+  &__nav--desktop {
+    a:not(:last-of-type) {
+      margin-right: 2.4375rem;
+    }
   }
 
-  @include media('md-up') {
-    padding-top: 7.8125rem;
-    padding-bottom: 7.375rem;
+  &__nav-toggle {
+    span {
+      width: 20px;
+      height: 1px;
+      background-color: color('black');
+      transform-origin: center;
+
+      &:not(:last-of-type) {
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    &.mobile-nav-active {
+      span:first-of-type {
+        margin-bottom: 0;
+        transform: rotate(45deg);
+      }
+      span:last-of-type {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  &__nav-container--mobile {
+    &.active {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &__nav--mobile {
+    &.active {
+      display: flex;
+      height: calc(100vh - 58px);
+    }
+
+    a {
+      font-size: 2.25rem;
+      line-height: 1.3;
+      margin-bottom: 0.25rem;
+    }
   }
 }
 
 //Footer
 .footer {
-  border-top: 1px solid color('gray-lighter');
+  border-top: 1px solid color('cloud');
+  // Footer > Contact Section
+  &__contact-section {
+    @include media('md-up') {
+      padding-top: 13.625rem;
+      padding-bottom: 14.875rem;
+    }
 
-  @include media('md-up') {
-    margin-top: 7.375rem;
+    &__email-link {
+        font-size: 1.75rem;
+        line-height: 1.3;
+
+        @include media('md-up') {
+          font-size: 2.625rem; 
+        }
+    }
+  }
+  
+  // Footer > Bottom Nav
+  &__nav-section {
+    a {
+      &:not(:last-of-type) {
+        margin-right: 1.25rem;
+      }
+
+      &:hover {
+        color: color('gray-darker');
+      }
+    }
   }
 }
 
-.footer-detail-text {
-  margin-top: 0.1rem;
+// Homepage
+.home {
+
+  // Homepage > Hero Section
+  &__hero-section {
+
+    &-text {
+      animation: $transition-duration-longer $transition-cubic-bezier 0.25s 1 normal forwards animation-fade-in;
+      margin-top: 2.75rem;
+
+      @include media('md-up') {
+        margin-top: 5.875rem;
+      }
+
+      @include media('lg-up') {
+        margin-top: 12.4375rem;
+      }
+    }
+
+    &-illustration-container {
+      margin-top: 2.125rem;
+      animation: $transition-duration-longer $transition-cubic-bezier 0.45s 1 normal forwards animation-fade-in;
+    }
+  }
+
+  // Homepage > Case Studies Section
+  &__studies-section {
+    padding-top: 3.4375rem;
+    padding-bottom: 3.4375rem;
+  
+    @include media('md-up') {
+      padding-top: 10.75rem;
+      padding-bottom: 8.375rem;  
+    }
+    
+    @include media('lg-up') {
+      padding-top: 8.375rem;
+      padding-bottom: 8.375rem;  
+    }
+  }
+
+  // Homepage > Offerings section
+  &__offerings-section {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  
+    @include media('md-up') {
+      padding-top: 8.5rem;
+      padding-bottom: 8.5rem;
+    }
+  
+    &-columns-container {
+      padding-top: 4.3125rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-row-gap: 7rem;
+    
+      @include media('md-up') {
+        padding-top: 8.4375rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 3rem;
+        grid-row-gap: 6rem;
+      }
+    }
+  }
+
+  // Homepage > Pricing section
+  &__pricing-section {
+    padding-top: 4.25rem;
+    padding-bottom: 5.625rem;
+  
+    @include media('md-up') {
+      padding-top: 8.125rem;
+      padding-bottom: 10rem;
+    }
+  
+    &-heading {
+      @include media('lg-up') {
+        margin-bottom: 6.5rem;
+      }
+    }
+  }
+
+  // Homepage > Impact Section
+  &__impact-section {
+    padding-bottom: 7.75rem;
+
+    @include media('md-up') {
+      padding-bottom: 9.68755rem;
+    }
+    
+    @include media('lg-up') {
+      padding-bottom: 15.6875rem;
+    }
+  }
+
+  // Homepage > Journey Section
+  &__journey-section {
+    padding-bottom: 5.125rem;
+
+    @include media('md-up') {
+      padding-bottom: 6.5rem;
+    }
+    
+    @include media('lg-up') {
+      padding-bottom: 9.6875rem;
+    }
+  }
+
+  // specific text styling for impact & journey sections
+  &__impact-section, &__journey-section {
+    .text-subheader {
+      font-size: 1.75rem;
+      line-height: 1.3;
+
+      @include media('lg-up') {
+        font-size: 2.25rem;
+      }
+    }
+
+    .text-body {
+      @include media('lg-up') {
+        font-weight: 300;
+      }
+    }
+  }
+
+}
+
+// About Page
+
+.about {
+  &__hero-section {
+    padding-top: 5.75rem;
+  
+    @include media('md-up') {
+      padding-top: 9rem;
+    }
+    
+    @include media('lg-up') {
+      padding-top: 12.1875rem;
+    }
+  }
+  
+  &__pricing-section {
+    padding-top: 7.875rem;
+    padding-bottom: 7.875rem;
+  
+    @include media('md-up') {
+      padding-top: 12.25rem;
+      padding-bottom: 12.25rem;
+    }
+  
+    @include media('lg-up') {
+      padding-top: 16.8125rem;
+      padding-bottom: 16.8125rem;
+    }
+  }
+}
+
+// Extra/Re-usable classes
+
+// Case study card (home & case study index page)
+.case-study-card {
+  border: 1px solid color('cloud');
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  max-width: 45rem;
+
+  &__image {
+    width: 6.25rem;
+    height: 6.25rem;
+
+    @include media('md-up') {
+      width: 11.875rem;
+      height: 11.875rem;
+    }
+  }
+
+  &__excerpt, &__link {
+    font-size: 0.75rem;
+    line-height: 1.6;
+
+    @include media('md-up') {
+      font-size: 1rem;
+    }
+  }
+
+  &__excerpt {
+    // trunctating with ellipsis on mobile
+    @include media('sm-down') {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      word-break: break-word;
+      overflow: hidden;
+    }
+  }
+}
+
+.callout-card {
+  border: 1px solid color('cloud');
 }
