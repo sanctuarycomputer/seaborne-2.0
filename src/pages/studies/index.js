@@ -14,7 +14,7 @@ export default function StudyIndex(props) {
       </section>
 
       <section className="study-index__studies site-padding-x">
-        <div className="study-index-case-study-card case-study-card flex flex-row justify-between mxauto mb1_5 md:mb3">
+        <div className="study-index__case-study-card case-study-card flex flex-row justify-between mxauto mb1_5 md:mb3">
           <figure className="case-study-card__image bg-cover" 
             style={{
               backgroundImage: `url('img/studies/light-two/hero.jpg')`
@@ -36,7 +36,7 @@ export default function StudyIndex(props) {
             </a>
           </article>
         </div>
-        <div className="study-index-case-study-card case-study-card flex flex-row justify-between mxauto mb1_5 md:mb3">
+        <div className="study-index__case-study-card case-study-card flex flex-row justify-between mxauto mb1_5 md:mb3">
           <figure className="case-study-card__image bg-cover" 
             style={{
               backgroundImage: `url('img/studies/light-two/hero.jpg')`
@@ -58,7 +58,7 @@ export default function StudyIndex(props) {
             </a>
           </article>
         </div>
-        <div className="study-index-case-study-card case-study-card flex flex-row justify-between mxauto mb1_5 md:mb3">
+        <div className="study-index__case-study-card case-study-card flex flex-row justify-between mxauto mb1_5 md:mb3">
           <figure className="case-study-card__image bg-cover" 
             style={{
               backgroundImage: `url('img/studies/light-two/hero.jpg')`
@@ -80,7 +80,7 @@ export default function StudyIndex(props) {
             </a>
           </article>
         </div>
-        <div className="study-index-case-study-card case-study-card flex flex-row justify-between mxauto">
+        <div className="study-index__case-study-card case-study-card flex flex-row justify-between mxauto">
           <figure className="case-study-card__image bg-cover" 
             style={{
               backgroundImage: `url('img/studies/light-two/hero.jpg')`
