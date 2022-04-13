@@ -22,12 +22,12 @@ export default function StudyIndex(props) {
           }}>
           </figure>
           <article className="flex-1 flex flex-col ml_75 md:ml2">
-            <p className="case-study-card__type text-eyebrow mb_25 md:mb_75">Case Study</p>
+            <p className="case-study-card__type color-gray text-eyebrow mb_25 md:mb_75">Case Study</p>
             <h3 className="case-study-card__title text-subheader md:mb_5">The Light Phone</h3>
             <p className="case-study-card__excerpt text-body color-gray">
               Investigating the climate impacts of a mobile phone. Building a novel checkout feature to invite customers into the sustainability conversation.
             </p>
-            <a className="case-study-card__link text-body arrow-link color-blue pt_5 md:pt1_5" href="#">
+            <a className="case-study-card__link bold text-body arrow-link color-blue pt_5 md:pt1_5" href="#">
               <img 
                 className="mr_5"
                 alt=""
@@ -44,12 +44,12 @@ export default function StudyIndex(props) {
           }}>
           </figure>
           <article className="flex-1 flex flex-col ml_75 md:ml2">
-            <p className="case-study-card__type text-eyebrow mb_25 md:mb_75">Blog Post</p>
+            <p className="case-study-card__type color-gray text-eyebrow mb_25 md:mb_75">Blog Post</p>
             <h3 className="case-study-card__title text-subheader md:mb_5">Trends of the Industry</h3>
             <p className="case-study-card__excerpt text-body color-gray">
             Luctus justo, in lectus bibendum. Ultrices sed enim, at sit egestas cursus cursus cursus. Vitae, viverra ut turpis congue sit. Cras nibh sed commodo, leo arcu amet. Cras.
             </p>
-            <a className="case-study-card__link text-body arrow-link color-blue pt_5 md:pt1_5" href="#">
+            <a className="case-study-card__link bold text-body arrow-link color-blue pt_5 md:pt1_5" href="#">
               <img 
                 className="mr_5"
                 alt=""
@@ -66,12 +66,12 @@ export default function StudyIndex(props) {
           }}>
           </figure>
           <article className="flex-1 flex flex-col ml_75 md:ml2">
-            <p className="case-study-card__type text-eyebrow mb_25 md:mb_75">Case Study</p>
+            <p className="case-study-card__type color-gray text-eyebrow mb_25 md:mb_75">Case Study</p>
             <h3 className="case-study-card__title text-subheader md:mb_5">The Light Phone</h3>
             <p className="case-study-card__excerpt text-body color-gray">
               Investigating the climate impacts of a mobile phone. Building a novel checkout feature to invite customers into the sustainability conversation.
             </p>
-            <a className="case-study-card__link text-body arrow-link color-blue pt_5 md:pt1_5" href="#">
+            <a className="case-study-card__link bold text-body arrow-link color-blue pt_5 md:pt1_5" href="#">
               <img 
                 className="mr_5"
                 alt=""
@@ -88,12 +88,12 @@ export default function StudyIndex(props) {
           }}>
           </figure>
           <article className="flex-1 flex flex-col ml_75 md:ml2">
-            <p className="case-study-card__type text-eyebrow mb_25 md:mb_75">Case Study</p>
+            <p className="case-study-card__type color-gray text-eyebrow mb_25 md:mb_75">Case Study</p>
             <h3 className="case-study-card__title text-subheader md:mb_5">The Light Phone</h3>
             <p className="case-study-card__excerpt text-body color-gray">
               Investigating the climate impacts of a mobile phone. Building a novel checkout feature to invite customers into the sustainability conversation.
             </p>
-            <a className="case-study-card__link text-body arrow-link color-blue pt_5 md:pt1_5" href="#">
+            <a className="case-study-card__link bold text-body arrow-link color-blue pt_5 md:pt1_5" href="#">
               <img 
                 className="mr_5"
                 alt=""
