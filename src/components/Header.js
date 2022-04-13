@@ -38,8 +38,8 @@ export default function Header() {
         </button>
 
         <nav className="header__nav--desktop none md:flex flex-row items-center text-body-sm">
-          <a href="/about" className="color-gray">How we work</a>
-          <a href="/studies" className="color-gray">Case Studies &amp; Blog Posts</a>
+          <a href="/about" className="color-gray" aria-label="Our Process">How we work</a>
+          <a href="/studies" className="color-gray" aria-label="Case Studies and Writing">Studies &amp; Writing</a>
           <a
             aria-label="Get in touch with Seaborne"
             href="mailto:hello@seaborne.nyc"
@@ -56,8 +56,8 @@ export default function Header() {
         <nav 
           className={`none header__nav--mobile flex-col text-header-sm transition-longer ${isMobileNavActive ? "active" : ""}`}
         >
-          <a href="/about" className="color-gray">How we work</a>
-          <a href="/studies" className="color-gray">Case Studies &amp; Blog Posts</a>
+          <a href="/about" className="color-gray" aria-label="Our Process">How we work</a>
+          <a href="/studies" className="color-gray" aria-label="Case Studies and Writing">Studies &amp; Writing</a>
           <a
             aria-label="Get in touch with Seaborne"
             href="mailto:hello@seaborne.nyc"

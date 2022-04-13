@@ -47,7 +47,7 @@ export default function Home() {
             }}>
             </figure>
             <article className="case-study-card__details flex-1 flex flex-col ml_75 md:ml2">
-              <p className="case-study-card__type text-eyebrow mb_25 md:mb_75">Case Study</p>
+              <p className="case-study-card__type color-gray text-eyebrow mb_25 md:mb_75">Case Study</p>
               <h3 className="case-study-card__title text-subheader md:mb_5">The Light Phone</h3>
               <p className="case-study-card__excerpt text-body color-gray">
                 Investigating the climate impacts of a mobile phone. Building a novel checkout feature to invite customers into the sustainability conversation.
@@ -69,7 +69,7 @@ export default function Home() {
             }}>
             </figure>
             <article className="case-study-card__details flex-1 flex flex-col ml_75 md:ml2">
-              <p className="case-study-card__type text-eyebrow mb_25 md:mb_75">Blog Post</p>
+              <p className="case-study-card__type color-gray text-eyebrow mb_25 md:mb_75">Blog Post</p>
               <h3 className="case-study-card__title text-subheader md:mb_5">Trends of the Industry</h3>
               <p className="case-study-card__excerpt text-body color-gray">
                 Luctus justo, in lectus bibendum. Ultrices sed enim, at sit egestas cursus cursus cursus. Vitae, viverra ut turpis congue sit. Cras nibh sed commodo, leo arcu amet. Cras.
