@@ -1,8 +1,9 @@
 import matter from 'gray-matter';
+// commented Link import — used for generating posts list dynamically
 // import Link from 'next/link';
 
 export default function StudyIndex(props) {
-  // Listing all posts under content/studies
+  // Listing all posts under content/studies - Kept this original code that generates a dynamic posts list just in case we want to go back to this in the future.
   // return props.studies.map(s => {
   //   return (<Link key={s.slug} href={`/studies/${s.slug}`}>{s.frontmatter.title}</Link>)
   // });
