@@ -33,7 +33,7 @@ export default function Footer() {
         </p>
         <nav className="footer__nav-section">
           <a className="text-footer color-gray underline" aria-label="Our Process" href="/about">Our Process</a>
-          <a className="text-footer color-gray underline" aria-label="Case Study" href="/studies">Case Studies &amp; Blog Posts</a>
+          <a className="text-footer color-gray underline" aria-label="Case Studies and Writing" href="/studies">Studies &amp; Writing</a>
           <a
             aria-label="Visit Seaborne's Twitter"
             href="https://twitter.com/seaborne_nyc"
