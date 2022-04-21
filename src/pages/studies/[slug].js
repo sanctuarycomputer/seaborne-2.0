@@ -52,8 +52,6 @@ export default function StudyShow(props) {
           {props.markdownBody}
         </ReactMarkdown>
       </article>
-
-    
     </main>
   );
 }
