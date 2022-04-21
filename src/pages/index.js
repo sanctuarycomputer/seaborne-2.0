@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -23,7 +22,6 @@ export default function Home() {
           </Link>
         </div>
         <div className="home__hero-section-illustration-container opacity-0 flex justify-center">
-
           <img
             className="hero-illustration w100 site-padding-x z-3 r0 l0 inner-content-max-width mxauto"
             alt="People doing outdoor activities in the mountains"
