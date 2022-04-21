@@ -47,7 +47,7 @@ export default function StudyShow(props) {
       </header>
 
         
-      <article className='article__body'>
+      <article className="article__body">
         <ReactMarkdown children={props.markdownBody} />
       </article>
     </main>
