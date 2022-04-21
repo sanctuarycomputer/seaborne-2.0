@@ -27,7 +27,7 @@ export default function StudyIndex(props) {
             <p className="case-study-card__excerpt text-body color-gray">
               Investigating the climate impacts of a mobile phone. Building a novel checkout feature to invite customers into the sustainability conversation.
             </p>
-            <a className="case-study-card__link bold text-body arrow-link color-blue pt_5 md:pt1_5" href="#">
+            <a className="case-study-card__link bold text-body arrow-link color-blue pt_5 md:pt1_5" href="studies/light-two">
               <img 
                 className="mr_5"
                 alt=""

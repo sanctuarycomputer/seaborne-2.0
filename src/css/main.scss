@@ -411,3 +411,42 @@ button {
 .callout-card {
   border: 1px solid color('cloud');
 }
+
+// Case Study Article
+
+.article {
+  // Article > Header
+  &__header {
+    padding-top: 3.5rem;
+    padding-bottom: 4rem;
+
+    @include media('md-up') {
+      padding-top: 2.125rem;
+      padding-bottom: 4.5rem;
+    }
+    
+    @include media('lg-up') {
+      padding-top: 3.8125rem;
+      padding-bottom: 4.625rem;
+    }
+
+    &-image {
+      &-caption {
+        @include media('sm-down') {
+          font-size: 0.75rem;
+        }
+      }
+    }
+
+    &-taglist {
+      &-tag {
+        border-radius: 0.625rem;
+        padding: 0.625rem;
+
+        @include media('md-down') {
+          font-size: 0.625rem;
+        }
+      }
+    }
+  }
+}
