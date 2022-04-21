@@ -6,9 +6,9 @@ export default function Home() {
         <div
           className="home__hero-section-text opacity-0 flex flex-col items-center text-center site-padding-x inner-content-max-width mxauto z-5"
         >
-          <p className="text-body color-gray pb2 sm:pb1_75 md:pb2_5">Hi, we're Seaborne</p>
+          <p className="text-body color-gray pb2 sm:pb1_75 md:pb2_5">Hi, we&rsquo;re Seaborne</p>
           <h1 className="text-header color-black pb3 sm:pb1_75 md:pb2_5 md:col-10">
-            We're your guides to sustainable business practices.
+            We&rsquo;re your guides to sustainable business practices.
           </h1>
           <a
             aria-label="Read more about how we work"
@@ -31,7 +31,7 @@ export default function Home() {
       <section className="home__studies-section flex flex-col mt4 fade-in">
         <div className="text-center site-padding-x">
           <p className="text-body color-gray pb2 sm:pb1_75 md:pb1_5">Latest updates from our company</p>
-          <h2 className="text-header-sm mb1_5 md:mb5 lg:mb4">See how we're making a difference</h2>
+          <h2 className="text-header-sm mb1_5 md:mb5 lg:mb4">See how we&rsquo;re making a difference</h2>
           <img 
             className="separator-arrow"
             alt=""
@@ -105,7 +105,7 @@ export default function Home() {
                 <img className="mb1_5" src="img/suitcase-icon.svg" alt="Suitcase" />
                 <p className="bold color-black">Corporate Assessment</p>
                 <p className="color-gray">
-                  Calculate your business’s carbon footprint by understanding the ins and outs of
+                  Calculate your business&rsquo;s carbon footprint by understanding the ins and outs of
                   your business and operations.
                 </p>
               </div>
@@ -118,7 +118,7 @@ export default function Home() {
                 />
                 <p className="bold color-black">Supply Chain Assessment</p>
                 <p className="color-gray">
-                  Calculate your product’s carbon footprint. Know the impact of your supply chain
+                  Calculate your product&rsquo;s carbon footprint. Know the impact of your supply chain
                   and manufacturing processes.
                 </p>
               </div>
@@ -144,7 +144,7 @@ export default function Home() {
                 />
                 <p className="bold color-black">Web Presence</p>
                 <p className="color-gray">
-                  Share the story of how your business became more sustainable. We’ll help shape
+                  Share the story of how your business became more sustainable. We&rsquo;ll help shape
                   your narrative and build your case study site.
                 </p>
               </div>
@@ -211,7 +211,7 @@ export default function Home() {
             We'll get you started on your journey.
           </h2>
           <p className="text-body color-gray mb1_5">
-            We use research-backed methods to create clear and informative insights. We don’t
+            We use research-backed methods to create clear and informative insights. We don&rsquo;t
             believe jargon or academic writing—we believe in taking action.
           </p>
           <div className="none md:flex flex-row">
