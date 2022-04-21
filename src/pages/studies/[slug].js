@@ -9,7 +9,7 @@ export default function StudyShow(props) {
 
   return (
     <main className="article">
-      <header className="site-padding-x article__header inner-content-max-width flex flex-col items-center">
+      <header className="site-padding-x article__header inner-content-max-width flex flex-col items-center mxauto">
         <figure className="col-12">
           {props.frontmatter.hero_image &&
             <Image
@@ -29,24 +29,24 @@ export default function StudyShow(props) {
         </figure>
 
         {props.frontmatter.type &&
-          <p className="article__header-type col-12 text-body color-gray">
+          <p className="article__header-type col-12 lg:col-8 text-body color-gray">
             {props.frontmatter.type}
           </p>
         }
         
-        <h1 className="article__header-title col-12 text-header">
+        <h1 className="article__header-title col-12 lg:col-8 text-header mt1 mb3 md:mb4">
           {props.frontmatter.title}
         </h1>
 
         {props.frontmatter.tags &&
-          <div className="article__header-tags col-12">
-            {tagArray.map((tag) => <span key={tag}>{tag}</span>)}
-          </div>
+          <ul className="article__header-taglist col-12 lg:col-8 list-style-none">
+            {tagArray.map((tag) => 
+              <li className="article__header-taglist-tag inline-block text-footer font-500 uppercase bg-color-sky color-blue mr_5 mb_5" key={tag}>{tag}</li>
+            )}
+          </ul>
         }
-
       </header>
-
-        
+      
       <article className="article__body">
         <ReactMarkdown children={props.markdownBody} />
       </article>

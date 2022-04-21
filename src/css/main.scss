@@ -415,6 +415,7 @@ button {
 // Case Study Article
 
 .article {
+  // Article > Header
   &__header {
     padding-top: 3.5rem;
     padding-bottom: 4rem;
@@ -433,6 +434,17 @@ button {
       &-caption {
         @include media('sm-down') {
           font-size: 0.75rem;
+        }
+      }
+    }
+
+    &-taglist {
+      &-tag {
+        border-radius: 0.625rem;
+        padding: 0.625rem;
+
+        @include media('md-down') {
+          font-size: 0.625rem;
         }
       }
     }
