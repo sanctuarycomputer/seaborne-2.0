@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Footer() {
   return (
     <footer className="footer">
@@ -32,16 +34,23 @@ export default function Footer() {
           </a>
         </p>
         <nav className="footer__nav-section">
-          <a className="text-footer color-gray underline" aria-label="Our Process" href="/about">Our Process</a>
-          <a className="text-footer color-gray underline" aria-label="Case Studies and Writing" href="/studies">Studies &amp; Writing</a>
-          <a
-            aria-label="Visit Seaborne's Twitter"
-            href="https://twitter.com/seaborne_nyc"
-            className="text-footer color-gray underline"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Twitter
-          </a>
+          <Link href="/about">
+            <a className="text-footer color-gray underline" aria-label="Our Process">Our Process</a>
+          </Link>
+          <Link href="/studies">
+            <a className="text-footer color-gray underline" aria-label="Case Studies and Writing">Studies &amp; Writing</a>
+          </Link>
+          <Link href="https://twitter.com/seaborne_nyc">
+            <a
+              aria-label="Visit Seaborne's Twitter"
+              className="text-footer color-gray underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Twitter
+            </a>
+          </Link>
+          
         </nav>
       </section>
     </footer>

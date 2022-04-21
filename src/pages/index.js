@@ -1,3 +1,6 @@
+import Link from 'next/link';
+import Image from 'next/image';
+
 export default function Home() {
   return (
     <main className="home">
@@ -10,15 +13,17 @@ export default function Home() {
           <h1 className="text-header color-black pb3 sm:pb1_75 md:pb2_5 md:col-10">
             We&rsquo;re your guides to sustainable business practices.
           </h1>
-          <a
-            aria-label="Read more about how we work"
-            className="event-contact-us button--style-primary text-body flex items-center justify-center font-500"
-            href="/about"
-          >
-            How we work
-          </a>
+          <Link href="/about">
+            <a
+              aria-label="Read more about how we work"
+              className="event-contact-us button--style-primary text-body flex items-center justify-center font-500"
+            >
+              How we work
+            </a>
+          </Link>
         </div>
         <div className="home__hero-section-illustration-container opacity-0 flex justify-center">
+
           <img
             className="hero-illustration w100 site-padding-x z-3 r0 l0 inner-content-max-width mxauto"
             alt="People doing outdoor activities in the mountains"
@@ -208,7 +213,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col px1 md:px0 md:col-5 lg:col-4">
           <h2 className="text-subheader color-black mt2 mb1_5 lg:mb3">
-            We'll get you started on your journey.
+            We&rsquo;ll get you started on your journey.
           </h2>
           <p className="text-body color-gray mb1_5">
             We use research-backed methods to create clear and informative insights. We don&rsquo;t

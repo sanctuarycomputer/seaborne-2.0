@@ -3,7 +3,10 @@ import ReactMarkdown from 'react-markdown';
 
 export default function StudyShow(props) {
   return (
-    <ReactMarkdown children={props.markdownBody} />
+    // <ReactMarkdown children={props.markdownBody} />
+    <ReactMarkdown>
+      {props.markdownBody}
+    </ReactMarkdown>
   );
 }
 
