@@ -465,10 +465,9 @@ button {
       padding-bottom: 2.625rem;
     }
 
-    // global width
+    // global width of children
     > h1, > h2, > h3, > p, ol, ul, blockquote, code, hr {
       @extend .col-12;
-      // max-width: 50.75rem;
 
       @include media('lg-up') {
         width: 66.6666666667%;
@@ -478,7 +477,7 @@ button {
     // paragraph with images
     p {
       > img, > img + em {
-        @extend .col-12;
+        @extend .col-12; // TODO: fix image width and centering
 
         @include media('lg-up') {
           width: 150%;
@@ -499,7 +498,6 @@ button {
         margin-top: 0.75rem;
         margin-bottom: 2.5rem;
         @extend .text-body-sm;
-        // color: color('gray');
         font-style: normal;
         color: color('gray');
       }
@@ -547,12 +545,6 @@ button {
           color: color('blue-darker'); 
         }
       }
-    }
-
-
-    img {
-      @extend .col-12;
-
     }
 
     blockquote {
@@ -637,7 +629,6 @@ button {
         width: 66.6666666667%;
         margin-bottom: 4.625rem;
       }
-
     }
   
   }
