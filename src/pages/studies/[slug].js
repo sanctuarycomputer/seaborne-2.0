@@ -23,7 +23,7 @@ export default function StudyShow(props) {
             />
           }
           
-          <figcaption className="article__header-image-caption text-body-sm mb3_5 md:mb3 lg:mb4_5">
+          <figcaption className="article__header-image-caption text-body-sm color-gray mb3_5 md:mb3 lg:mb4_5 mt_75">
             {props.frontmatter.hero_image_caption} 
           </figcaption>
         </figure>
