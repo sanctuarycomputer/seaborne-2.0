@@ -451,29 +451,92 @@ button {
   }
 
   &__body {
+    padding-bottom: 1rem;
+
+    @include media('md-up') {
+      padding-bottom: 2.625rem;
+    }
+
     h1, h2, h3, h4, h5, h6, p, ol, ul, blockquote, code, img {
       @extend .col-12;
     }
 
+    h1, h2, h3 {
+      color: color('black');
+    }
+
     h1 {
       @extend .text-subheader-alt;
+      margin-bottom: 1.5rem;
 
-      &:first-child {
-        @extend .pb3;
+      @include media('md-up') {
+        margin-bottom: 4rem;
       }
+      
+      @include media('lg-up') {
+        margin-bottom: 6rem;
+      }
+
+      // &:first-child {
+      //   @extend .pb3;
+      // }
     }
     
     h2 {
       @extend .text-subheader-alt;
-
+      margin-bottom: 1.5rem;
     }
 
     p, ul, ol {
       @extend .text-body;
+      color: color('gray');
+      margin-bottom: 2rem;
+    }
+
+    // para that has image
+    p ~ img {
+      // background-color: yellow;
+    }
+
+    p > img + em {
+      // image with caption
+      // background: red;
+    }
+    p > img {
+      // just image
+      // background: green;
+    }
+
+    img {
+      // margin-bottom: 4.5rem;
+    }
+
+    strong { @extend .bold; }
+
+    // image caption
+    img + em {
+      margin-bottom: 4.5rem;
+      @extend .text-body-sm;
+      // color: color('gray');
+      font-style: normal;
     }
 
     img {
 
+    }
+
+    blockquote {
+      margin-top: 4.5rem;
+    }
+
+    // callout header floating
+    blockquote > h1 {
+      padding-top: 0.75rem;
+      padding-bottom: 1.875rem;
+      padding-right: 2.25rem;
+      margin-bottom: 0;
+      float: left;
+      width: 50%;
     }
   }
 }
