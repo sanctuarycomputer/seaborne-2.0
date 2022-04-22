@@ -42,7 +42,7 @@ export default function StudyShow(props) {
         {props.frontmatter.tags &&
           <ul className="article__header-taglist col-12 lg:col-8 list-style-none">
             {tagArray.map((tag) => 
-              <li className="article__header-taglist-tag inline-block text-footer font-500 uppercase bg-color-sky color-blue mr_5 mb_5" key={tag}>{tag}</li>
+              <li className="article__header-taglist-tag inline-block text-eyebrow bg-color-sky color-blue mr_5 mb_5" key={tag}>{tag}</li>
             )}
           </ul>
         }

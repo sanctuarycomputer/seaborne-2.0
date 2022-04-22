@@ -448,10 +448,10 @@ button {
       &-tag {
         border-radius: 0.625rem;
         padding: 0.625rem;
-        letter-spacing: 0.05em;
 
-        @include media('md-down') {
-          font-size: 0.625rem;
+        @include media('md-up') {
+          font-size: 0.875rem;
+          line-height: 160%;
         }
       }
     }
