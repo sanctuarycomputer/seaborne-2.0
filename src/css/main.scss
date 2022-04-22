@@ -588,6 +588,42 @@ button {
       padding: 1.5rem;
       width: 100%;
 
+      aside {
+        @extend .text-eyebrow;
+        margin-bottom: 0.25rem;
+        color: color('gray');
+
+        @include media('md-up') {
+          margin-bottom: 0.5rem;
+        }
+      }
+
+      main {
+        @extend .text-body-light;
+        margin-bottom: 1.5rem;
+        color: color('gray');
+
+        i {
+          color: color('black');
+        }
+      }
+
+      a {
+        @extend .text-body-sm;
+        color: color('blue');
+        padding-top: 0.5rem;
+        
+        @include media('md-up') {
+          padding-top: 1.5rem;
+        }
+
+        img {
+          width: 1.25rem;
+          vertical-align: sub;
+          margin-right: 0.5rem;
+        }
+      }
+
       @include media('md-up') {
         margin-bottom: 2.75rem;  
         padding: 2rem;

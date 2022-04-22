@@ -1,7 +1,7 @@
 import matter from 'gray-matter';
 import ReactMarkdown from 'react-markdown';
 import Image from 'next/image';
-import rehypeRaw from 'rehype-raw'
+import rehypeRaw from 'rehype-raw';
 
 export default function StudyShow(props) {
   // splitting tags string into an array

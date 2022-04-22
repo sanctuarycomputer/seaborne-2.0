@@ -16,20 +16,19 @@ Armed with a conservative estimate of embedded emissions, we asked ourselves how
 ![Field of sunflowers](/img/studies/light-two/sunflower.jpg)
 *field of sunflowers caption*
 
-<div className="callout-card p1_5 md:p2 col-12 lg:col-8">
-    <p className="text-eyebrow mb_25 md:mb_5">Link to something else</p>
-    <p className="text-body-light mb1_5">
-        <span className="color-black">
+<div className="callout-card">
+    <aside>
+        Link to something else
+    </aside>
+    <main>
+        <i>
             Click here to find out more.
-        </span>
-        <span className="color-gray">
-            Click here to find out more. Praesent nibh egestas egestas blandit. Arcu quisque viverra dictumst amet in.
-        </span>
-    </p>
-    <a className="text-body-sm arrow-link color-blue pt_5 md:pt1_5" href="#">
+        </i>
+        Click here to find out more. Praesent nibh egestas egestas blandit. Arcu quisque viverra dictumst amet in.
+    </main>
+    <a href="#">
         <img 
-            className="mr_5"
-            alt="Section separator"
+            alt=""
             src="/img/squiggle-arrow-right.svg"
         />
             CTA Linkout
@@ -62,40 +61,19 @@ Another ordered list
 
 Labore tempor velit nulla culpa eu elit culpa incididunt incididunt consectetur pariatur laboris reprehenderit. Labore tempor velit nulla culpa eu elit culpa incididunt incididunt consectetur pariatur laboris reprehenderit. Labore tempor velit nulla culpa eu elit culpa incididunt incididunt consectetur pariatur laboris reprehenderit. Labore tempor velit nulla culpa eu elit culpa incididunt incididunt consectetur pariatur laboris reprehenderit. Labore tempor velit nulla culpa eu elit culpa incididunt incididunt consectetur pariatur laboris reprehenderit. Labore tempor velit nulla culpa eu elit culpa incididunt incididunt consectetur pariatur laboris reprehenderit.
 
-<div className="callout-card p1_5 md:p2 col-12 lg:col-8">
-    <p className="text-eyebrow mb_25 md:mb_5">Link to something else</p>
-    <p className="text-body-light mb1_5">
-        <span className="color-black">
-            Click here to find out more.
-        </span>
-        <span className="color-gray">
-            Click here to find out more. Praesent nibh egestas egestas blandit. Arcu quisque viverra dictumst amet in.
-        </span>
-    </p>
-    <a className="text-body-sm arrow-link color-blue pt_5 md:pt1_5" href="#">
-        <img 
-            className="mr_5"
-            alt="Section separator"
-            src="/img/squiggle-arrow-right.svg"
-        />
-            CTA Linkout
-    </a>
-</div>
-
 <div className="callout-card">
-    <aside className="callout-card_eyebrow text-eyebrow mb_25 md:mb_5">
+    <aside className="">
         Link to something else
     </aside>
-    <main className="text-body-light mb1_5">
-        <i className="color-black">
+    <main className="">
+        <i className="">
             Click here to find out more.
         </i>
         Click here to find out more. Praesent nibh egestas egestas blandit. Arcu quisque viverra dictumst amet in.
     </main>
-    <a className="text-body-sm arrow-link color-blue pt_5 md:pt1_5" href="#">
+    <a className="" href="#">
         <img 
-            className="mr_5"
-            alt="Section separator"
+            alt=""
             src="/img/squiggle-arrow-right.svg"
         />
             CTA Linkout
