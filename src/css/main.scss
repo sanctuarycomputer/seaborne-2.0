@@ -449,4 +449,31 @@ button {
       }
     }
   }
+
+  &__body {
+    h1, h2, h3, h4, h5, h6, p, ol, ul, blockquote, code, img {
+      @extend .col-12;
+    }
+
+    h1 {
+      @extend .text-subheader-alt;
+
+      &:first-child {
+        @extend .pb3;
+      }
+    }
+    
+    h2 {
+      @extend .text-subheader-alt;
+
+    }
+
+    p, ul, ol {
+      @extend .text-body;
+    }
+
+    img {
+
+    }
+  }
 }

@@ -1,6 +1,7 @@
 import matter from 'gray-matter';
 import ReactMarkdown from 'react-markdown';
 import Image from 'next/image';
+import rehypeRaw from 'rehype-raw'
 
 export default function StudyShow(props) {
   // splitting tags string into an array
@@ -47,8 +48,9 @@ export default function StudyShow(props) {
         }
       </header>
       
-      <article className="article__body">
-        <ReactMarkdown>
+      <article className="article__body site-padding-x inner-content-max-width mxauto flex flex-col col-12 lg:col-8">
+      {/* <article className="article__body site-padding-x inner-content-max-width flex flex-col items-center mxauto"> */}
+        <ReactMarkdown rehypePlugins={[rehypeRaw]}>
           {props.markdownBody}
         </ReactMarkdown>
       </article>
