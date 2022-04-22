@@ -82,6 +82,26 @@ Labore tempor velit nulla culpa eu elit culpa incididunt incididunt consectetur 
     </a>
 </div>
 
+<div className="callout-card">
+    <aside className="callout-card_eyebrow text-eyebrow mb_25 md:mb_5">
+        Link to something else
+    </aside>
+    <main className="text-body-light mb1_5">
+        <i className="color-black">
+            Click here to find out more.
+        </i>
+        Click here to find out more. Praesent nibh egestas egestas blandit. Arcu quisque viverra dictumst amet in.
+    </main>
+    <a className="text-body-sm arrow-link color-blue pt_5 md:pt1_5" href="#">
+        <img 
+            className="mr_5"
+            alt="Section separator"
+            src="/img/squiggle-arrow-right.svg"
+        />
+            CTA Linkout
+    </a>
+</div>
+
 ## h2 subtitle again
 
 Labore tempor velit nulla culpa eu elit culpa incididunt incididunt consectetur pariatur laboris reprehenderit. Labore tempor velit nulla culpa eu elit culpa incididunt incididunt consectetur pariatur laboris reprehenderit. Labore tempor velit nulla culpa eu elit culpa incididunt incididunt consectetur pariatur laboris reprehenderit. Labore tempor velit nulla culpa eu elit culpa incididunt incididunt consectetur pariatur laboris reprehenderit. Labore tempor velit nulla culpa eu elit culpa incididunt incididunt consectetur pariatur laboris reprehenderit. Labore tempor velit nulla culpa eu elit culpa incididunt incididunt consectetur pariatur laboris reprehenderit.

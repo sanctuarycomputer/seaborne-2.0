@@ -534,21 +534,7 @@ button {
     }
 
     ul, ol {
-      @extend .site-padding-x;
-    }
-
-    // para that has image
-    p ~ img {
-      // background-color: yellow;
-    }
-
-    p > img + em {
-      // image with caption
-      // background: red;
-    }
-    p > img {
-      // just image
-      // background: green;
+      list-style-position: inside;
     }
 
     strong { @extend .bold; }
@@ -599,9 +585,12 @@ button {
 
     .callout-card {
       margin-bottom: 2.75rem;
+      padding: 1.5rem;
+      width: 100%;
 
       @include media('md-up') {
         margin-bottom: 2.75rem;  
+        padding: 2rem;
       }
       
       @include media('md-up') {
@@ -609,6 +598,7 @@ button {
       }
 
       @include media('lg-up') {
+        width: 66.6666666667%;
         margin-bottom: 4.625rem;
       }
 
