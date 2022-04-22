@@ -9,7 +9,7 @@ export default function StudyShow(props) {
 
   return (
     <main className="article">
-      <header className="site-padding-x article__header inner-content-max-width flex flex-col items-center mxauto">
+      <header className="article__header site-padding-x inner-content-max-width flex flex-col items-center mxauto">
         <figure className="col-12">
           {props.frontmatter.hero_image &&
             <Image
