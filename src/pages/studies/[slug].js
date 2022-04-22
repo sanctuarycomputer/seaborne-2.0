@@ -24,7 +24,7 @@ export default function StudyShow(props) {
             />
           }
           
-          <figcaption className="article__header-image-caption text-body-sm mb3_5 md:mb3 lg:mb4_5">
+          <figcaption className="article__header-image-caption text-body-sm color-gray mb3_5 md:mb3 lg:mb4_5 mt_75">
             {props.frontmatter.hero_image_caption} 
           </figcaption>
         </figure>
@@ -48,7 +48,7 @@ export default function StudyShow(props) {
         }
       </header>
       
-      <article className="article__body site-padding-x inner-content-max-width mxauto flex flex-col col-12 lg:col-8">
+      <article className="article__body site-padding-x inner-content-max-width mxauto flex flex-col items-center">
       {/* <article className="article__body site-padding-x inner-content-max-width flex flex-col items-center mxauto"> */}
         <ReactMarkdown rehypePlugins={[rehypeRaw]}>
           {props.markdownBody}
