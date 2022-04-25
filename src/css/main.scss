@@ -93,6 +93,14 @@ button {
     padding-right: 1.125rem;
   }
 
+  &__logo-container {
+    width: 5.25rem;
+
+    @include media('md-up') {
+      width: 7.143125rem;
+    }
+  }
+
   &__nav--desktop {
     a:not(:last-of-type) {
       margin-right: 2.4375rem;

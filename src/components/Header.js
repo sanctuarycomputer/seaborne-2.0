@@ -1,5 +1,6 @@
 import {useState, useEffect} from "react";
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Header() {
   const [isMobileNavActive, setMobileNavActive] = useState(false);
@@ -25,9 +26,10 @@ export default function Header() {
         <Link href="/">
           <a 
             rel="noopener noreferrer"
-            aria-label="Homepage"  
+            aria-label="Homepage"
+            className="header__logo-container block"
           >
-            <img className="Seaborne logo" src="/img/seaborne-logo.svg" alt="Seaborne logo" />
+            <Image className="Seaborne logo" src="/img/seaborne-logo.svg" alt="Seaborne logo" width={100} height={19} layout="responsive" />
           </a>
         </Link>
         
