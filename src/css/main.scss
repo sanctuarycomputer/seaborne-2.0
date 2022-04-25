@@ -481,7 +481,9 @@ button {
 
         @include media('lg-up') {
           width: 150%;
-          transform: translateX(-17.5%);
+          transform: translateX(-50%);
+          position: relative;
+          left: 50%;
           display: block;
         }
       }
