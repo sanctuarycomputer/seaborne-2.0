@@ -61,14 +61,14 @@ export default function Home() {
               <p className="case-study-card__excerpt text-body color-gray">
                 Investigating the climate impacts of a mobile phone. Building a novel checkout feature to invite customers into the sustainability conversation.
               </p>
-              <a className="case-study-card__link text-body arrow-link color-blue pt_5 md:pt1_5" href="#">
-                <figure className="mr_5 inline">
+              <a className="case-study-card__link flex items-center text-body arrow-link color-blue pt_5 md:pt1_5" href="#">
+                <figure className="mr_5">
                   <Image 
                     alt=""
                     src="/img/squiggle-arrow-right.svg"
                     width={20.22}
                     height={14}
-                    layout="fixed"
+                    layout="responsive"
                   />
                 </figure>
                 View Case Study
@@ -87,14 +87,14 @@ export default function Home() {
               <p className="case-study-card__excerpt text-body color-gray">
                 Luctus justo, in lectus bibendum. Ultrices sed enim, at sit egestas cursus cursus cursus. Vitae, viverra ut turpis congue sit. Cras nibh sed commodo, leo arcu amet. Cras.
               </p>
-              <a className="case-study-card__link text-body arrow-link color-blue pt_5 md:pt1_5" href="#">
-                <figure className="mr_5 inline">
+              <a className="case-study-card__link flex items-center text-body arrow-link color-blue pt_5 md:pt1_5" href="#">
+                <figure className="mr_5">
                   <Image 
                     alt=""
                     src="/img/squiggle-arrow-right.svg"
                     width={20.22}
                     height={14}
-                    layout="fixed"
+                    layout="responsive"
                   />
                 </figure>
                 View Case Study
@@ -217,7 +217,7 @@ export default function Home() {
             sustainable businesses. We want your business to do good to the environment.
           </p>
           <div className="flex items-center">
-            <figure className="pr2">
+            <figure className="pr1_5">
               <Image className="" src="/img/arrow.svg" alt="" width={42} height={42} layout="fixed" />
             </figure>
             <p className="text-body-sm color-gray mt1">
@@ -257,7 +257,7 @@ export default function Home() {
             believe jargon or academic writing—we believe in taking action.
           </p>
           <div className="flex items-center">
-            <figure className="pr2">
+            <figure className="pr1_5">
               <Image className="" src="/img/arrow.svg" alt="" width={42} height={42} layout="fixed" />
             </figure>
             <p className="text-body-sm color-gray mt1">

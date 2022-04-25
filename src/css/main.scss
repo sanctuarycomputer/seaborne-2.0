@@ -395,6 +395,16 @@ button {
     }
   }
 
+  &__link {
+    figure {
+      width: 0.75rem;
+
+      @include media('md-up') {
+        width: 1.26375rem;
+      }
+    }
+  }
+
   &__excerpt {
     // trunctating with ellipsis on mobile
     @include media('sm-down') {

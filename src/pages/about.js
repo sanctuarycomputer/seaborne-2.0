@@ -21,6 +21,7 @@ export default function About() {
             src="/img/squiggle-arrow.svg"
             width={27}
             height={51}
+            layout="fixed"
           />
         </div>
       </section>
@@ -82,6 +83,7 @@ export default function About() {
                     src="/img/squiggle-arrow-right.svg"
                     width={12}
                     height={10}
+                    layout="fixed"
                   />
                 </figure>
                 CTA Linkout
