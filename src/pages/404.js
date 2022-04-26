@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Custom404() {
   return (
-    <main className="custom404 py3 md:py5 site-padding-x mxauto flex flex-col items-center text-center inner-content-max-width">
+    <main className="custom404 py3 md:py5 lg:py8 site-padding-x mxauto flex flex-col items-center text-center inner-content-max-width">
       <figure className="col-12 md:col-4 sm:col-8">
         <Image
           className=""
