@@ -24,7 +24,7 @@ export default function Custom404() {
       </h1>
 
       <p className="text-body-light color-gray mb3_5">
-        Learn about <Link href="/about"><a className="color-blue">how we work</a></Link> and see how we're <Link href="/studies"><a className="color-blue">making a difference</a></Link>.
+        Learn about <Link href="/about"><a className="color-blue">how we work</a></Link> and see how we&rsquo;re <Link href="/studies"><a className="color-blue">making a difference</a></Link>.
       </p>
 
       <Link href="/">
