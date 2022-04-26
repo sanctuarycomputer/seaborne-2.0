@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function About() {
   return (
     <main className="about">
@@ -13,10 +15,13 @@ export default function About() {
             We work with companies that want to take meaningful action on contemporary social and environmental issues, guiding them through each step of the way from strategy to storytelling. 
           </h2>
 
-          <img 
+          <Image 
             className="separator-arrow"
-            alt="Section separator"
-            src="img/squiggle-arrow.svg"
+            alt=""
+            src="/img/squiggle-arrow.svg"
+            width={27}
+            height={51}
+            layout="fixed"
           />
         </div>
       </section>
@@ -72,12 +77,16 @@ export default function About() {
                 <span className="color-gray">Praesent nibh egestas egestas.</span>
               </p>
               <a className="text-body-sm arrow-link color-blue pt_5 md:pt1_5" href="#">
-                <img 
-                  className="mr_5"
-                  alt="Section separator"
-                  src="img/squiggle-arrow-right.svg"
-                />
-                  CTA Linkout
+                <figure className="mr_5 inline">
+                  <Image 
+                    alt=""
+                    src="/img/squiggle-arrow-right.svg"
+                    width={12}
+                    height={10}
+                    layout="fixed"
+                  />
+                </figure>
+                CTA Linkout
               </a>
             </div>
           </div>          

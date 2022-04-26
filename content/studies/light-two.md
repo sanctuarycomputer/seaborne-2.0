@@ -1,7 +1,9 @@
 ---
 title: Regenerative Phone - The Light II
 tags: Lightweight LCA, Consumer Education, Meaningful Offsets
-hero_image: ../public/studies/light-two/hero.jpg
+hero_image: /img/studies/light-two/hero.jpg
+hero_image_caption: This is a caption.
+type: Case Study
 ---
 # Investigating the climate impacts of a mobile phone. Building a novel checkout feature to invite customers into the sustainability conversation.
 

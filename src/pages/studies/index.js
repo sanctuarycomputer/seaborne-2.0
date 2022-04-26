@@ -1,4 +1,6 @@
 import matter from 'gray-matter';
+import Image from 'next/image';
+
 // commented Link import — used for generating posts list dynamically
 // import Link from 'next/link';
 
@@ -27,12 +29,16 @@ export default function StudyIndex(props) {
             <p className="case-study-card__excerpt text-body color-gray">
               Investigating the climate impacts of a mobile phone. Building a novel checkout feature to invite customers into the sustainability conversation.
             </p>
-            <a className="case-study-card__link bold text-body arrow-link color-blue pt_5 md:pt1_5" href="#">
-              <img 
-                className="mr_5"
-                alt=""
-                src="img/squiggle-arrow-right.svg"
-              />
+            <a className="case-study-card__link flex items-center text-body arrow-link color-blue pt_5 md:pt1_5" href="#">
+              <figure className="mr_5">
+                <Image 
+                  alt=""
+                  src="/img/squiggle-arrow-right.svg"
+                  width={20.22}
+                  height={14}
+                  layout="responsive"
+                />
+              </figure>
               View Case Study
             </a>
           </article>
@@ -49,12 +55,16 @@ export default function StudyIndex(props) {
             <p className="case-study-card__excerpt text-body color-gray">
             Luctus justo, in lectus bibendum. Ultrices sed enim, at sit egestas cursus cursus cursus. Vitae, viverra ut turpis congue sit. Cras nibh sed commodo, leo arcu amet. Cras.
             </p>
-            <a className="case-study-card__link bold text-body arrow-link color-blue pt_5 md:pt1_5" href="#">
-              <img 
-                className="mr_5"
-                alt=""
-                src="img/squiggle-arrow-right.svg"
-              />
+            <a className="case-study-card__link flex items-center text-body arrow-link color-blue pt_5 md:pt1_5" href="#">
+              <figure className="mr_5">
+                <Image 
+                  alt=""
+                  src="/img/squiggle-arrow-right.svg"
+                  width={20.22}
+                  height={14}
+                  layout="responsive"
+                />
+              </figure>
               View Case Study
             </a>
           </article>
@@ -71,12 +81,16 @@ export default function StudyIndex(props) {
             <p className="case-study-card__excerpt text-body color-gray">
               Investigating the climate impacts of a mobile phone. Building a novel checkout feature to invite customers into the sustainability conversation.
             </p>
-            <a className="case-study-card__link bold text-body arrow-link color-blue pt_5 md:pt1_5" href="#">
-              <img 
-                className="mr_5"
-                alt=""
-                src="img/squiggle-arrow-right.svg"
-              />
+            <a className="case-study-card__link flex items-center text-body arrow-link color-blue pt_5 md:pt1_5" href="#">
+              <figure className="mr_5">
+                <Image 
+                  alt=""
+                  src="/img/squiggle-arrow-right.svg"
+                  width={20.22}
+                  height={14}
+                  layout="responsive"
+                />
+              </figure>
               View Case Study
             </a>
           </article>
@@ -93,12 +107,16 @@ export default function StudyIndex(props) {
             <p className="case-study-card__excerpt text-body color-gray">
               Investigating the climate impacts of a mobile phone. Building a novel checkout feature to invite customers into the sustainability conversation.
             </p>
-            <a className="case-study-card__link bold text-body arrow-link color-blue pt_5 md:pt1_5" href="#">
-              <img 
-                className="mr_5"
-                alt=""
-                src="img/squiggle-arrow-right.svg"
-              />
+            <a className="case-study-card__link flex items-center text-body arrow-link color-blue pt_5 md:pt1_5" href="#">
+              <figure className="mr_5">
+                <Image 
+                  alt=""
+                  src="/img/squiggle-arrow-right.svg"
+                  width={20.22}
+                  height={14}
+                  layout="responsive"
+                />
+              </figure>
               View Case Study
             </a>
           </article>

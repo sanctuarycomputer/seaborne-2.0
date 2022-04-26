@@ -1,3 +1,6 @@
+import Link from 'next/link';
+import Image from 'next/image';
+
 export default function Home() {
   return (
     <main className="home">
@@ -6,23 +9,26 @@ export default function Home() {
         <div
           className="home__hero-section-text opacity-0 flex flex-col items-center text-center site-padding-x inner-content-max-width mxauto z-5"
         >
-          <p className="text-body color-gray pb2 sm:pb1_75 md:pb2_5">Hi, we're Seaborne</p>
+          <p className="text-body color-gray pb2 sm:pb1_75 md:pb2_5">Hi, we&rsquo;re Seaborne</p>
           <h1 className="text-header color-black pb3 sm:pb1_75 md:pb2_5 md:col-10">
-            We're your guides to sustainable business practices.
+            We&rsquo;re your guides to sustainable business practices.
           </h1>
-          <a
-            aria-label="Read more about how we work"
-            className="event-contact-us button--style-primary text-body flex items-center justify-center font-500"
-            href="/about"
-          >
-            How we work
-          </a>
+          <Link href="/about">
+            <a
+              aria-label="Read more about how we work"
+              className="event-contact-us button--style-primary text-body flex items-center justify-center font-500"
+            >
+              How we work
+            </a>
+          </Link>
         </div>
-        <div className="home__hero-section-illustration-container opacity-0 flex justify-center">
-          <img
-            className="hero-illustration w100 site-padding-x z-3 r0 l0 inner-content-max-width mxauto"
+        <div className="home__hero-section-illustration-container opacity-0 flex justify-center mxauto inner-content-max-width">
+          <Image
+            className="hero-illustration"
             alt="People doing outdoor activities in the mountains"
-            src="img/hero-illustration.svg"
+            src="/img/hero-illustration.svg"
+            width={1362}
+            height={765}
           />
         </div>
       </section>
@@ -31,11 +37,14 @@ export default function Home() {
       <section className="home__studies-section flex flex-col mt4 fade-in">
         <div className="text-center site-padding-x">
           <p className="text-body color-gray pb2 sm:pb1_75 md:pb1_5">Latest updates from our company</p>
-          <h2 className="text-header-sm mb1_5 md:mb5 lg:mb4">See how we're making a difference</h2>
-          <img 
+          <h2 className="text-header-sm mb1_5 md:mb5 lg:mb4">See how we&rsquo;re making a difference</h2>
+          <Image 
             className="separator-arrow"
             alt=""
-            src="img/squiggle-arrow.svg"
+            src="/img/squiggle-arrow.svg"
+            width={27}
+            height={51}
+            layout="fixed"
           />
         </div>
 
@@ -52,12 +61,16 @@ export default function Home() {
               <p className="case-study-card__excerpt text-body color-gray">
                 Investigating the climate impacts of a mobile phone. Building a novel checkout feature to invite customers into the sustainability conversation.
               </p>
-              <a className="case-study-card__link text-body arrow-link color-blue pt_5 md:pt1_5" href="#">
-                <img 
-                  className="mr_5"
-                  alt=""
-                  src="img/squiggle-arrow-right.svg"
-                />
+              <a className="case-study-card__link flex items-center text-body arrow-link color-blue pt_5 md:pt1_5" href="#">
+                <figure className="mr_5">
+                  <Image 
+                    alt=""
+                    src="/img/squiggle-arrow-right.svg"
+                    width={20.22}
+                    height={14}
+                    layout="responsive"
+                  />
+                </figure>
                 View Case Study
               </a>
             </article>
@@ -74,12 +87,16 @@ export default function Home() {
               <p className="case-study-card__excerpt text-body color-gray">
                 Luctus justo, in lectus bibendum. Ultrices sed enim, at sit egestas cursus cursus cursus. Vitae, viverra ut turpis congue sit. Cras nibh sed commodo, leo arcu amet. Cras.
               </p>
-              <a className="case-study-card__link text-body arrow-link color-blue pt_5 md:pt1_5" href="#">
-                <img 
-                  className="mr_5"
-                  alt=""
-                  src="img/squiggle-arrow-right.svg"
-                />
+              <a className="case-study-card__link flex items-center text-body arrow-link color-blue pt_5 md:pt1_5" href="#">
+                <figure className="mr_5">
+                  <Image 
+                    alt=""
+                    src="/img/squiggle-arrow-right.svg"
+                    width={20.22}
+                    height={14}
+                    layout="responsive"
+                  />
+                </figure>
                 View Case Study
               </a>
             </article>
@@ -102,33 +119,49 @@ export default function Home() {
 
             <div className="home__offerings-section-columns-container flex flex-wrap flex-row text-center md:col-10 mxauto">
               <div className="flex flex-col items-center text-body-sm">
-                <img className="mb1_5" src="img/suitcase-icon.svg" alt="Suitcase" />
+                <figure className="mb1_5">
+                  <Image
+                    src="/img/suitcase-icon.svg" 
+                    alt="Suitcase"
+                    width={72}
+                    height={72}
+                    layout="fixed"
+                  />
+                </figure>
                 <p className="bold color-black">Corporate Assessment</p>
                 <p className="color-gray">
-                  Calculate your business’s carbon footprint by understanding the ins and outs of
+                  Calculate your business&rsquo;s carbon footprint by understanding the ins and outs of
                   your business and operations.
                 </p>
               </div>
 
               <div className="flex flex-col items-center text-body-sm">
-                <img
-                  className="mb1_5"
-                  src="img/supply-chain-icon.svg"
-                  alt="Arrows rotating in a circle and surrounding a box"
-                />
+                <figure className="mb1_5">
+                  <Image
+                    src="/img/supply-chain-icon.svg"
+                    alt="Arrows rotating in a circle and surrounding a box"
+                    width={72}
+                    height={72}
+                    layout="fixed"
+                  />
+                </figure>
                 <p className="bold color-black">Supply Chain Assessment</p>
                 <p className="color-gray">
-                  Calculate your product’s carbon footprint. Know the impact of your supply chain
+                  Calculate your product&rsquo;s carbon footprint. Know the impact of your supply chain
                   and manufacturing processes.
                 </p>
               </div>
 
               <div className="flex flex-col items-center text-body-sm">
-                <img
-                  className="mb1_5"
-                  src="img/goal-setting-icon.svg"
-                  alt="Target with an arrow in the center"
-                />
+                <figure className="mb1_5">
+                  <Image
+                    src="/img/goal-setting-icon.svg"
+                    alt="Target with an arrow in the center"
+                    width={72}
+                    height={72}
+                    layout="fixed"
+                  />
+                </figure>
                 <p className="bold color-black">Goal Setting</p>
                 <p className="color-gray">
                   Set sustainability goals so that your organization builds sustainability into its
@@ -137,14 +170,18 @@ export default function Home() {
               </div>
 
               <div className="flex flex-col items-center text-body-sm">
-                <img
-                  className="mb1_5"
-                  src="img/web-icon.svg"
-                  alt="Browser with an arrow pointing towards it"
-                />
+                <figure className="mb1_5">
+                  <Image
+                    src="/img/web-icon.svg"
+                    alt="Browser with an arrow pointing towards it"
+                    width={72}
+                    height={72}
+                    layout="fixed"
+                  />
+                </figure>
                 <p className="bold color-black">Web Presence</p>
                 <p className="color-gray">
-                  Share the story of how your business became more sustainable. We’ll help shape
+                  Share the story of how your business became more sustainable. We&rsquo;ll help shape
                   your narrative and build your case study site.
                 </p>
               </div>
@@ -157,10 +194,13 @@ export default function Home() {
       <section className="home__pricing-section text-center md:col-10 lg:col-8 mxauto site-padding-x">
         <p className="text-body-light color-gray pb2 sm:pb1_75 md:pb1_5">We keep our pricing simple</p>
         <h2 className="home__pricing-section-heading text-header-sm mb4 md:mb3">All of our services are $90/hour to get you started on your journey</h2>
-        <img
+        <Image
           className="separator-arrow"
           alt=""
-          src="img/squiggle-arrow.svg"
+          src="/img/squiggle-arrow.svg"
+          width={27}
+          height={51}
+          layout="fixed"
         />
       </section>
 
@@ -176,10 +216,10 @@ export default function Home() {
             We are a team of strategists, designers, and technologists who help founders run more
             sustainable businesses. We want your business to do good to the environment.
           </p>
-          <div className="none md:flex flex-row">
-            <div className="flex items-start">
-              <img className="arrow pr2" src="img/arrow.svg" alt="" />
-            </div>
+          <div className="flex items-center">
+            <figure className="pr1_5">
+              <Image className="" src="/img/arrow.svg" alt="" width={42} height={42} layout="fixed" />
+            </figure>
             <p className="text-body-sm color-gray mt1">
               We are using our product experience to help founders launch responsible products and
               businesses.
@@ -187,10 +227,11 @@ export default function Home() {
           </div>
         </div>
         <div className="impact-section__image md:col-7 md:pl2_5 lg:col-6 lg:pl0">
-          <img
-            className="w100"
-            src="img/impact-illustration.svg"
+          <Image
+            src="/img/impact-illustration.svg"
             alt="Person holding a flower at the beach."
+            width={592}
+            height={569}
           />
         </div>
       </section>
@@ -200,24 +241,25 @@ export default function Home() {
         className="home__journey-section flex flex-col md:flex-row flex-col md:items-between justify-between items-center inner-content-max-width site-padding-x mxauto fade-in"
       >
         <div className="journey-section__image md:col-7 md:pr2_5 lg:col-6 lg:pr0">
-          <img
-            className="w100"
-            src="img/journey-illustration.svg"
+          <Image
+            src="/img/journey-illustration.svg"
             alt="Two people in nature."
+            width={592}
+            height={569}
           />
         </div>
         <div className="flex flex-col px1 md:px0 md:col-5 lg:col-4">
           <h2 className="text-subheader color-black mt2 mb1_5 lg:mb3">
-            We'll get you started on your journey.
+            We&rsquo;ll get you started on your journey.
           </h2>
           <p className="text-body color-gray mb1_5">
-            We use research-backed methods to create clear and informative insights. We don’t
+            We use research-backed methods to create clear and informative insights. We don&rsquo;t
             believe jargon or academic writing—we believe in taking action.
           </p>
-          <div className="none md:flex flex-row">
-            <div className="flex items-start">
-              <img className="arrow pr2" src="img/arrow.svg" alt="" />
-            </div>
+          <div className="flex items-center">
+            <figure className="pr1_5">
+              <Image className="" src="/img/arrow.svg" alt="" width={42} height={42} layout="fixed" />
+            </figure>
             <p className="text-body-sm color-gray mt1">
               We use a different type of communication to our clients to help them understand their
               impact.
