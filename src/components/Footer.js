@@ -27,7 +27,7 @@ export default function Footer() {
           <a
             aria-label="Visit Sanctuary Computer"
             href="http://www.sanctuary.computer"
-            className="color-gray"
+            className="color-gray text-footer"
             target="_blank"
             rel="noopener noreferrer"
           > Sanctuary Computer
