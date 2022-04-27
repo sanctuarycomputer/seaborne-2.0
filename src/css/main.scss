@@ -460,6 +460,12 @@ button {
       }
     }
 
+    &-title {
+      @include media('lg-up') {
+        width: 67.066667%;
+      }
+    }
+
     &-taglist {
       &-tag {
         border-radius: 0.625rem;
