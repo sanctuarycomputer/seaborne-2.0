@@ -89,10 +89,6 @@ button {
     animation-fade-in-down;
   border-bottom: 1px solid color('cloud');
 
-  @include media('md-up') {
-    padding-right: 1.125rem;
-  }
-
   &__logo-container {
     width: 5.25rem;
 
@@ -102,6 +98,8 @@ button {
   }
 
   &__nav--desktop {
+    padding-right: 1.125rem;
+
     a:not(:last-of-type) {
       margin-right: 2.4375rem;
     }
