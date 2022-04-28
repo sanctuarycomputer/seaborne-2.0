@@ -502,37 +502,6 @@ button {
       }
     }
 
-    // paragraph with images
-    p {
-      > img, > img + em {
-        @extend .col-12; // TODO: fix image width and centering
-
-        @include media('lg-up') {
-          width: 150%;
-          transform: translateX(-50%);
-          position: relative;
-          left: 50%;
-          display: block;
-        }
-      }
-
-      > img {
-        margin-top: 1.5rem;    
-
-        @include media('lg-up') {
-          margin-top: 3.625rem;
-        }
-      }
-
-      > img + em {
-        margin-top: 0.75rem;
-        margin-bottom: 2.5rem;
-        @extend .text-body-sm;
-        font-style: normal;
-        color: color('gray');
-      }
-    }
-
     h1, h2, h3 {
       color: color('black');
     }
@@ -562,18 +531,57 @@ button {
     }
 
     ul, ol {
-      list-style-position: inside;
+      // list-style-position: inside;
     }
 
     strong { @extend .bold; }
 
     p {
+      background:green;
+      
+      & + p {
+        background:hotpink;
+      }
+
       a {
         color: color('blue'); 
+        text-decoration: underline;
 
         &:hover {
           color: color('blue-darker'); 
+          text-decoration: none;
         }
+      }
+
+      // both images and captions
+      > img, > img + em {
+        @extend .col-12;
+
+        @include media('lg-up') {
+          width: 150%; // full width image on large viewports
+          position: relative;
+          left: 50%;
+          transform: translateX(-50%);
+          display: block;
+        }
+      }
+
+      // just image
+      > img {
+        // margin-top: 1.5rem;    
+
+        // @include media('lg-up') {
+        //   margin-top: 3.625rem;
+        // }
+      }
+
+      // just caption
+      > img + em {
+        margin-top: 0.75rem;
+        margin-bottom: 2.5rem;
+        @extend .text-body-sm;
+        font-style: normal;
+        color: color('gray');
       }
     }
 
@@ -581,13 +589,18 @@ button {
       margin-top: 4.5rem;
 
       // floating callout header
-      > h1 {
+      > h2 {
         padding-top: 0.75rem;
         padding-bottom: 1.875rem;
         padding-right: 2.25rem;
         margin-bottom: 0;
         float: left;
         width: 50%;
+
+        @include media('lg-up') {
+          width: 52%;
+          margin-left: calc(-8.3333333333% - 3rem);
+        }
       }
 
       > p {
