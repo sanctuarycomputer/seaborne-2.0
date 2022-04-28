@@ -7,8 +7,7 @@ type: Case Study
 ---
 # Investigating the climate impacts of a mobile phone. Building a novel checkout feature to invite customers into the sustainability conversation.
 
-We worked with a mobile phone company called Light Phone to dive head first into the environmental footprint of their flagship product, the Light Phone II. As a ‘lightweight LCA’ investigation, we started with processing all the material inputs of the phone, and translating this into component level impact categories. With climate impact as our main focus, we saved time and money by focusing on the areas of the device that we knew would have the greatest embedded emissions across different lifecycle phases. [Link](#)
-
+We worked with a mobile phone company called Light Phone to dive head first into the environmental footprint of their flagship product, the Light Phone II. As a ‘lightweight LCA’ investigation, we started with processing all the material inputs of the phone, and translating this into component level impact categories. With climate impact as our main focus, we saved time and money by focusing on the areas of the device that we knew would have the greatest embedded emissions across different lifecycle phases. [Link](#) <br><br>
 Armed with a conservative estimate of embedded emissions, we asked ourselves how we could go about taking action without purchasing low quality offsets that would be difficult to verify or track. We chose to partner with promising a soil carbon sequestration project only ~100 miles away from the Light Phone headquarters in NYC. Uniting all of our work together, we designed and deployed a simple one-click checkout option to allow customers to purchase best-in-class offsets directly from our provider, Hudson Carbon.
 
 ![Field of sunflowers](/img/studies/light-two/sunflower.jpg)
@@ -22,7 +21,7 @@ Armed with a conservative estimate of embedded emissions, we asked ourselves how
         <i>
             Click here to find out more.
         </i>
-        Click here to find out more. Praesent nibh egestas egestas blandit. Arcu quisque viverra dictumst amet in.
+        Praesent nibh egestas egestas blandit. Arcu quisque viverra dictumst amet in.
     </main>
     <a href="#">
         <img 
@@ -48,7 +47,7 @@ Vulputate gravida massa eu tincidunt. Pharetra, convallis mauris diam a. Et id t
         <i>
             Click here to find out more.
         </i>
-        Click here to find out more. Praesent nibh egestas egestas blandit. Arcu quisque viverra dictumst amet in.
+        Praesent nibh egestas egestas blandit. Arcu quisque viverra dictumst amet in.
     </main>
     <a href="#">
         <img 

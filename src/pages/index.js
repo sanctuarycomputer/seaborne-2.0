@@ -61,18 +61,20 @@ export default function Home() {
               <p className="case-study-card__excerpt text-body color-gray">
                 Investigating the climate impacts of a mobile phone. Building a novel checkout feature to invite customers into the sustainability conversation.
               </p>
-              <a className="case-study-card__link flex items-center text-body arrow-link color-blue pt_5 md:pt1_5" href="#">
-                <figure className="mr_5">
-                  <Image 
-                    alt=""
-                    src="/img/squiggle-arrow-right.svg"
-                    width={20.22}
-                    height={14}
-                    layout="responsive"
-                  />
-                </figure>
-                View Case Study
-              </a>
+              <Link href="/studies/light-two">
+                <a className="case-study-card__link flex items-center text-body arrow-link color-blue pt_5 md:pt1_5">
+                  <figure className="mr_5">
+                    <Image 
+                      alt=""
+                      src="/img/squiggle-arrow-right.svg"
+                      width={20.22}
+                      height={14}
+                      layout="responsive"
+                    />
+                  </figure>
+                  View Case Study
+                </a>
+              </Link>
             </article>
           </div>
           <div className="home__studies-section-case-study-card case-study-card flex flex-row justify-between mxauto">
@@ -87,18 +89,20 @@ export default function Home() {
               <p className="case-study-card__excerpt text-body color-gray">
                 Luctus justo, in lectus bibendum. Ultrices sed enim, at sit egestas cursus cursus cursus. Vitae, viverra ut turpis congue sit. Cras nibh sed commodo, leo arcu amet. Cras.
               </p>
-              <a className="case-study-card__link flex items-center text-body arrow-link color-blue pt_5 md:pt1_5" href="#">
-                <figure className="mr_5">
-                  <Image 
-                    alt=""
-                    src="/img/squiggle-arrow-right.svg"
-                    width={20.22}
-                    height={14}
-                    layout="responsive"
-                  />
-                </figure>
-                View Case Study
-              </a>
+              <Link href="/studies/sample">
+                <a className="case-study-card__link flex items-center text-body arrow-link color-blue pt_5 md:pt1_5">
+                  <figure className="mr_5">
+                    <Image 
+                      alt=""
+                      src="/img/squiggle-arrow-right.svg"
+                      width={20.22}
+                      height={14}
+                      layout="responsive"
+                    />
+                  </figure>
+                  View Case Study
+                </a>
+              </Link>
             </article>
           </div>
         </div>

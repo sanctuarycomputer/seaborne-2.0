@@ -443,6 +443,7 @@ button {
 // Case Study Article
 
 .article {
+  
   // Article > Header
   &__header {
     padding-top: 3.5rem;
@@ -456,6 +457,9 @@ button {
     @include media('lg-up') {
       padding-top: 3.8125rem;
       padding-bottom: 4.625rem;
+      // removing site-padding-x
+      padding-right: 0;
+      padding-left: 0;
     }
 
     &-image {
@@ -493,6 +497,12 @@ button {
       padding-bottom: 2.625rem;
     }
 
+    @include media('lg-up') {
+      // removing site-padding-x
+      padding-right: 0;
+      padding-left: 0;
+    }
+
     // global width of children
     > h1, > h2, > h3, > p, ol, ul, blockquote, code, hr {
       @extend .col-12;
@@ -515,19 +525,27 @@ button {
       }
       
       @include media('lg-up') {
-        margin-bottom: 6rem;
+        margin-bottom: 4.625rem;
       }
     }
     
     h2 {
       @extend .text-subheader-alt;
-      margin-bottom: 1.5rem;
+      margin-bottom: 0.75rem;
+
+      @include media('md-up') {
+        margin-bottom: 1.5rem;
+      }
     }
 
     > p, > ul, > ol {
       @extend .text-body-light;
       color: color('gray');
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
+
+      @include media('lg-up') {
+        margin-bottom: 4.625rem;
+      }
     }
 
     ul, ol {
@@ -537,10 +555,10 @@ button {
     strong { @extend .bold; }
 
     p {
-      background:green;
+      // border:green;
       
       & + p {
-        background:hotpink;
+        // border:hotpink;
       }
 
       a {
@@ -556,50 +574,72 @@ button {
       // both images and captions
       > img, > img + em {
         @extend .col-12;
+        display: block;
 
         @include media('lg-up') {
           width: 150%; // full width image on large viewports
           position: relative;
           left: 50%;
           transform: translateX(-50%);
-          display: block;
         }
       }
 
       // just image
       > img {
-        // margin-top: 1.5rem;    
+        @include media('md-up') {
+          margin-top: 1.5rem;
+        }
 
-        // @include media('lg-up') {
-        //   margin-top: 3.625rem;
-        // }
+        @include media('lg-up') {
+          // margin-top: 1.875rem;    
+          margin-top: 0;    
+        }
       }
 
       // just caption
       > img + em {
         margin-top: 0.75rem;
-        margin-bottom: 2.5rem;
         @extend .text-body-sm;
         font-style: normal;
         color: color('gray');
+
+        @include media('md-up') {
+          margin-bottom: 4.5rem;
+        }
+        
+        @include media('lg-up') {
+          margin-bottom: 0;
+        }
       }
     }
 
     blockquote {
-      margin-top: 4.5rem;
+      margin-top: 3.125rem;
+
+      @include media('lg-up') {
+        margin-top: 0;
+      }
 
       // floating callout header
       > h2 {
-        padding-top: 0.75rem;
-        padding-bottom: 1.875rem;
-        padding-right: 2.25rem;
-        margin-bottom: 0;
         float: left;
-        width: 50%;
+        width: calc(50% + 1.5rem);
+        // padding-top: 0.75rem;
+        // padding-bottom: 0.75rem;
+        padding-right: 1.5rem;
+        margin-bottom: 0;
+
+        @include media('md-up') {
+          width: 50%;
+          margin-bottom: 1.875rem;
+        }
 
         @include media('lg-up') {
           width: 52%;
           margin-left: calc(-8.3333333333% - 3rem);
+          padding-top: 0.75rem;
+          padding-bottom: 1.875rem;
+          padding-right: 2.25rem;
         }
       }
 
@@ -619,9 +659,24 @@ button {
     }
 
     .callout-card {
-      margin-bottom: 2.75rem;
+      margin-bottom: 1.5rem;
       padding: 1.5rem;
       width: 100%;
+
+      @include media('md-up') {
+        margin-bottom: 2.375rem;
+        margin-bottom: 2.75rem;  
+        padding: 2rem;
+      }
+      
+      @include media('md-up') {
+        margin-bottom: 2.375rem; 
+      }
+
+      @include media('lg-up') {
+        width: 66.6666666667%;
+        margin-bottom: 4.625rem;
+      }
 
       aside {
         @extend .text-eyebrow;
@@ -657,20 +712,6 @@ button {
           vertical-align: sub;
           margin-right: 0.5rem;
         }
-      }
-
-      @include media('md-up') {
-        margin-bottom: 2.75rem;  
-        padding: 2rem;
-      }
-      
-      @include media('md-up') {
-        margin-bottom: 2.375rem; 
-      }
-
-      @include media('lg-up') {
-        width: 66.6666666667%;
-        margin-bottom: 4.625rem;
       }
     }
   
