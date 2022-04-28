@@ -536,7 +536,7 @@ button {
       }
     }
 
-    > p, > ul, > ol {
+    > p, > ul, > ol, > blockquote {
       @extend .text-body-light;
       color: color('gray');
       margin-bottom: 1.5rem;
@@ -553,11 +553,6 @@ button {
     strong { @extend .bold; }
 
     p {
-      // border:green;
-      
-      & + p {
-        // border:hotpink;
-      }
 
       a {
         color: color('blue'); 
@@ -633,11 +628,12 @@ button {
         }
 
         @include media('lg-up') {
-          width: 52%;
+          width: 51%;
           margin-left: calc(-8.3333333333% - 3rem);
           padding-top: 0.75rem;
           padding-bottom: 1.875rem;
           padding-right: 2.25rem;
+          margin-bottom: 0;
         }
       }
 
@@ -645,7 +641,7 @@ button {
         width: 100%;
         @extend .text-body-light;
         color: color('gray');
-        margin-bottom: 2rem;
+        // margin-bottom: 2rem;
       }
     }
 
