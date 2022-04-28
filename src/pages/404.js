@@ -31,8 +31,6 @@ export default function Custom404() {
           Back to homepage
         </a>
       </Link>
-
-      
     </main>
   );
 }
