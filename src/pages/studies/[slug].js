@@ -34,7 +34,7 @@ export default function StudyShow(props) {
           </p>
         }
         
-        <h1 className="article__header-title col-12 lg:col-8 text-header mt1 mb3 md:mb4">
+        <h1 className="article__header-title col-12 lg:col-8 text-header mt1 mb2_25 md:mb3">
           {props.frontmatter.title}
         </h1>
 

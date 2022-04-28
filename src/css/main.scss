@@ -170,6 +170,10 @@ button {
         }
     }
   }
+
+  .text-footer {
+    color: rgba(color('gray'), 0.7);
+  }
   
   // Footer > Bottom Nav
   &__nav-section {
@@ -453,6 +457,12 @@ button {
         @include media('sm-down') {
           font-size: 0.75rem;
         }
+      }
+    }
+
+    &-title {
+      @include media('lg-up') {
+        width: 67.066667%;
       }
     }
 
