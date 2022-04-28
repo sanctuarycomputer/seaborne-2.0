@@ -14,10 +14,6 @@ export default function Custom404() {
           layout="responsive"
         />
       </figure>
-
-      {/* <p className="text-footer color-gray mt1_5 mb1">
-        Error 404 / Let's get you home.
-      </p> */}
       
       <h1 className="text-subheader-alt color-black mt3_5 md:mb_5 mb1">
         Sorry, we couldn&rsquo;t find what you were looking for.
