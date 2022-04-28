@@ -475,6 +475,8 @@ button {
     }
 
     &-taglist {
+      gap: 0.5rem;
+      
       &-tag {
         border-radius: 0.625rem;
         padding: 0.625rem;
@@ -510,13 +512,22 @@ button {
       }
     }
 
-    h1, h2, h3 {
-      color: color('black');
+    // body copy
+    > p, > ul, > ol, > blockquote {
+      @extend .text-body-light;
+      color: color('gray');
+      margin-bottom: 1.5rem;
+
+      @include media('lg-up') {
+        margin-bottom: 4.625rem;
+      }
     }
 
+    // headings
     h1 {
       @extend .text-subheader-alt;
       margin-bottom: 1.5rem;
+      color: color('black');
 
       @include media('md-up') {
         margin-bottom: 4rem;
@@ -530,30 +541,25 @@ button {
     h2 {
       @extend .text-subheader-alt;
       margin-bottom: 0.75rem;
+      color: color('black');
+
+      @include media('md-up') {
+        margin-bottom: 1.5rem;
+      }
+    }
+    
+    h3 {
+      @extend .text-subheader;
+      margin-bottom: 0.75rem;
+      color: color('black');
 
       @include media('md-up') {
         margin-bottom: 1.5rem;
       }
     }
 
-    > p, > ul, > ol, > blockquote {
-      @extend .text-body-light;
-      color: color('gray');
-      margin-bottom: 1.5rem;
-
-      @include media('lg-up') {
-        margin-bottom: 4.625rem;
-      }
-    }
-
-    ul, ol {
-      // list-style-position: inside;
-    }
-
-    strong { @extend .bold; }
-
     p {
-
+      // internal links
       a {
         color: color('blue'); 
         text-decoration: underline;
@@ -577,7 +583,7 @@ button {
         }
       }
 
-      // just image
+      // image
       > img {
         @include media('md-up') {
           margin-top: 1.5rem;
@@ -589,7 +595,7 @@ button {
         }
       }
 
-      // just caption
+      // caption
       > img + em {
         margin-top: 0.75rem;
         @extend .text-body-sm;
@@ -604,8 +610,15 @@ button {
           margin-bottom: 0;
         }
       }
+
+      & + ul, & + ol {
+        @include media('lg-up') {
+          margin-top: -3.125rem; // reducing margin between paragraphs & sibling lists
+        }
+      }
     }
 
+    // paragraph with floating callout header
     blockquote {
       margin-top: 3.125rem;
 
@@ -617,8 +630,6 @@ button {
       > h2 {
         float: left;
         width: calc(50% + 1.5rem);
-        // padding-top: 0.75rem;
-        // padding-bottom: 0.75rem;
         padding-right: 1.5rem;
         margin-bottom: 0;
 
@@ -636,20 +647,6 @@ button {
           margin-bottom: 0;
         }
       }
-
-      > p {
-        width: 100%;
-        @extend .text-body-light;
-        color: color('gray');
-        // margin-bottom: 2rem;
-      }
-    }
-
-    hr {
-      background-color: color('cloud');
-      margin: 0 0 2rem;
-      border: 0;
-      height: 2px;
     }
 
     .callout-card {
@@ -708,6 +705,17 @@ button {
         }
       }
     }
+
+    // extras
+
+    hr {
+      background-color: color('cloud');
+      margin: 0 0 2rem;
+      border: 0;
+      height: 2px;
+    }
+
+    strong { @extend .bold; }
   
   }
 }
