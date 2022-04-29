@@ -13,7 +13,7 @@ export default function StudyShow(props) {
     <main className="article">
       <Head>
         {/* metadata */}
-        <title key="title">{props.frontmatter.title}</title>
+        <title key="title">{props.frontmatter.title} &mdash; Seaborne</title>
         <meta
           name="description"
           content={props.frontmatter.summary}
@@ -44,6 +44,7 @@ export default function StudyShow(props) {
         <meta name="twitter:image" content={props.frontmatter.hero_image} key="twitter__image" />
       </Head>
 
+      {/* Article Header */}
       <header className="article__header site-padding-x inner-content-max-width flex flex-col items-center mxauto">
         <figure className="col-12">
           {props.frontmatter.hero_image &&
@@ -82,6 +83,7 @@ export default function StudyShow(props) {
         }
       </header>
       
+      {/* Article Body */}
       <article className="article__body site-padding-x inner-content-max-width mxauto flex flex-col items-center">
       {/* <article className="article__body site-padding-x inner-content-max-width flex flex-col items-center mxauto"> */}
         <ReactMarkdown rehypePlugins={[rehypeRaw]}>

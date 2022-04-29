@@ -10,6 +10,13 @@ export default function StudyIndex(props) {
 
   return (
     <main className="study-index">
+      {/* Page Metadata */}
+      <Head>
+        <title key="title">Seaborne &mdash; Studies &amp; Writing</title>
+        <meta property="og:title" content="Seaborne — Studies &amp; Writing" key="og__title" />
+        <meta name="twitter:title" content="Seaborne — Studies &amp; Writing" key="twitter__title" />
+      </Head>
+
       <section className="study-index__heading pt5 pb4">
         <h1 className="text-header-sm text-center">Case Studies</h1>
       </section>
