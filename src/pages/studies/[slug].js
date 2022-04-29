@@ -12,23 +12,36 @@ export default function StudyShow(props) {
   return (
     <main className="article">
       <Head>
-        <title>{props.frontmatter.title}</title>
+        {/* metadata */}
+        <title key="title">{props.frontmatter.title}</title>
         <meta
           name="description"
           content={props.frontmatter.summary}
+          key="meta__desc"
         />
-        <meta property="og:title" content={props.frontmatter.title} />
+
+        {/* OG data */}
+        <meta property="og:title" content={props.frontmatter.title} key="og__title" />
         <meta
           property="og:description"
           content={props.frontmatter.summary}
+          key="og__desc"
         />
-        <meta property="og:image" content={props.frontmatter.hero_image} />
-        <meta name="twitter:title" content={props.frontmatter.title} />
+        <meta property="og:image" content={props.frontmatter.hero_image} key="og__image" />
+        <meta
+          property="og:site_name"
+          content={props.frontmatter.title}
+          key="og__name"
+        />
+
+        {/* twitter data */}
+        <meta name="twitter:title" content={props.frontmatter.title} key="twitter__title" />
         <meta
           name="twitter:description"
           content={props.frontmatter.summary}
+          key="twitter__desc"
         />
-        <meta name="twitter:image" content={props.frontmatter.hero_image} />
+        <meta name="twitter:image" content={props.frontmatter.hero_image} key="twitter__image" />
       </Head>
 
       <header className="article__header site-padding-x inner-content-max-width flex flex-col items-center mxauto">
