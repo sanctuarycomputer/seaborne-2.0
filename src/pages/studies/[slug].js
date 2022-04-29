@@ -85,7 +85,6 @@ export default function StudyShow(props) {
       
       {/* Article Body */}
       <article className="article__body site-padding-x inner-content-max-width mxauto flex flex-col items-center">
-      {/* <article className="article__body site-padding-x inner-content-max-width flex flex-col items-center mxauto"> */}
         <ReactMarkdown rehypePlugins={[rehypeRaw]}>
           {props.markdownBody}
         </ReactMarkdown>

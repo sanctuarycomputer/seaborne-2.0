@@ -1,6 +1,7 @@
 import matter from 'gray-matter';
 import Image from 'next/image';
 import Link from 'next/link';
+import Head from 'next/head';
 
 export default function StudyIndex(props) {
   // Listing all posts under content/studies - Kept this original code that generates a dynamic posts list just in case we want to go back to this in the future.
