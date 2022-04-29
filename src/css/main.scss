@@ -632,10 +632,12 @@ button {
         width: calc(50% + 1.5rem);
         padding-right: 1.5rem;
         margin-bottom: 0;
+        transform: translateY(-0.25rem);
 
         @include media('md-up') {
           width: 50%;
           margin-bottom: 1.875rem;
+          transform: translateY(0.75rem);
         }
 
         @include media('lg-up') {
@@ -645,6 +647,7 @@ button {
           padding-bottom: 1.875rem;
           padding-right: 2.25rem;
           margin-bottom: 0;
+          transform: translateY(0);
         }
       }
     }

@@ -24,19 +24,21 @@ This is a pagraph — cillum nisi aliqua officia proident dolor esse sint ut non
 3. Ordered list item
 4. Ordered list item
 
----
-
 ![Field of sunflowers](/img/studies/light-two/sunflower.jpg)
 *Image with caption — `<em>` under the image*
 
+Quis deserunt ut irure irure dolore exercitation ipsum commodo Lorem Lorem enim. Qui qui sint deserunt nisi tempor Lorem proident. Laboris eiusmod aute nostrud nostrud duis eu sunt cupidatat ut pariatur consequat. Minim aliquip irure mollit voluptate adipisicing qui mollit labore sint anim velit sit sint. Fugiat est in fugiat occaecat voluptate ipsum Lorem elit ea ad ea elit pariatur labore. Elit cillum adipisicing voluptate esse sit. Laborum quis amet veniam minim cillum veniam in. Esse ut tempor nisi et eiusmod tempor ex. Laboris ullamco officia irure aute eu consectetur. Irure elit pariatur culpa eu culpa minim do non laboris mollit et incididunt aliqua exercitation. Fugiat adipisicing proident elit consectetur dolore est ut et fugiat non aliquip occaecat mollit ad. Non dolore do et sunt nulla cillum incididunt commodo incididunt esse.
+
+---
+
 <div className="callout-card">
     <aside>
-        eyebrow — .callout-card aside
+        &lt;aside&gt; eyebrow
     </aside>
     <main>
-        This is a callout card. 
+        &lt;main&gt; This is a callout card. 
         <i>
-            Highlight in black with i 
+            Highlight in black with &lt;i&gt;
         </i>
     </main>
     <a href="#">
@@ -47,7 +49,3 @@ This is a pagraph — cillum nisi aliqua officia proident dolor esse sint ut non
             CTA Linkout
     </a>
 </div>
-
-![Field of sunflowers](/img/studies/light-two/sunflower.jpg)
-
-Quis deserunt ut irure irure dolore exercitation ipsum commodo Lorem Lorem enim. Qui qui sint deserunt nisi tempor Lorem proident. Laboris eiusmod aute nostrud nostrud duis eu sunt cupidatat ut pariatur consequat. Minim aliquip irure mollit voluptate adipisicing qui mollit labore sint anim velit sit sint. Fugiat est in fugiat occaecat voluptate ipsum Lorem elit ea ad ea elit pariatur labore. Elit cillum adipisicing voluptate esse sit. Laborum quis amet veniam minim cillum veniam in. Esse ut tempor nisi et eiusmod tempor ex. Laboris ullamco officia irure aute eu consectetur. Irure elit pariatur culpa eu culpa minim do non laboris mollit et incididunt aliqua exercitation. Fugiat adipisicing proident elit consectetur dolore est ut et fugiat non aliquip occaecat mollit ad. Non dolore do et sunt nulla cillum incididunt commodo incididunt esse.
