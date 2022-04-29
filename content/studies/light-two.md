@@ -4,6 +4,7 @@ tags: Lightweight LCA, Consumer Education, Meaningful Offsets
 hero_image: /img/studies/light-two/hero.jpg
 hero_image_caption: This is a caption.
 type: Case Study
+summary: Investigating the climate impacts of a mobile phone. Building a novel checkout feature to invite customers into the sustainability conversation.
 ---
 # Investigating the climate impacts of a mobile phone. Building a novel checkout feature to invite customers into the sustainability conversation.
 

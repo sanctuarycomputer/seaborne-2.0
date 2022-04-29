@@ -2,6 +2,7 @@ import matter from 'gray-matter';
 import ReactMarkdown from 'react-markdown';
 import Image from 'next/image';
 import rehypeRaw from 'rehype-raw'; // for writing HTML inside markdown posts
+import Head from 'next/head';
 
 export default function StudyShow(props) {
   // splitting tags string into an array
@@ -10,6 +11,26 @@ export default function StudyShow(props) {
 
   return (
     <main className="article">
+      <Head>
+        <title>{props.frontmatter.title}</title>
+        <meta
+          name="description"
+          content={props.frontmatter.summary}
+        />
+        <meta property="og:title" content={props.frontmatter.title} />
+        <meta
+          property="og:description"
+          content={props.frontmatter.summary}
+        />
+        <meta property="og:image" content={props.frontmatter.hero_image} />
+        <meta name="twitter:title" content={props.frontmatter.title} />
+        <meta
+          name="twitter:description"
+          content={props.frontmatter.summary}
+        />
+        <meta name="twitter:image" content={props.frontmatter.hero_image} />
+      </Head>
+
       <header className="article__header site-padding-x inner-content-max-width flex flex-col items-center mxauto">
         <figure className="col-12">
           {props.frontmatter.hero_image &&
