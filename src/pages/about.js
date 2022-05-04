@@ -1,8 +1,25 @@
 import Image from 'next/image';
+import Head from 'next/head';
 
 export default function About() {
   return (
     <main className="about">
+      {/* Page Metadata */}
+      <Head>
+        <title key="title">Seaborne &mdash; How we work</title>
+        <meta
+          name="description"
+          content="We work with companies that want to take meaningful action on contemporary social and environmental issues, guiding them through each step of the way from strategy to storytelling."
+          key="meta__desc"
+        />
+        <meta property="og:title" content="Seaborne — How we work" key="og__title" />
+        <meta name="twitter:title" content="Seaborne — How we work" key="twitter__title" />
+        <meta
+          name="twitter:description"
+          content="We work with companies that want to take meaningful action on contemporary social and environmental issues, guiding them through each step of the way from strategy to storytelling. "
+          key="twitter__desc"
+        />
+      </Head>
 
       {/* Hero section */}
       <section className="about__hero-section site-padding-x flex pb4_5 md:pb8 lg:pb10 inner-content-max-width mxauto">

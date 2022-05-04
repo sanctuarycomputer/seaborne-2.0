@@ -89,10 +89,6 @@ button {
     animation-fade-in-down;
   border-bottom: 1px solid color('cloud');
 
-  @include media('md-up') {
-    padding-right: 1.125rem;
-  }
-
   &__logo-container {
     width: 5.25rem;
 
@@ -102,6 +98,8 @@ button {
   }
 
   &__nav--desktop {
+    padding-right: 1.125rem;
+
     a:not(:last-of-type) {
       margin-right: 2.4375rem;
     }
@@ -432,11 +430,18 @@ button {
 // Callout card (about & blog post page)
 .callout-card {
   border: 1px solid color('cloud');
+  border-radius: 1.25rem;
+
+  .arrow-link img {
+    width: 1.25rem;
+    vertical-align: sub;
+  }
 }
 
 // Case Study Article
 
 .article {
+  
   // Article > Header
   &__header {
     padding-top: 3.5rem;
@@ -450,6 +455,9 @@ button {
     @include media('lg-up') {
       padding-top: 3.8125rem;
       padding-bottom: 4.625rem;
+      // removing site-padding-x
+      padding-right: 0;
+      padding-left: 0;
     }
 
     &-image {
@@ -467,6 +475,8 @@ button {
     }
 
     &-taglist {
+      gap: 0.5rem;
+      
       &-tag {
         border-radius: 0.625rem;
         padding: 0.625rem;
@@ -477,5 +487,244 @@ button {
         }
       }
     }
+  }
+
+  // Article > Body
+  &__body {
+    padding-bottom: 1rem;
+
+    @include media('md-up') {
+      padding-bottom: 2.625rem;
+    }
+
+    @include media('lg-up') {
+      // removing site-padding-x
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    // global width of children
+    > h1, > h2, > h3, > p, ol, ul, blockquote, code, hr {
+      @extend .col-12;
+
+      @include media('lg-up') {
+        width: 66.6666666667%;
+      }
+    }
+
+    // body copy
+    > p, > ul, > ol, > blockquote {
+      @extend .text-body-light;
+      color: color('gray');
+      margin-bottom: 1.5rem;
+
+      @include media('lg-up') {
+        margin-bottom: 4.625rem;
+      }
+    }
+
+    // headings
+    h1 {
+      @extend .text-subheader-alt;
+      margin-bottom: 1.5rem;
+      color: color('black');
+
+      @include media('md-up') {
+        margin-bottom: 4rem;
+      }
+      
+      @include media('lg-up') {
+        margin-bottom: 4.625rem;
+      }
+    }
+    
+    h2 {
+      @extend .text-subheader-alt;
+      margin-bottom: 0.75rem;
+      color: color('black');
+
+      @include media('md-up') {
+        margin-bottom: 1.5rem;
+      }
+    }
+    
+    h3 {
+      @extend .text-subheader;
+      margin-bottom: 0.75rem;
+      color: color('black');
+
+      @include media('md-up') {
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    p {
+      // internal links
+      a {
+        color: color('blue'); 
+        text-decoration: underline;
+
+        &:hover {
+          color: color('blue-darker'); 
+          text-decoration: none;
+        }
+      }
+
+      // both images and captions
+      > img, > img + em {
+        @extend .col-12;
+        display: block;
+
+        @include media('lg-up') {
+          width: 150%; // full width image on large viewports
+          position: relative;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+
+      // image
+      > img {
+        @include media('md-up') {
+          margin-top: 1.5rem;
+        }
+
+        @include media('lg-up') {
+          // margin-top: 1.875rem;    
+          margin-top: 0;    
+        }
+      }
+
+      // caption
+      > img + em {
+        margin-top: 0.75rem;
+        @extend .text-body-sm;
+        font-style: normal;
+        color: color('gray');
+
+        @include media('md-up') {
+          margin-bottom: 4.5rem;
+        }
+        
+        @include media('lg-up') {
+          margin-bottom: 0;
+        }
+      }
+
+      & + ul, & + ol {
+        @include media('lg-up') {
+          margin-top: -3.125rem; // reducing margin between paragraphs & sibling lists
+        }
+      }
+    }
+
+    // paragraph with floating callout header
+    blockquote {
+      margin-top: 3.125rem;
+
+      @include media('lg-up') {
+        margin-top: 0;
+      }
+
+      // floating callout header
+      > h2 {
+        float: left;
+        width: calc(50% + 1.5rem);
+        padding-right: 1.5rem;
+        margin-bottom: 0;
+        transform: translateY(-0.25rem);
+
+        @include media('md-up') {
+          width: 50%;
+          margin-bottom: 1.875rem;
+          transform: translateY(0.75rem);
+        }
+
+        @include media('lg-up') {
+          width: 51%;
+          margin-left: calc(-8.3333333333% - 3rem);
+          padding-top: 0.75rem;
+          padding-bottom: 1.875rem;
+          padding-right: 2.25rem;
+          margin-bottom: 0;
+          transform: translateY(0);
+        }
+      }
+    }
+
+    .callout-card {
+      margin-bottom: 2.5rem;
+      padding: 1.5rem;
+      width: 100%;
+
+      @include media('md-up') {
+        margin-bottom: 2.375rem;
+        padding: 2rem;
+      }
+
+      @include media('lg-up') {
+        width: 66.6666666667%;
+        margin-bottom: 4.625rem;
+      }
+
+      aside {
+        @extend .text-eyebrow;
+        margin-bottom: 0.25rem;
+        color: color('gray');
+
+        @include media('md-up') {
+          margin-bottom: 0.5rem;
+        }
+      }
+
+      main {
+        @extend .text-body-light;
+        margin-bottom: 1.5rem;
+        color: color('gray');
+
+        i {
+          color: color('black');
+        }
+      }
+
+      a {
+        @extend .text-body-sm;
+        color: color('blue');
+        padding-top: 0.5rem;
+        
+        @include media('md-up') {
+          padding-top: 1.5rem;
+        }
+
+        img {
+          width: 1.25rem;
+          vertical-align: sub;
+          margin-right: 0.5rem;
+        }
+      }
+    }
+
+    // extras
+
+    hr {
+      background-color: color('cloud');
+      margin: 0 0 2rem;
+      border: 0;
+      height: 2px;
+    }
+
+    ul, ol {
+      margin-left: 2rem;
+
+      @include media('md-up') {
+        margin-left: 2.75rem;
+      }
+      
+      @include media('lg-up') {
+        margin-left: 2.5rem;
+      }
+    }
+
+    strong { @extend .bold; }
   }
 }

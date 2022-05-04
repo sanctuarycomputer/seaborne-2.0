@@ -22,7 +22,7 @@ export default function Header() {
     <header
       className="header z-overlay relative"
     >
-      <div className="header__nav-container--desktop mxauto flex justify-between items-center flex-row pt1 px1_5 py1_5">
+      <div className="header__nav-container--desktop mxauto flex justify-between items-center flex-row p1_5 md:pr0">
         <Link href="/">
           <a 
             rel="noopener noreferrer"
@@ -66,13 +66,13 @@ export default function Header() {
           className={`none header__nav--mobile flex-col text-header-sm transition-longer ${isMobileNavActive ? "active" : ""}`}
         >
           <Link href="/about">
-            <a className="color-gray" aria-label="Our Process">How we work</a>
+            <a onClick={handleMobileNavToggle} className="color-gray" aria-label="Our Process">How we work</a>
           </Link>
           <Link href="/studies">
-            <a className="color-gray" aria-label="Case Studies and Writing">Studies &amp; Writing</a>
+            <a onClick={handleMobileNavToggle} className="color-gray" aria-label="Case Studies and Writing">Studies &amp; Writing</a>
           </Link>
           <Link href="mailto:hello@seaborne.nyc">
-            <a
+            <a onClick={handleMobileNavToggle} 
               aria-label="Get in touch with Seaborne"
               className="color-blue"
             >

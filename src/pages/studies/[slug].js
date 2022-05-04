@@ -1,6 +1,8 @@
 import matter from 'gray-matter';
 import ReactMarkdown from 'react-markdown';
 import Image from 'next/image';
+import rehypeRaw from 'rehype-raw'; // for writing HTML inside markdown posts
+import Head from 'next/head';
 
 export default function StudyShow(props) {
   // splitting tags string into an array
@@ -9,6 +11,40 @@ export default function StudyShow(props) {
 
   return (
     <main className="article">
+      <Head>
+        {/* metadata */}
+        <title key="title">{props.frontmatter.title} &mdash; Seaborne</title>
+        <meta
+          name="description"
+          content={props.frontmatter.summary}
+          key="meta__desc"
+        />
+
+        {/* OG data */}
+        <meta property="og:title" content={props.frontmatter.title} key="og__title" />
+        <meta
+          property="og:description"
+          content={props.frontmatter.summary}
+          key="og__desc"
+        />
+        <meta property="og:image" content={props.frontmatter.hero_image} key="og__image" />
+        <meta
+          property="og:site_name"
+          content={props.frontmatter.title}
+          key="og__name"
+        />
+
+        {/* twitter data */}
+        <meta name="twitter:title" content={props.frontmatter.title} key="twitter__title" />
+        <meta
+          name="twitter:description"
+          content={props.frontmatter.summary}
+          key="twitter__desc"
+        />
+        <meta name="twitter:image" content={props.frontmatter.hero_image} key="twitter__image" />
+      </Head>
+
+      {/* Article Header */}
       <header className="article__header site-padding-x inner-content-max-width flex flex-col items-center mxauto">
         <figure className="col-12">
           {props.frontmatter.hero_image &&
@@ -39,16 +75,17 @@ export default function StudyShow(props) {
         </h1>
 
         {props.frontmatter.tags &&
-          <ul className="article__header-taglist col-12 lg:col-8 list-style-none">
+          <ul className="article__header-taglist inline-flex flex-wrap col-12 lg:col-8 list-style-none">
             {tagArray.map((tag) => 
-              <li className="article__header-taglist-tag inline-block text-eyebrow bg-color-sky color-blue mr_5 mb_5" key={tag}>{tag}</li>
+              <li className="article__header-taglist-tag text-eyebrow bg-color-sky color-blue" key={tag}>{tag}</li>
             )}
           </ul>
         }
       </header>
       
-      <article className="article__body">
-        <ReactMarkdown>
+      {/* Article Body */}
+      <article className="article__body site-padding-x inner-content-max-width mxauto flex flex-col items-center">
+        <ReactMarkdown rehypePlugins={[rehypeRaw]}>
           {props.markdownBody}
         </ReactMarkdown>
       </article>
