@@ -653,18 +653,13 @@ button {
     }
 
     .callout-card {
-      margin-bottom: 1.5rem;
+      margin-bottom: 2.5rem;
       padding: 1.5rem;
       width: 100%;
 
       @include media('md-up') {
         margin-bottom: 2.375rem;
-        margin-bottom: 2.75rem;  
         padding: 2rem;
-      }
-      
-      @include media('md-up') {
-        margin-bottom: 2.375rem; 
       }
 
       @include media('lg-up') {
@@ -716,6 +711,18 @@ button {
       margin: 0 0 2rem;
       border: 0;
       height: 2px;
+    }
+
+    ul, ol {
+      margin-left: 2rem;
+
+      @include media('md-up') {
+        margin-left: 2.75rem;
+      }
+      
+      @include media('lg-up') {
+        margin-left: 2.5rem;
+      }
     }
 
     strong { @extend .bold; }
