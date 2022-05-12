@@ -616,7 +616,50 @@ button {
           margin-top: -3.125rem; // reducing margin between paragraphs & sibling lists
         }
       }
+
+      
+
+      &.two-images {
+
+        @include media('md-up') {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: auto;
+          grid-column-gap: 2.25rem;
+
+          > img {
+            grid-row: 1;
+          }
+
+          > img + em {
+            grid-row: 2;
+          }
+        }
+        
+        @include media('lg-up') {
+            grid-column-gap: 3rem;
+            width: 100%;
+            // position: relative;
+            // left: 50%;
+            // transform: translateX(-50%);
+
+          
+            > img, > img + em {
+              width: 100%;
+              // position: inherit;
+              // left: initial;
+              // transform: none;
+            }
+        }
+
+        > em:nth-of-type(1) {
+          @include media('sm-down') {
+            margin-bottom: 1.5rem;
+          }
+        }
+      }
     }
+
 
     // paragraph with floating callout header
     blockquote {

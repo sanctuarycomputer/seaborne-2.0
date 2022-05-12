@@ -1,8 +1,32 @@
 import matter from 'gray-matter';
 import ReactMarkdown from 'react-markdown';
 import Image from 'next/image';
-import rehypeRaw from 'rehype-raw'; // for writing HTML inside markdown posts
+// import rehypeRaw from 'rehype-raw'; // for writing HTML inside markdown posts
 import Head from 'next/head';
+
+// import {read} from 'to-vfile'
+import {unified} from 'unified'
+import remarkParse from 'remark-parse'
+import remarkRehype from 'remark-rehype'
+import rehypeRaw from 'rehype-raw'
+// import rehypeDocument from 'rehype-document'
+import rehypeFormat from 'rehype-format'
+import rehypeStringify from 'rehype-stringify'
+
+main()
+
+async function main() {
+  const file = await unified()
+    .use(remarkParse)
+    .use(remarkRehype, {allowDangerousHtml: true})
+    .use(rehypeRaw)
+    // .use(rehypeDocument, {title: '🙌'})
+    .use(rehypeFormat)
+    .use(rehypeStringify)
+    // .process(await read('example.md'))
+
+  // console.log(String(file))
+}
 
 export default function StudyShow(props) {
   // splitting tags string into an array
