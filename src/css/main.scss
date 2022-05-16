@@ -652,6 +652,55 @@ button {
       }
     }
 
+    // side-by-side columns
+    .cols {      
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+
+      @include media('md-up') {
+        flex-direction: row;
+        gap: 3rem;
+      }
+
+      @include media('lg-up') {
+        width: 100%; // full width image on large viewports
+        margin-bottom: 4.625rem;
+      }
+
+      figure {
+        width: 100%;
+
+        @include media('md-up') {
+          width: 50%;
+        }
+
+        img {
+          display: block;
+          width: 100%;
+        }
+
+        figcaption {
+          display: block;
+          @extend .text-body-sm;
+          font-style: normal;
+          color: color('gray');
+          margin-top: 0.75rem;
+        }
+      }
+
+      p {
+        @extend .text-body-light;
+        color: color('gray');
+
+        @include media('md-up') {
+          width: 50%; // half-width paragraph next to image
+        }
+      }
+    }
+
+    // Callout card
     .callout-card {
       margin-bottom: 2.5rem;
       padding: 1.5rem;
