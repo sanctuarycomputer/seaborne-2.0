@@ -24,65 +24,101 @@ This is a pagraph — cillum nisi aliqua officia proident dolor esse sint ut non
 3. Ordered list item
 4. Ordered list item
 
-### One Image
+### One Image — simple markdown
 
 ![Field of sunflowers](/img/studies/light-two/sunflower.jpg)
 *Image with caption — `<em>` under the image*
 
-### Two Images — p.two-images
+### Side-by-side modules
+div.cols > figure > img + figcaption
 
-<p className="two-images">
-    <img 
-        src="/img/studies/light-two/sunflower.jpg" 
-        alt="Field of sunflowers" />
-    <em>
-        &uarr; &lt;img&gt; &rarr; &lt;em&gt;
-    </em>
-    <img 
-        src="/img/studies/light-two/sunflower.jpg" 
-        alt="Field of sunflowers" />
-    <em>
-        &uarr; &lt;img&gt; &rarr; &lt;em&gt;
-    </em>
-</p>
+<div class="cols">
+    <figure>
+        <img src="/img/studies/light-two/sunflower.jpg" alt="">
+        <figcaption>div.cols</figcaption>
+    </figure>
+    <figure>
+        <img src="/img/studies/light-two/phone-square.jpg" alt="">
+        <figcaption>div.cols</figcaption>
+    </figure>
+</div>
 
-### Top align
+<div class="cols items-center">
+    <figure>
+        <img src="/img/studies/light-two/sunflower.jpg" alt="">
+        <figcaption>div.cols.items-center</figcaption>
+    </figure>
+    <figure>
+        <img src="/img/studies/light-two/phone-square.jpg" alt="">
+        <figcaption>div.cols.items-center</figcaption>
+    </figure>
+</div>
 
-<p className="two-images">
-    <img 
-        src="/img/journey-illustration.svg" 
-        alt="Field of sunflowers" />
-    <em>
-        &uarr; &lt;img&gt; &rarr; &lt;em&gt;
-    </em>
-    <img 
-        src="/img/studies/light-two/sunflower.jpg" 
-        alt="Field of sunflowers" />
-    <em>
-        &uarr; &lt;img&gt; &rarr; &lt;em&gt;
-    </em>
-</p>
+<div class="cols items-end">
+    <figure>
+        <img src="/img/studies/light-two/sunflower.jpg" alt="">
+        <figcaption>div.cols.items-end</figcaption>
+    </figure>
+    <figure>
+        <img src="/img/studies/light-two/phone-square.jpg" alt="">
+        <figcaption>div.cols.items-end</figcaption>
+    </figure>
+</div>
 
-### Three Images — p.two-images
+<div class="cols">
+    <figure>
+        <img src="/img/studies/light-two/sunflower.jpg" alt="">
+        <figcaption>div with 3 images</figcaption>
+    </figure>
+    <figure>
+        <img src="/img/studies/light-two/phone-square.jpg" alt="">
+        <figcaption>div with 3 images</figcaption>
+    </figure>
+    <figure>
+        <img src="/img/studies/light-two/phone-square.jpg" alt="">
+        <figcaption>div with 3 images</figcaption>
+    </figure>
+</div>
 
-<p className="two-images">
-    <img 
-        src="/img/studies/light-two/sunflower.jpg" 
-        alt="Field of sunflowers" />
-    <em>
-        &uarr; &lt;img&gt; &rarr; &lt;em&gt;
-    </em>
-    <img 
-        src="/img/studies/light-two/sunflower.jpg" 
-        alt="Field of sunflowers" />
-    <em>
-        &uarr; &lt;img&gt; &rarr; &lt;em&gt;
-    </em>
-</p>
+<div class="cols">
+    <figure>
+        <img src="/img/studies/light-two/sunflower.jpg" alt="">
+        <figcaption>div > figure + p</figcaption>
+    </figure>
+    <p>
+        Lorem, ipsum dolor sit <em>amet</em> consectetur adipisicing elit. Molestias cumque cupiditate repellat iusto nulla, nisi sunt pariatur sint voluptatibus. Facilis modi vel debitis, corrupti aliquam itaque rem temporibus soluta ducimus. Lorem, ipsum dolor sit <em>amet</em> consectetur adipisicing elit. Molestias cumque cupiditate repellat iusto nulla, nisi sunt pariatur sint voluptatibus. Facilis modi vel debitis, corrupti aliquam itaque rem temporibus soluta ducimus. Lorem, ipsum dolor sit <em>amet</em> consectetur adipisicing elit. Molestias cumque cupiditate repellat iusto nulla, nisi sunt pariatur sint voluptatibus. Facilis modi vel debitis, corrupti aliquam itaque rem temporibus soluta ducimus. Lorem, ipsum dolor sit <em>amet</em> consectetur adipisicing elit. Molestias cumque cupiditate repellat iusto nulla, nisi sunt pariatur sint voluptatibus. Facilis modi vel debitis, corrupti aliquam itaque rem temporibus soluta ducimus.
+    </p>
+</div>
 
-Quis deserunt ut irure irure dolore exercitation ipsum commodo Lorem Lorem enim. Qui qui sint deserunt nisi tempor Lorem proident. Laboris eiusmod aute nostrud nostrud duis eu sunt cupidatat ut pariatur consequat. Minim aliquip irure mollit voluptate adipisicing qui mollit labore sint anim velit sit sint. Fugiat est in fugiat occaecat voluptate ipsum Lorem elit ea ad ea elit pariatur labore. Elit cillum adipisicing voluptate esse sit. Laborum quis amet veniam minim cillum veniam in. Esse ut tempor nisi et eiusmod tempor ex. Laboris ullamco officia irure aute eu consectetur. Irure elit pariatur culpa eu culpa minim do non laboris mollit et incididunt aliqua exercitation. Fugiat adipisicing proident elit consectetur dolore est ut et fugiat non aliquip occaecat mollit ad. Non dolore do et sunt nulla cillum incididunt commodo incididunt esse.
+<div class="cols items-center">
+    <figure>
+        <img src="/img/studies/light-two/sunflower.jpg" alt="">
+        <figcaption>div.items-center figure + p</figcaption>
+    </figure>
+    <p>
+        Lorem, ipsum dolor sit <em>amet</em> consectetur adipisicing elit. Molestias cumque cupiditate repellat iusto nulla, nisi sunt pariatur sint voluptatibus. Facilis modi vel debitis, corrupti aliquam itaque rem temporibus soluta ducimus. Lorem, ipsum dolor sit <em>amet</em> consectetur adipisicing elit. Molestias cumque cupiditate repellat iusto nulla, nisi sunt pariatur sint voluptatibus. Facilis modi vel debitis, corrupti aliquam itaque rem temporibus soluta ducimus. Lorem, ipsum dolor sit <em>amet</em> consectetur adipisicing elit. Molestias cumque cupiditate repellat iusto nulla, nisi sunt pariatur sint voluptatibus. Facilis modi vel debitis, corrupti aliquam itaque rem temporibus soluta ducimus. Lorem, ipsum dolor sit <em>amet</em> consectetur adipisicing elit. Molestias cumque cupiditate repellat iusto nulla, nisi sunt pariatur sint voluptatibus. Facilis modi vel debitis, corrupti aliquam itaque rem temporibus soluta ducimus.
+    </p>
+</div>
 
----
+<div class="cols items-center">
+    <figure>
+        <img src="/img/studies/light-two/sunflower.jpg" alt="">
+        <figcaption>div.items-center figure + p</figcaption>
+    </figure>
+    <p>
+        Lorem, ipsum dolor sit <em>amet</em> consectetur adipisicing elit. Molestias cumque cupiditate repellat iusto nulla, nisi sunt pariatur sint voluptatibus. Facilis modi vel debitis, corrupti aliquam.
+    </p>
+</div>
+
+<div class="cols items-end">
+    <figure>
+        <img src="/img/studies/light-two/sunflower.jpg" alt="">
+        <figcaption>div.items-end figure + p</figcaption>
+    </figure>
+    <p>
+        Lorem, ipsum dolor sit <em>amet</em> consectetur adipisicing elit. Molestias cumque cupiditate repellat iusto nulla, nisi sunt pariatur sint voluptatibus. Facilis modi vel debitis, corrupti aliquam itaque rem temporibus soluta ducimus. Lorem, ipsum dolor sit <em>amet</em> consectetur adipisicing elit. Molestias cumque cupiditate repellat iusto nulla, nisi sunt pariatur sint voluptatibus. Facilis modi vel debitis, corrupti aliquam itaque rem temporibus soluta ducimus. Lorem, ipsum dolor sit <em>amet</em> consectetur adipisicing elit. Molestias cumque cupiditate repellat iusto nulla, nisi sunt pariatur sint voluptatibus. Facilis modi vel debitis, corrupti aliquam itaque rem temporibus soluta ducimus. Lorem, ipsum dolor sit <em>amet</em> consectetur adipisicing elit. Molestias cumque cupiditate repellat iusto nulla, nisi sunt pariatur sint voluptatibus. Facilis modi vel debitis, corrupti aliquam itaque rem temporibus soluta ducimus.
+    </p>
+</div>
 
 <div className="callout-card">
     <aside>
@@ -103,25 +139,13 @@ Quis deserunt ut irure irure dolore exercitation ipsum commodo Lorem Lorem enim.
     </a>
 </div>
 
-### some shit
+<!-- > ![Field of sunflowers](/img/studies/light-two/sunflower.jpg)
+> *Image with caption — `<em>` under the image*
+> 
+> ![Field of sunflowers](/img/studies/light-two/sunflower.jpg)
+> *Image with caption — `<em>` under the image* -->
 
-<div class="note">
-    A mix of *markdown* and <em>HTML</em>.    
-</div>
 
-<p>
-    <div>
-        <em>something</em> is there only <div>asdasds</div>
-    </div>
-</p>
+<!-- Use more spaces :)
 
-<p class="two-images">
-    <figure>
-        <img src="/img/studies/light-two/sunflower.jpg" alt="" />
-        <em>asdasdasds</em>
-    </figure>
-    <figure>
-        <img src="/img/studies/light-two/sunflower.jpg" alt="" />
-        <em>asdasdasds</em>
-    </figure>
-</p>
+The commonmark specification (as well as most markdown "specifications") says to use 4 spaces to signify a parent->child relationship. For instance, this is the example markdown you pasted: -->

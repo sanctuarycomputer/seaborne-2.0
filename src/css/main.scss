@@ -616,50 +616,7 @@ button {
           margin-top: -3.125rem; // reducing margin between paragraphs & sibling lists
         }
       }
-
-      
-
-      &.two-images {
-
-        @include media('md-up') {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          grid-template-rows: auto;
-          grid-column-gap: 2.25rem;
-
-          > img {
-            grid-row: 1;
-          }
-
-          > img + em {
-            grid-row: 2;
-          }
-        }
-        
-        @include media('lg-up') {
-            grid-column-gap: 3rem;
-            width: 100%;
-            // position: relative;
-            // left: 50%;
-            // transform: translateX(-50%);
-
-          
-            > img, > img + em {
-              width: 100%;
-              // position: inherit;
-              // left: initial;
-              // transform: none;
-            }
-        }
-
-        > em:nth-of-type(1) {
-          @include media('sm-down') {
-            margin-bottom: 1.5rem;
-          }
-        }
-      }
     }
-
 
     // paragraph with floating callout header
     blockquote {
@@ -691,6 +648,57 @@ button {
           padding-right: 2.25rem;
           margin-bottom: 0;
           transform: translateY(0);
+        }
+      }
+    }
+
+    // side-by-side columns
+
+    .cols {
+      margin-top: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+
+      margin-bottom: 1.5rem;
+
+      @include media('md-up') {
+        flex-direction: row;
+        gap: 3rem;
+      }
+
+      @include media('lg-up') {
+        width: 100%; // full width image on large viewports
+        margin-bottom: 4.625rem;
+      }
+
+      figure {
+        width: 100%;
+
+        @include media('md-up') {
+          width: 50%;
+        }
+
+        img {
+          display: block;
+          width: 100%;
+        }
+
+        figcaption {
+          @extend .text-body-sm;
+          font-style: normal;
+          color: color('gray');
+          display: block;
+          margin-top: 0.75rem;
+        }
+      }
+
+      p {
+        @extend .text-body-light;
+        color: color('gray');
+
+        @include media('md-up') {
+          width: 50%; // half-width paragraph next to image
         }
       }
     }
