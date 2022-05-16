@@ -138,14 +138,3 @@ div.cols > figure > img + figcaption
             CTA Linkout
     </a>
 </div>
-
-<!-- > ![Field of sunflowers](/img/studies/light-two/sunflower.jpg)
-> *Image with caption — `<em>` under the image*
-> 
-> ![Field of sunflowers](/img/studies/light-two/sunflower.jpg)
-> *Image with caption — `<em>` under the image* -->
-
-
-<!-- Use more spaces :)
-
-The commonmark specification (as well as most markdown "specifications") says to use 4 spaces to signify a parent->child relationship. For instance, this is the example markdown you pasted: -->

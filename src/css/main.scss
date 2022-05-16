@@ -653,13 +653,10 @@ button {
     }
 
     // side-by-side columns
-
-    .cols {
-      margin-top: 0;
+    .cols {      
       display: flex;
       flex-direction: column;
       gap: 1.5rem;
-
       margin-bottom: 1.5rem;
 
       @include media('md-up') {
@@ -685,10 +682,10 @@ button {
         }
 
         figcaption {
+          display: block;
           @extend .text-body-sm;
           font-style: normal;
           color: color('gray');
-          display: block;
           margin-top: 0.75rem;
         }
       }
@@ -703,6 +700,7 @@ button {
       }
     }
 
+    // Callout card
     .callout-card {
       margin-bottom: 2.5rem;
       padding: 1.5rem;
