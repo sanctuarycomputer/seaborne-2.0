@@ -29,10 +29,10 @@ export default function About() {
           </p>
 
           <h2 className="text-subheader-alt mb1_5 md:mb4 lg:mb12 color-black">
-            We work with companies that want to take meaningful action on contemporary social and environmental issues, guiding them through each step of the way from strategy to storytelling. 
+            We work with companies that want to take meaningful action on contemporary social and environmental issues, guiding them through each step of the way from strategy to storytelling.
           </h2>
 
-          <Image 
+          <Image
             className="separator-arrow"
             alt=""
             src="/img/squiggle-arrow.svg"
@@ -50,40 +50,39 @@ export default function About() {
           <div className="col-12 md:col-10 lg:col-7">
             <div className="mb4_5 md:mb6">
               <h2 className="text-subheader-alt mb_75 color-black">
-                Amet duis lacus morbi sit nisl quisque.
+                We work with modern product companies
               </h2>
 
               <p className="color-gray text-body-light">
-                What does “sustainability” even mean? As it turns out, not much. That’s why we work with our clients to align on their own custom definition that is equally impactful and resonant. All of our engagements start with a value recognition exercise that prioritizes issues with the greatest stakes.
+Unlike most consultancies, our focus (and price point!) is tailored to young startups in the direct-to-consumer or consumer packaged goods spaces. Why? It’s these early ad-hoc manufacturing phases where our work can effect the biggest change; well before a hulking supply chain is built around a non-optimized product design.
               </p>
             </div>
             <div className="mb4_5 md:mb6">
               <h2 className="text-subheader-alt mb_75 color-black">
-                Amet duis lacus morbi sit nisl quisque.
+                Substantive Sustainability
               </h2>
 
               <p className="color-gray text-body-light">
-                What does “sustainability” even mean? As it turns out, not much. That’s why we work with our clients to align on their own custom definition that is equally impactful and resonant. All of our engagements start with a value recognition exercise that prioritizes issues with the greatest stakes.
+What does “sustainability” even mean? As it turns out, not much. That’s why we work with our clients to align on their own custom definition that is equally impactful and resonant. All of our engagements start with a value recognition exercise that prioritizes issues with the greatest stakes; so we can tailor our research approach to the goals that mean most to customers and stakeholders.
               </p>
             </div>
             <div className="mb4_5 md:mb6">
               <h2 className="text-subheader-alt mb_75 color-black">
-                Amet duis lacus morbi sit nisl quisque.
+                Measure, Mitigate & Reduce
               </h2>
-
               <p className="color-gray text-body-light">
-                What does “sustainability” even mean? As it turns out, not much. That’s why we work with our clients to align on their own custom definition that is equally impactful and resonant. All of our engagements start with a value recognition exercise that prioritizes issues with the greatest stakes.
+We’ll work to understand the complexity in your supply chain, mapping out every process, ingredient and manufacturing step using a science-backed process called a “lifecycle analysis”. That output gives us a quantified picture of a product’s total environmental impact; helping the team understand the biggest problem areas, and set goals to mitigate and reduce future impact.
               </p>
             </div>
             <div className="mb4_5 md:mb6">
               <h2 className="text-subheader-alt mb_75 color-black">
-                Amet duis lacus morbi sit nisl quisque.
+                Research, Storytelling & Infrastructure
               </h2>
 
               <p className="color-gray text-body-light">
-                What does “sustainability” even mean? As it turns out, not much. That’s why we work with our clients to align on their own custom definition that is equally impactful and resonant. All of our engagements start with a value recognition exercise that prioritizes issues with the greatest stakes.
+Sustainability work done right is a powerful point of difference. Guided by our research, we collaborate tightly with our clients to build an environmental mitigation strategy, and work to bring that story our consumers and stakeholders (through content, copywriting and even web development), helping drive forward future change for the brand and it’s broader community.
               </p>
-            </div>            
+            </div>
           </div>
 
           <div className="none lg:block lg:col-3 lg:pl3">
@@ -95,7 +94,7 @@ export default function About() {
               </p>
               <a className="text-body-sm arrow-link color-blue pt_5 md:pt1_5" href="#">
                 <figure className="mr_5 inline">
-                  <Image 
+                  <Image
                     alt=""
                     src="/img/squiggle-arrow-right.svg"
                     width={12}
@@ -106,7 +105,7 @@ export default function About() {
                 CTA Linkout
               </a>
             </div>
-          </div>          
+          </div>
 
         </div>
       </section>

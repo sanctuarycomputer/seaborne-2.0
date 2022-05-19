@@ -13,6 +13,13 @@ $steinbeck: 'Steinbeck', sans-serif;
   font-family: $steinbeck;
 }
 
+code {
+  background-color: color('sky');
+  color: color('blue');
+  padding: 0px 8px 3px 8px;
+  border-radius: 0.625rem;
+}
+
 em {
   font-style: italic;
 }
@@ -112,7 +119,7 @@ em {
     font-size: 0.75rem;
     line-height: 1.2rem;
   }
-  
+
   @include media('lg-up') {
     font-size: 0.875rem;
     line-height: 1.4rem;
