@@ -25,7 +25,7 @@ function MyApp({ Component, pageProps }) {
           content="Seaborne uses research-backed methods to help founders run more sustainable businesses. We want your business to do good to the environment by providing corporate assessment, supply chain assessment, goal setting and web presence."
           key="og__desc"
         />
-        <meta property="og:image" content="/img/seaborne-share-card.png" key="og__image" />
+        <meta property="og:image" content={`https://seaborne-2-0.vercel.app/img/seaborne-share-card.png`} key="og__image" />
         <meta
           property="og:site_name"
           content="Seaborne — Your guides to sustainable business practices"
@@ -38,7 +38,7 @@ function MyApp({ Component, pageProps }) {
           content="Seaborne uses research-backed methods to help founders run more sustainable businesses. We want your business to do good to the environment by providing corporate assessment, supply chain assessment, goal setting and web presence."
           key="twitter__desc"
         />
-        <meta name="twitter:image" content="/img/seaborne-share-card.png" key="twitter__image" />
+        <meta name="twitter:image" content={`https://seaborne-2-0.vercel.app/img/seaborne-share-card.png`} key="twitter__image" />
         <meta name="twitter:site" content="@seaborne_nyc" key="twitter__site" />
         <meta name="twitter:creator" content="@seaborne_nyc" key="twitter__creator" />
         <meta name="twitter:card" content="summary_large_image" key="twitter__card" />

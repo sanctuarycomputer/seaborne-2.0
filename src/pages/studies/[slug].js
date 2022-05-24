@@ -27,7 +27,7 @@ export default function StudyShow(props) {
           content={props.frontmatter.summary}
           key="og__desc"
         />
-        <meta property="og:image" content={props.frontmatter.hero_image} key="og__image" />
+        <meta property="og:image" content={`https://seaborne-2-0.vercel.app${props.frontmatter.hero_image}`} key="og__image" />
         <meta
           property="og:site_name"
           content={props.frontmatter.title}
@@ -41,7 +41,7 @@ export default function StudyShow(props) {
           content={props.frontmatter.summary}
           key="twitter__desc"
         />
-        <meta name="twitter:image" content={props.frontmatter.hero_image} key="twitter__image" />
+        <meta name="twitter:image" content={`https://seaborne-2-0.vercel.app${props.frontmatter.hero_image}`} key="twitter__image" />
       </Head>
 
       {/* Article Header */}
