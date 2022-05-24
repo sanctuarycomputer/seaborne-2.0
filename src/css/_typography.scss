@@ -1,5 +1,6 @@
 html {
   font-size: 16px;
+  color: color('gray-darker');
 }
 
 $be-vietnam: 'Be Vietnam', sans-serif;
@@ -166,17 +167,7 @@ a {
   text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-div,
-span,
-a,
-img {
+* {
   &::selection {
     color: color('white');
     background-color: color('blue');

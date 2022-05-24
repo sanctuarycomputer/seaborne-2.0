@@ -86,25 +86,27 @@ Sustainability work done right is a powerful point of difference. Guided by our 
           </div>
 
           <div className="none lg:block lg:col-3 lg:pl3">
-            <div className="about__content-section-callout-card callout-card p2">
-              <p className="text-eyebrow mb_25 md:mb_75">CTA to Link</p>
-              <p className="text-body-light mb1_5">
-                <span className="color-black">Click here to find out more. </span>
-                <span className="color-gray">Praesent nibh egestas egestas.</span>
+            <a className="about__content-section-callout-card callout-card p2 block" href="https://garden3d.substack.com/p/greenwashing-certified" target="_blank">
+              <p className="text-eyebrow mb_25 md:mb_75 color-gray">Blog Post</p>
+              <p className="text-body-light">
+                <span className="color-black">Greenwashing Certified™</span>
               </p>
-              <a className="text-body-sm arrow-link color-blue pt_5 md:pt1_5" href="#">
+              <p className="text-body-light">
+                <span className="color-gray">{"Corporate sustainability's shortcomings"}</span>
+              </p>
+              <div className="text-body-sm arrow-link color-blue pt_5 md:pt1_5">
                 <figure className="mr_5 inline">
                   <Image
-                    alt=""
+                    alt="Right Arrow Icon"
                     src="/img/squiggle-arrow-right.svg"
                     width={12}
                     height={10}
                     layout="fixed"
                   />
                 </figure>
-                CTA Linkout
-              </a>
-            </div>
+                Read it
+              </div>
+            </a>
           </div>
 
         </div>
@@ -113,7 +115,7 @@ Sustainability work done right is a powerful point of difference. Guided by our 
       {/* Pricing section */}
       <section className="about__pricing-section bg-color-powder text-center mxauto site-padding-x flex flex-col items-center">
           <p className="col-12 md:col-10 lg:col-8 text-body-light color-gray mb1_5">We keep our pricing simple</p>
-          <h2 className="col-12 md:col-10 lg:col-8 text-subheader-alt ">All of our services are $90/hour to get you started on your journey</h2>
+          <h2 className="col-12 md:col-10 lg:col-8 text-subheader-alt ">All of our services are $130/hour to get you started on your journey</h2>
       </section>
     </main>
   );
