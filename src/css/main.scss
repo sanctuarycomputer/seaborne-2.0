@@ -14,7 +14,7 @@
     padding-left: $site-padding-x-mobile;
     padding-right: $site-padding-x-mobile;
   }
-  
+
   @include media('md-up') {
     padding-left: $site-padding-x-tablet;
     padding-right: $site-padding-x-tablet;
@@ -46,9 +46,10 @@ button {
   color: color('white');
   min-width: 9.25rem;
   padding: 1rem 1.5rem;
+  padding: 0.6rem 1rem 0.75rem 1rem;
 
   @include media('md-up') {
-    padding: 1rem 2rem;
+    padding: 0.8rem 2rem 1rem 2rem;
     min-width: 11.75rem;
   }
 
@@ -61,7 +62,7 @@ button {
   background-color: transparent;
   border: 1px solid rgba(color('blue'), 0.2);
   color: color('blue');
-  padding: 0.75rem 1rem;
+  padding: 0.6rem 1rem 0.75rem 1rem;
 
   &:hover {
     background-color: color('blue');
@@ -164,7 +165,7 @@ button {
         line-height: 1.3;
 
         @include media('md-up') {
-          font-size: 2.625rem; 
+          font-size: 2.625rem;
         }
     }
   }
@@ -172,7 +173,7 @@ button {
   .text-footer {
     color: rgba(color('gray'), 0.7);
   }
-  
+
   // Footer > Bottom Nav
   &__nav-section {
     a {
@@ -216,15 +217,15 @@ button {
   &__studies-section {
     padding-top: 3.4375rem;
     padding-bottom: 3.4375rem;
-  
+
     @include media('md-up') {
       padding-top: 10.75rem;
-      padding-bottom: 8.375rem;  
+      padding-bottom: 8.375rem;
     }
-    
+
     @include media('lg-up') {
       padding-top: 8.375rem;
-      padding-bottom: 8.375rem;  
+      padding-bottom: 8.375rem;
     }
   }
 
@@ -232,18 +233,18 @@ button {
   &__offerings-section {
     padding-top: 4.5rem;
     padding-bottom: 4.5rem;
-  
+
     @include media('md-up') {
       padding-top: 8.5rem;
       padding-bottom: 8.5rem;
     }
-  
+
     &-columns-container {
       padding-top: 4.3125rem;
       display: grid;
       grid-template-columns: 1fr;
       grid-row-gap: 7rem;
-    
+
       @include media('md-up') {
         padding-top: 8.4375rem;
         grid-template-columns: repeat(2, 1fr);
@@ -257,12 +258,12 @@ button {
   &__pricing-section {
     padding-top: 4.25rem;
     padding-bottom: 5.625rem;
-  
+
     @include media('md-up') {
       padding-top: 8.125rem;
       padding-bottom: 10rem;
     }
-  
+
     &-heading {
       @include media('lg-up') {
         margin-bottom: 6.5rem;
@@ -277,7 +278,7 @@ button {
     @include media('md-up') {
       padding-bottom: 9.68755rem;
     }
-    
+
     @include media('lg-up') {
       padding-bottom: 15.6875rem;
     }
@@ -290,7 +291,7 @@ button {
     @include media('md-up') {
       padding-bottom: 6.5rem;
     }
-    
+
     @include media('lg-up') {
       padding-bottom: 9.6875rem;
     }
@@ -321,25 +322,25 @@ button {
 .about {
   &__hero-section {
     padding-top: 5.75rem;
-  
+
     @include media('md-up') {
       padding-top: 9rem;
     }
-    
+
     @include media('lg-up') {
       padding-top: 12.1875rem;
     }
   }
-  
+
   &__pricing-section {
     padding-top: 7.875rem;
     padding-bottom: 7.875rem;
-  
+
     @include media('md-up') {
       padding-top: 12.25rem;
       padding-bottom: 12.25rem;
     }
-  
+
     @include media('lg-up') {
       padding-top: 16.8125rem;
       padding-bottom: 16.8125rem;
@@ -356,7 +357,7 @@ button {
       padding-top: 9rem;
       padding-bottom: 6.75rem;
     }
-    
+
     @include media('lg-up') {
       padding-top: 10.25rem;
       padding-bottom: 10.25rem;
@@ -370,7 +371,7 @@ button {
     @include media('md-up') {
      padding-bottom: 9rem;
     }
-    
+
     @include media('md-up') {
       padding-bottom: 8rem;
     }
@@ -441,7 +442,7 @@ button {
 // Case Study Article
 
 .article {
-  
+
   // Article > Header
   &__header {
     padding-top: 3.5rem;
@@ -451,7 +452,7 @@ button {
       padding-top: 2.125rem;
       padding-bottom: 4.5rem;
     }
-    
+
     @include media('lg-up') {
       padding-top: 3.8125rem;
       padding-bottom: 4.625rem;
@@ -476,7 +477,7 @@ button {
 
     &-taglist {
       gap: 0.5rem;
-      
+
       &-tag {
         border-radius: 0.625rem;
         padding: 0.625rem;
@@ -516,28 +517,28 @@ button {
     > p, > ul, > ol, > blockquote {
       @extend .text-body-light;
       color: color('gray');
-      margin-bottom: 1.5rem;
+      margin-bottom: $site-margin-y-mobile;
 
       @include media('lg-up') {
-        margin-bottom: 4.625rem;
+        margin-bottom: $site-margin-y-desktop;
       }
     }
 
     // headings
     h1 {
       @extend .text-subheader-alt;
-      margin-bottom: 1.5rem;
+      margin-bottom: $site-margin-y-mobile;
       color: color('black');
 
       @include media('md-up') {
-        margin-bottom: 4rem;
+        margin-bottom: $site-margin-y-tablet;
       }
-      
+
       @include media('lg-up') {
-        margin-bottom: 4.625rem;
+        margin-bottom: $site-margin-y-desktop;
       }
     }
-    
+
     h2 {
       @extend .text-subheader-alt;
       margin-bottom: 0.75rem;
@@ -547,7 +548,7 @@ button {
         margin-bottom: 1.5rem;
       }
     }
-    
+
     h3 {
       @extend .text-subheader;
       margin-bottom: 0.75rem;
@@ -561,11 +562,11 @@ button {
     p {
       // internal links
       a {
-        color: color('blue'); 
+        color: color('blue');
         text-decoration: underline;
 
         &:hover {
-          color: color('blue-darker'); 
+          color: color('blue-darker');
           text-decoration: none;
         }
       }
@@ -590,8 +591,8 @@ button {
         }
 
         @include media('lg-up') {
-          // margin-top: 1.875rem;    
-          margin-top: 0;    
+          // margin-top: 1.875rem;
+          margin-top: 0;
         }
       }
 
@@ -605,22 +606,22 @@ button {
         @include media('md-up') {
           margin-bottom: 4.5rem;
         }
-        
+
         @include media('lg-up') {
           margin-bottom: 0;
         }
       }
 
-      & + ul, & + ol {
-        @include media('lg-up') {
-          margin-top: -3.125rem; // reducing margin between paragraphs & sibling lists
-        }
-      }
+      //& + ul, & + ol {
+      //  @include media('lg-up') {
+      //    margin-top: -3.125rem; // reducing margin between paragraphs & sibling lists
+      //  }
+      //}
     }
 
     // paragraph with floating callout header
     blockquote {
-      margin-top: 3.125rem;
+      //margin-top: 3.125rem;
 
       @include media('lg-up') {
         margin-top: 0;
@@ -653,7 +654,7 @@ button {
     }
 
     // side-by-side columns
-    .cols {      
+    .cols {
       display: flex;
       flex-direction: column;
       gap: 1.5rem;
@@ -702,18 +703,18 @@ button {
 
     // Callout card
     .callout-card {
-      margin-bottom: 2.5rem;
+      margin-bottom: $site-margin-y-mobile;
       padding: 1.5rem;
       width: 100%;
 
       @include media('md-up') {
-        margin-bottom: 2.375rem;
+        margin-bottom: $site-margin-y-tablet;
         padding: 2rem;
       }
 
       @include media('lg-up') {
         width: 66.6666666667%;
-        margin-bottom: 4.625rem;
+        margin-bottom: $site-margin-y-desktop;
       }
 
       aside {
@@ -736,15 +737,9 @@ button {
         }
       }
 
-      a {
+      figure {
         @extend .text-body-sm;
         color: color('blue');
-        padding-top: 0.5rem;
-        
-        @include media('md-up') {
-          padding-top: 1.5rem;
-        }
-
         img {
           width: 1.25rem;
           vertical-align: sub;
@@ -768,7 +763,7 @@ button {
       @include media('md-up') {
         margin-left: 2.75rem;
       }
-      
+
       @include media('lg-up') {
         margin-left: 2.5rem;
       }

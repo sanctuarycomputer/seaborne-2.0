@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="footer">
       <section
-        className="footer__contact-section flex flex-col justify-between items-center inner-content-max-width mxauto py8 site-padding-x fade-in"
+        className="footer__contact-section flex flex-col justify-between items-center inner-content-max-width mxauto py8 site-padding-x"
       >
         <div className="flex flex-col col-12 sm:col-5 items-center">
           <p className="text-body-light color-gray pb2 sm:pb1_75 md:pb2_5">Ready to use less?</p>
@@ -23,7 +23,7 @@ export default function Footer() {
         className="flex flex-col md:flex-row justify-between md:justify-center items-center inner-content-max-width mxauto pb2 md:pb2_5 site-padding-x text-center"
       >
         <p className="pb2 md:pb0 md:mr2 text-footer color-gray">
-          Seaborne is a sister company to 
+          Seaborne is a sister company to
           <a
             aria-label="Visit Sanctuary Computer"
             href="http://www.sanctuary.computer"
@@ -50,7 +50,7 @@ export default function Footer() {
               Twitter
             </a>
           </Link>
-          
+
         </nav>
       </section>
     </footer>

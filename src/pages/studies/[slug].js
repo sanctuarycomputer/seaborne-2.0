@@ -1,8 +1,8 @@
-import matter from 'gray-matter';
-import ReactMarkdown from 'react-markdown';
-import Image from 'next/image';
-import rehypeRaw from 'rehype-raw'; // for writing HTML inside markdown posts
 import Head from 'next/head';
+import Image from 'next/image';
+import ReactMarkdown from 'react-markdown';
+import matter from 'gray-matter';
+import rehypeRaw from 'rehype-raw';
 
 export default function StudyShow(props) {
   // splitting tags string into an array
@@ -49,18 +49,18 @@ export default function StudyShow(props) {
         <figure className="col-12">
           {props.frontmatter.hero_image &&
             <Image
-              className="article__header-image w100 mxauto" 
-              src={props.frontmatter.hero_image} 
-              alt={props.frontmatter.hero_image_caption} 
+              className="article__header-image w100 mxauto"
+              src={props.frontmatter.hero_image}
+              alt={props.frontmatter.hero_image_caption}
               layout="responsive"
-              width={1248}
-              height={677}
+              width={1200 * 2}
+              height={628 * 2}
               priority="true"
             />
           }
-          
+
           <figcaption className="article__header-image-caption text-body-sm color-gray mb3_5 md:mb3 lg:mb4_5 mt_75">
-            {props.frontmatter.hero_image_caption} 
+            {props.frontmatter.hero_image_caption}
           </figcaption>
         </figure>
 
@@ -69,20 +69,20 @@ export default function StudyShow(props) {
             {props.frontmatter.type}
           </p>
         }
-        
+
         <h1 className="article__header-title col-12 lg:col-8 text-header mt1 mb2_25 md:mb3">
           {props.frontmatter.title}
         </h1>
 
         {props.frontmatter.tags &&
           <ul className="article__header-taglist inline-flex flex-wrap col-12 lg:col-8 list-style-none">
-            {tagArray.map((tag) => 
+            {tagArray.map((tag) =>
               <li className="article__header-taglist-tag text-eyebrow bg-color-sky color-blue" key={tag}>{tag}</li>
             )}
           </ul>
         }
       </header>
-      
+
       {/* Article Body */}
       <article className="article__body site-padding-x inner-content-max-width mxauto flex flex-col items-center">
         <ReactMarkdown rehypePlugins={[rehypeRaw]}>

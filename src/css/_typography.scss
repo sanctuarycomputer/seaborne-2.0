@@ -1,5 +1,6 @@
 html {
   font-size: 16px;
+  color: color('gray-darker');
 }
 
 $be-vietnam: 'Be Vietnam', sans-serif;
@@ -11,6 +12,13 @@ $steinbeck: 'Steinbeck', sans-serif;
 
 .steinbeck {
   font-family: $steinbeck;
+}
+
+code {
+  background-color: color('sky');
+  color: color('blue');
+  padding: 0px 8px 3px 8px;
+  border-radius: 0.625rem;
 }
 
 em {
@@ -112,7 +120,7 @@ em {
     font-size: 0.75rem;
     line-height: 1.2rem;
   }
-  
+
   @include media('lg-up') {
     font-size: 0.875rem;
     line-height: 1.4rem;
@@ -159,17 +167,7 @@ a {
   text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-div,
-span,
-a,
-img {
+* {
   &::selection {
     color: color('white');
     background-color: color('blue');

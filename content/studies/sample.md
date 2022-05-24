@@ -125,13 +125,13 @@ div.cols > figure > img + figcaption
         &lt;aside&gt; eyebrow
     </aside>
     <main>
-        &lt;main&gt; This is a callout card. 
+        &lt;main&gt; This is a callout card.
         <i>
             Highlight in black with &lt;i&gt;
         </i>
     </main>
     <a href="#">
-        <img 
+        <img
             alt=""
             src="/img/squiggle-arrow-right.svg"
         />

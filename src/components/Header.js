@@ -12,28 +12,28 @@ export default function Header() {
   useEffect(function mount() {
     if (isMobileNavActive) {
       // When mobile nav is active, body becomes fixed to avoid scrolling
-      document.body.style.position = 'fixed';  
+      document.body.style.position = 'fixed';
     } else {
       document.body.style.position = null;
     }
   });
-  
+
   return (
     <header
       className="header z-overlay relative"
     >
       <div className="header__nav-container--desktop mxauto flex justify-between items-center flex-row p1_5 md:pr0">
         <Link href="/">
-          <a 
+          <a
             rel="noopener noreferrer"
             aria-label="Homepage"
             className="header__logo-container block"
           >
-            <Image className="Seaborne logo" src="/img/seaborne-logo.svg" alt="Seaborne logo" width={100} height={19} layout="responsive" />
+            <img className="Seaborne logo" src="/img/seaborne-logo.svg" alt="Seaborne logo" />
           </a>
         </Link>
-        
-        <button 
+
+        <button
           className={`header__nav-toggle flex flex-col md:none bg-color-transparent ${isMobileNavActive ? "mobile-nav-active" : ""}`}
           onClick={handleMobileNavToggle}
         >
@@ -52,17 +52,17 @@ export default function Header() {
             <a
               aria-label="Get in touch with Seaborne"
               className="button--style-blue-border nav-button flex items-center"
-            >          
+            >
               Get in touch
             </a>
           </Link>
         </nav>
       </div>
 
-      <div 
+      <div
         className={`header__nav-container--mobile absolute pt3 px1_5 bg-color-white w100 transition-longer opacity-0 hidden z-0 ${isMobileNavActive ? "active" : ""}`}
       >
-        <nav 
+        <nav
           className={`none header__nav--mobile flex-col text-header-sm transition-longer ${isMobileNavActive ? "active" : ""}`}
         >
           <Link href="/about">
@@ -72,7 +72,7 @@ export default function Header() {
             <a onClick={handleMobileNavToggle} className="color-gray" aria-label="Case Studies and Writing">Studies &amp; Writing</a>
           </Link>
           <Link href="mailto:hello@seaborne.nyc">
-            <a onClick={handleMobileNavToggle} 
+            <a onClick={handleMobileNavToggle}
               aria-label="Get in touch with Seaborne"
               className="color-blue"
             >

@@ -3,22 +3,6 @@ import Header from 'components/Header';
 import Footer from 'components/Footer';
 import 'css/main.scss';
 
-if (typeof document !== 'undefined') {
-  const sections = document.querySelectorAll('section.fade-in');
-  window.onscroll = function () {
-    if (!document.querySelectorAll('section.fade-in:not(.visible)')) return;
-
-    for (const section of sections) {
-      if (
-        section.getBoundingClientRect().top <= window.innerHeight * 0.75 &&
-        section.getBoundingClientRect().top > 0
-      ) {
-        section.classList.add('visible');
-      }
-    }
-  };
-}
-
 function MyApp({ Component, pageProps }) {
   return (
     <>
