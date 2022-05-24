@@ -86,7 +86,7 @@ Sustainability work done right is a powerful point of difference. Guided by our 
           </div>
 
           <div className="none lg:block lg:col-3 lg:pl3">
-            <a className="about__content-section-callout-card callout-card p2 block" href="https://garden3d.substack.com/p/greenwashing-certified" target="_blank">
+            <a className="about__content-section-callout-card callout-card p2 block" href="https://garden3d.substack.com/p/greenwashing-certified" target="_blank" rel="noreferrer">
               <p className="text-eyebrow mb_25 md:mb_75 color-gray">Blog Post</p>
               <p className="text-body-light">
                 <span className="color-black">Greenwashing Certified™</span>
