@@ -43,10 +43,10 @@ export default function Header() {
 
         <nav className="header__nav--desktop none md:flex flex-row items-center text-body-sm">
           <Link href="/about">
-            <a className="color-gray" aria-label="Our Process">How we work</a>
+            <a className="color-gray" aria-label="Our Process">Our Process</a>
           </Link>
           <Link href="/studies">
-            <a className="color-gray" aria-label="Case Studies and Writing">Studies &amp; Writing</a>
+            <a className="color-gray" aria-label="Our Work & Writing">Our Work & Writing</a>
           </Link>
           <Link href="mailto:hello@seaborne.nyc">
             <a
@@ -66,7 +66,7 @@ export default function Header() {
           className={`none header__nav--mobile flex-col text-header-sm transition-longer ${isMobileNavActive ? "active" : ""}`}
         >
           <Link href="/about">
-            <a onClick={handleMobileNavToggle} className="color-gray" aria-label="Our Process">How we work</a>
+            <a onClick={handleMobileNavToggle} className="color-gray" aria-label="Our Process">Our Process</a>
           </Link>
           <Link href="/studies">
             <a onClick={handleMobileNavToggle} className="color-gray" aria-label="Case Studies and Writing">Studies &amp; Writing</a>

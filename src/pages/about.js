@@ -9,7 +9,7 @@ export default function About() {
         <title key="title">Seaborne &mdash; How we work</title>
         <meta
           name="description"
-          content="We work with companies that want to take meaningful action on contemporary social and environmental issues, guiding them through each step of the way from strategy to storytelling."
+          content="We work with purpose driven companies that want to take meaningful action on contemporary social and environmental issues, guiding them through each step of the way from strategy to storytelling."
           key="meta__desc"
         />
         <meta property="og:title" content="Seaborne — How we work" key="og__title" />
@@ -29,7 +29,7 @@ export default function About() {
           </p>
 
           <h2 className="text-subheader-alt mb1_5 md:mb4 lg:mb12 color-black">
-            We work with companies that want to take meaningful action on contemporary social and environmental issues, guiding them through each step of the way from strategy to storytelling.
+            We work with purpose driven companies that want to take meaningful action on contemporary social and environmental issues, guiding them through each step of the way from strategy to storytelling.
           </h2>
 
           <Image
@@ -50,11 +50,11 @@ export default function About() {
           <div className="col-12 md:col-10 lg:col-7">
             <div className="mb4_5 md:mb6">
               <h2 className="text-subheader-alt mb_75 color-black">
-                We work with modern product companies
+                For modern product companies
               </h2>
 
               <p className="color-gray text-body-light">
-Unlike most consultancies, our focus (and price point!) is tailored to young startups in the direct-to-consumer or consumer packaged goods spaces. Why? It’s these early ad-hoc manufacturing phases where our work can effect the biggest change; well before a hulking supply chain is built around a non-optimized product design.
+Unlike most consultancies, our focus (and price point!) is tailored to young startups in the direct-to-consumer or consumer packaged goods spaces. Why? We believe that establishing a strong environmental focus at this stage will build a more impactful business for you, your customers, and the planet.
               </p>
             </div>
             <div className="mb4_5 md:mb6">
@@ -68,15 +68,15 @@ What does “sustainability” even mean? As it turns out, not much. That’s wh
             </div>
             <div className="mb4_5 md:mb6">
               <h2 className="text-subheader-alt mb_75 color-black">
-                Measure, Mitigate & Reduce
+                Measure, Reduce & Mitigate
               </h2>
               <p className="color-gray text-body-light">
-We’ll work to understand the complexity in your supply chain, mapping out every process, ingredient and manufacturing step using a science-backed process called a “lifecycle analysis”. That output gives us a quantified picture of a product’s total environmental impact; helping the team understand the biggest problem areas, and set goals to mitigate and reduce future impact.
+We’ll work to understand the complexity in your supply chain, mapping out every process, ingredient and manufacturing step using a science-backed process called a <code>Lifecycle Analysis (LCA)</code>. That output gives us a quantified picture of a product’s total environmental impact; helping the team understand the biggest problem areas, and set goals to mitigate and reduce future impact.
               </p>
             </div>
             <div className="mb4_5 md:mb6">
               <h2 className="text-subheader-alt mb_75 color-black">
-                Research, Storytelling & Infrastructure
+                Research & Storytelling
               </h2>
 
               <p className="color-gray text-body-light">
@@ -114,8 +114,11 @@ Sustainability work done right is a powerful point of difference. Guided by our 
 
       {/* Pricing section */}
       <section className="about__pricing-section bg-color-powder text-center mxauto site-padding-x flex flex-col items-center">
-          <p className="col-12 md:col-10 lg:col-8 text-body-light color-gray mb1_5">We keep our pricing simple</p>
-          <h2 className="col-12 md:col-10 lg:col-8 text-subheader-alt ">All of our services are $130/hour to get you started on your journey</h2>
+        <p className="col-12 md:col-10 lg:col-8 text-body-light color-gray mb1_5">We keep our pricing simple</p>
+        <h2 className="col-12 md:col-10 lg:col-8 text-subheader-alt mb1_5">All of our services are $130/hour to get you started on your journey</h2>
+        <p className="col-12 md:col-10 lg:col-8 text-body-light color-gray">
+          Each consumer product that we analyze incurs roughly <code>80 to 120 hours</code> of work (pending supply chain complexity), and we work with our clients to craft a budget and timeline to meet the evolving needs of their business.
+        </p>
       </section>
     </main>
   );

@@ -15,7 +15,7 @@ export default function StudyIndex(props) {
       </Head>
 
       <section className="study-index__heading pt5 pb4">
-        <h1 className="text-header-sm text-center">Studies & Writing</h1>
+        <h1 className="text-header-sm text-center">Our Work & Writing</h1>
       </section>
 
       <section className="study-index__studies site-padding-x">
@@ -36,7 +36,7 @@ export default function StudyIndex(props) {
         />
 
         <CaseStudyCard
-          type="Blog Post"
+          type="Case Study"
           image="img/studies/studio-carbon-negative/hero.jpeg"
           title="Studio Carbon Negative"
           link="/studies/studio-carbon-negative"

@@ -263,12 +263,6 @@ button {
       padding-top: 8.125rem;
       padding-bottom: 10rem;
     }
-
-    &-heading {
-      @include media('lg-up') {
-        margin-bottom: 6.5rem;
-      }
-    }
   }
 
   // Homepage > Impact Section

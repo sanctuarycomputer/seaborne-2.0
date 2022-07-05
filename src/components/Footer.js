@@ -38,7 +38,7 @@ export default function Footer() {
             <a className="text-footer color-gray underline" aria-label="Our Process">Our Process</a>
           </Link>
           <Link href="/studies">
-            <a className="text-footer color-gray underline" aria-label="Case Studies and Writing">Studies &amp; Writing</a>
+            <a className="text-footer color-gray underline" aria-label="Our Work">Our Work & Writing</a>
           </Link>
           <Link href="https://twitter.com/seaborne_nyc">
             <a

@@ -11,8 +11,8 @@ export default function Home() {
           className="home__hero-section-text opacity-0 flex flex-col items-center text-center site-padding-x inner-content-max-width mxauto z-5"
         >
           <p className="text-body color-gray pb2 sm:pb1_75 md:pb2_5">Hi, we&rsquo;re Seaborne</p>
-          <h1 className="text-header color-black pb3 sm:pb1_75 md:pb2_5 md:col-10">
-            We&rsquo;re your guides to sustainable business practices.
+          <h1 className="text-header-sm color-black pb3 sm:pb1_75 md:pb2_5 md:col-10">
+            We&apos;ll guide your brand toward more sustainable business practices
           </h1>
           <Link href="/about">
             <a
@@ -37,8 +37,8 @@ export default function Home() {
       {/* Case studies section */}
       <section className="home__studies-section flex flex-col mt4">
         <div className="text-center site-padding-x">
-          <p className="text-body color-gray pb2 sm:pb1_75 md:pb1_5">Latest updates from our company</p>
-          <h2 className="text-header-sm mb1_5 md:mb5 lg:mb4">See how we&rsquo;re making a difference</h2>
+          <p className="text-body color-gray pb2 sm:pb1_75 md:pb1_5">Our work integrates analysis, strategy and design</p>
+          <h2 className="text-header-sm mb1_5 md:mb5 lg:mb4">See our strategies in action</h2>
           <Image
             className="separator-arrow"
             alt=""
@@ -77,7 +77,7 @@ export default function Home() {
             <div className="flex flex-col items-center text-center md:col-10 lg:col-8 mxauto">
               <p className="text-body-light color-gray md:font-300">What we offer</p>
               <p className="text-header-sm color-black pt1_5">
-                Our unique set of services that help companies of all sizes.
+                Build a better brand through science backed research, strategy and storytelling
               </p>
             </div>
 
@@ -94,8 +94,7 @@ export default function Home() {
                 </figure>
                 <p className="bold color-black">Corporate Assessment</p>
                 <p className="color-gray">
-                  Calculate your business&rsquo;s carbon footprint by understanding the ins and outs of
-                  your business and operations.
+                  Prioritize your sustainability efforts by mapping your emissions. Build toward carbon neutrality with measurement, reduction and mitigation.
                 </p>
               </div>
 
@@ -109,10 +108,9 @@ export default function Home() {
                     layout="fixed"
                   />
                 </figure>
-                <p className="bold color-black">Supply Chain Assessment</p>
+                <p className="bold color-black">Lifecycle Analysis</p>
                 <p className="color-gray">
-                  Calculate your product&rsquo;s carbon footprint. Know the impact of your supply chain
-                  and manufacturing processes.
+                  Engage your team and equip your vendors with product lifecycle data to build a brand that that does better by the planet.
                 </p>
               </div>
 
@@ -126,10 +124,9 @@ export default function Home() {
                     layout="fixed"
                   />
                 </figure>
-                <p className="bold color-black">Goal Setting</p>
+                <p className="bold color-black">Actionable Strategies</p>
                 <p className="color-gray">
-                  Set sustainability goals so that your organization builds sustainability into its
-                  DNA.
+                  Boost brand reputation and investor confidence by putting analysis into action. We&apos;ll help identify your most valuable opportunities.
                 </p>
               </div>
 
@@ -143,10 +140,9 @@ export default function Home() {
                     layout="fixed"
                   />
                 </figure>
-                <p className="bold color-black">Web Presence</p>
+                <p className="bold color-black">Storytelling & Content</p>
                 <p className="color-gray">
-                  Share the story of how your business became more sustainable. We&rsquo;ll help shape
-                  your narrative and build your case study site.
+                  Build superfans & brand loyalists by thoughtfully sharing your journey with stakeholders! We can help shape that narrative.
                 </p>
               </div>
             </div>
@@ -157,7 +153,10 @@ export default function Home() {
       {/* Pricing section */}
       <section className="home__pricing-section text-center md:col-10 lg:col-8 mxauto site-padding-x">
         <p className="text-body-light color-gray pb2 sm:pb1_75 md:pb1_5">We keep our pricing simple</p>
-        <h2 className="home__pricing-section-heading text-header-sm mb4 md:mb3">All of our services are $130/hour to get you started on your journey</h2>
+        <h2 className="home__pricing-section-heading text-header-sm mb1_5">All of our services are $130/hour to get you started on your journey</h2>
+        <p className="text-body-light color-gray mb4 md:mb3">
+          Each consumer product that we analyze incurs roughly <code>80 to 120 hours</code> of work (pending supply chain complexity), and we work with our clients to craft a budget and timeline to meet the evolving needs of their business.
+        </p>
         <Image
           className="separator-arrow"
           alt=""
@@ -174,19 +173,17 @@ export default function Home() {
       >
         <div className="flex flex-col px1 md:px0 md:col-5 lg:col-4">
           <h2 className="text-subheader color-black mt2 mb1_5 lg:mb3">
-            We help you understand your impact.
+            A powerful point of difference.
           </h2>
           <p className="text-body color-gray mb1_5">
-            We are a team of strategists, designers, and technologists who help founders run more
-            sustainable businesses. We want your business to do good to the environment.
+            We&apos;re a small group of sustainability experts who make it easy for your team to ship better products than your competitors.
           </p>
           <div className="flex items-center">
             <figure className="pr1_5">
               <Image className="" src="/img/arrow.svg" alt="" width={42} height={42} layout="fixed" />
             </figure>
             <p className="text-body-sm color-gray mt1">
-              We are using our product experience to help founders launch responsible products and
-              businesses.
+              Launch new product offerings and environmental intiatives with confidence and care.
             </p>
           </div>
         </div>
@@ -214,19 +211,17 @@ export default function Home() {
         </div>
         <div className="flex flex-col px1 md:px0 md:col-5 lg:col-4">
           <h2 className="text-subheader color-black mt2 mb1_5 lg:mb3">
-            We&rsquo;ll get you started on your journey.
+            We&apos;ll do the heavy lifting.
           </h2>
           <p className="text-body color-gray mb1_5">
-            We use research-backed methods to create clear and informative insights. We don&rsquo;t
-            believe jargon or academic writing—we believe in taking action.
+            We use research-backed methods to create clear and informative insights, packaged in an easy to understand report, highlighting actionable insights and opportunities.
           </p>
           <div className="flex items-center">
             <figure className="pr1_5">
               <Image className="" src="/img/arrow.svg" alt="" width={42} height={42} layout="fixed" />
             </figure>
             <p className="text-body-sm color-gray mt1">
-              We use a different type of communication to our clients to help them understand their
-              impact.
+              Our expert team will understand the complexity of your supply chain, allowing you to focus on running your business.
             </p>
           </div>
         </div>
