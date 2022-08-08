@@ -94,7 +94,7 @@ Sustainability work done right is a powerful point of difference. Guided by our 
               <p className="text-body-light">
                 <span className="color-gray">{"Corporate sustainability's shortcomings"}</span>
               </p>
-              <div className="text-body-sm arrow-link color-blue pt_5 md:pt1_5">
+              <div className="text-body-sm arrow-link color-blue pt_5 md:pt1">
                 <figure className="mr_5 inline">
                   <Image
                     alt="Right Arrow Icon"

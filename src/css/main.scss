@@ -431,6 +431,16 @@ button {
     width: 1.25rem;
     vertical-align: sub;
   }
+
+  &.about__content-section-callout-card {
+    .text-body-light {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    position: sticky;
+    top: 2rem;
+    padding: 1.5rem;
+  }
 }
 
 // Case Study Article
