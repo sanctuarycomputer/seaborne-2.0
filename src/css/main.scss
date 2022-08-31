@@ -422,16 +422,64 @@ button {
   }
 }
 
-// Callout card (about & blog post page)
+// Callout card
 .callout-card {
+  display: block;
+  padding: 1.5rem;
+  width: 100%;
   border: 1px solid color('cloud');
   border-radius: 1.25rem;
+
+  .headshot {
+    max-width: 100px;
+    border-radius: 999px;
+  }
 
   .arrow-link img {
     width: 1.25rem;
     vertical-align: sub;
   }
 
+  @include media('md-up') {
+    margin-bottom: $site-margin-y-tablet;
+    padding: 2rem;
+  }
+
+  @include media('lg-up') {
+    margin-bottom: $site-margin-y-desktop;
+  }
+
+  aside {
+    @extend .text-eyebrow;
+    margin-bottom: 0.25rem;
+    color: color('gray');
+
+    @include media('md-up') {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  main {
+    @extend .text-body-light;
+    margin-bottom: 1.5rem;
+    color: color('gray');
+
+    i {
+      color: color('black');
+    }
+  }
+
+  figure {
+    @extend .text-body-sm;
+    color: color('blue');
+    img {
+      width: 1.25rem;
+      vertical-align: sub;
+      margin-right: 0.5rem;
+    }
+  }
+
+  // Hack for the sticky version on the /about page
   &.about__content-section-callout-card {
     .text-body-light {
       font-size: 1rem;
@@ -444,8 +492,12 @@ button {
 }
 
 // Case Study Article
-
 .article {
+  .callout-card {
+    @include media('lg-up') {
+      width: 66.6666666667%;
+    }
+  }
 
   // Article > Header
   &__header {
@@ -704,55 +756,6 @@ button {
         }
       }
     }
-
-    // Callout card
-    .callout-card {
-      margin-bottom: $site-margin-y-mobile;
-      padding: 1.5rem;
-      width: 100%;
-
-      @include media('md-up') {
-        margin-bottom: $site-margin-y-tablet;
-        padding: 2rem;
-      }
-
-      @include media('lg-up') {
-        width: 66.6666666667%;
-        margin-bottom: $site-margin-y-desktop;
-      }
-
-      aside {
-        @extend .text-eyebrow;
-        margin-bottom: 0.25rem;
-        color: color('gray');
-
-        @include media('md-up') {
-          margin-bottom: 0.5rem;
-        }
-      }
-
-      main {
-        @extend .text-body-light;
-        margin-bottom: 1.5rem;
-        color: color('gray');
-
-        i {
-          color: color('black');
-        }
-      }
-
-      figure {
-        @extend .text-body-sm;
-        color: color('blue');
-        img {
-          width: 1.25rem;
-          vertical-align: sub;
-          margin-right: 0.5rem;
-        }
-      }
-    }
-
-    // extras
 
     hr {
       background-color: color('cloud');
