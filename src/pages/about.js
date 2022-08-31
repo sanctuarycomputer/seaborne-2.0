@@ -58,7 +58,7 @@ Unlike most consultancies, our focus (and price point!) is tailored to young sta
               </p>
             </div>
 
-            <a className="callout-card mb4_5 md:mb6" href="https://millimylk.com/" target="_blank">
+            <a className="callout-card mb4_5 md:mb6" href="https://millimylk.com/" target="_blank" rel="noreferrer">
               <img className="headshot mb_5" src="/img/studies/milli-mylk/caleb.jpeg" alt="Caleb Ferguson Headshot" />
               <aside>
                 Caleb Ferguson, Milli Mylk
@@ -81,7 +81,7 @@ Unlike most consultancies, our focus (and price point!) is tailored to young sta
                   alt="Right Arrow Icon"
                   src="/img/squiggle-arrow-right.svg"
                 />
-                Explore Milli Mylk's Sustainability Work
+                Explore Milli Mylk&apos;s Sustainability Work
               </figure>
             </a>
 
