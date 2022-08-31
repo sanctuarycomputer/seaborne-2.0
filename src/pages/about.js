@@ -48,7 +48,7 @@ export default function About() {
         <div className="flex justify-center">
 
           <div className="col-12 md:col-10 lg:col-7">
-            <div className="mb4_5 md:mb6">
+            <div className="mb2">
               <h2 className="text-subheader-alt mb_75 color-black">
                 For modern product companies
               </h2>
@@ -57,6 +57,34 @@ export default function About() {
 Unlike most consultancies, our focus (and price point!) is tailored to young startups in the direct-to-consumer or consumer packaged goods spaces. Why? We believe that establishing a strong environmental focus at this stage will build a more impactful business for you, your customers, and the planet.
               </p>
             </div>
+
+            <a className="callout-card mb4_5 md:mb6" href="https://millimylk.com/" target="_blank">
+              <img className="headshot mb_5" src="/img/studies/milli-mylk/caleb.jpeg" alt="Caleb Ferguson Headshot" />
+              <aside>
+                Caleb Ferguson, Milli Mylk
+              </aside>
+              <main>
+                <p className="mb_75">
+                  <em>
+                  Seaborne.nyc is a team of experts who completed an LCA for our Almond mylk, which is a complex product with global supply chains and multiple production phases. Utilizing a variety of publicized and peer reviewed journals/studies, Seaborne analyzed and produced a beginning to end computation of our emissions to help us accurately offset our carbon emissions.
+                  </em>
+                </p>
+
+                <p>
+                  <em>
+                  As an added benefit, their team of designers and developers are able to fully realize the data in a digestible and product driven approach. Simply put, they’re bringing forth a fresh approach to scientifically offsetting carbon emissions.
+                  </em>
+                </p>
+              </main>
+              <figure>
+                <img
+                  alt="Right Arrow Icon"
+                  src="/img/squiggle-arrow-right.svg"
+                />
+                Explore Milli Mylk's Sustainability Work
+              </figure>
+            </a>
+
             <div className="mb4_5 md:mb6">
               <h2 className="text-subheader-alt mb_75 color-black">
                 Substantive Sustainability
@@ -84,6 +112,7 @@ Sustainability work done right is a powerful point of difference. Guided by our 
               </p>
             </div>
           </div>
+
 
           <div className="none lg:block lg:col-3 lg:pl3">
             <a className="about__content-section-callout-card callout-card p2 block" href="https://garden3d.substack.com/p/greenwashing-certified" target="_blank" rel="noreferrer">
