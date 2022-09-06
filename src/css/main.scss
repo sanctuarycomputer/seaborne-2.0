@@ -677,6 +677,11 @@ button {
 
     // paragraph with floating callout header
     blockquote {
+      blockquote {
+        border-left: 2px solid rgba(84, 84, 84, 0.7);
+        padding-left: 1rem;
+        width: 100%;
+      }
       //margin-top: 3.125rem;
 
       @include media('lg-up') {

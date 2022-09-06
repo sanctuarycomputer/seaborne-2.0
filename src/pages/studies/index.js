@@ -21,6 +21,14 @@ export default function StudyIndex(props) {
       <section className="study-index__studies site-padding-x">
         <CaseStudyCard
           type="Case Study"
+          image="img/studies/milli-mylk/hero.jpg"
+          title="Milli Mylk"
+          link="/studies/milli-mylk"
+          description="Quantifying the environmental impacts of making a new plant-based mylk. Guiding founders toward attainable climate actions today with a long-term strategy for improvements."
+        />
+
+        <CaseStudyCard
+          type="Case Study"
           image="img/studies/light-two/hero.jpeg"
           title="The Light Phone II"
           link="/studies/light-two"
