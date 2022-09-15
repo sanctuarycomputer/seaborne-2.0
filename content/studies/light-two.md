@@ -52,6 +52,29 @@ In order to keep our process light and simple, we developed a light-weight appro
 
 **The outcome:** our (conservative) estimate for the embodied carbon in each Light Phone device was found to be `60.6 kg CO2e`, from manufacturing, fulfillment and electricity usage, all the way through to end of life.
 
+<a className="callout-card mb4_5 md:mb6" href="https://www.thelightphone.com/sustainability" target="_blank" rel="noreferrer">
+  <img className="headshot mb_5" src="/img/studies/light-two/joe.jpeg" alt="Joe Hollier Headshot" />
+  <aside>
+    Joe Hollier, Co-founder Light Phone
+  </aside>
+  <main>
+    <p className="mb_75">
+      <em>
+Our users have always appreciated that we the avoid planned obsolescence of trying to upsell them a new model every year, and instead continue to provide meaningful updates to their existing phones. It’s a business decision with environmental impacts that come with electronic waste. We knew our users would be interested in learning about the Light Phone’s carbon footprint and likely willing to invest in offsetting.
+
+Seaborne took the lead and was very thorough as well as efficient in their lightweight LCA approach. They were cooperative in helping us tell the carbon story in our own voice, and very mindful of potential greenwashing. They seamlessly integrated the offset option into our checkout, and we were able to offer it retroactively to existing users as well. It was very popular with our base and is just one of the first ways we’ll be thinking about sustainability with Light.
+      </em>
+    </p>
+  </main>
+  <figure>
+    <img
+      alt="Right Arrow Icon"
+      src="/img/squiggle-arrow-right.svg"
+    />
+    Explore Light&apos;s Sustainability Work
+  </figure>
+</a>
+
 ## Consumer Education and Storytelling
 
 Part of any successful environmental strategy is a resonant and legible approach to talking about the work. So, we set out to tell that story; so that the Light Phone’s customers could quickly understand how the device compares to it’s competitors, and other lifestyle choices.
