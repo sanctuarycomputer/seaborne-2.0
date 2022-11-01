@@ -60,10 +60,10 @@ export default function Home() {
 
           <CaseStudyCard
             type="Case Study"
-            image="img/studies/studio-carbon-negative/hero.jpeg"
-            title="Studio Carbon Negative"
-            link="/studies/studio-carbon-negative"
-            description="Sanctuary Computer had one goal. Understand and mitigate their impact, so they could lead clients and peers in doing the same."
+            image="img/studies/milli-mylk/hero.jpg"
+            title="Milli Mylk"
+            link="/studies/milli-mylk"
+            description="Quantifying the environmental impacts of making a new plant-based mylk. Guiding founders toward attainable climate actions today with a long-term strategy for improvements."
           />
         </div>
       </section>
