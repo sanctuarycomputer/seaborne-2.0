@@ -20,6 +20,14 @@ export default function StudyIndex(props) {
 
       <section className="study-index__studies site-padding-x">
         <CaseStudyCard
+          type="Blog Post"
+          image="img/writing/substantive-sustainability/hero.png"
+          title="Substantive Sustainability"
+          link="https://garden3d.substack.com/p/substantive-sustainability"
+          description="How we build corporate climate programs that are effective and resonant."
+        />
+
+        <CaseStudyCard
           type="Case Study"
           image="img/studies/milli-mylk/hero.jpg"
           title="Milli Mylk"
