@@ -2,6 +2,22 @@
 @import '~@sanctucompu/basement/src/index';
 @import 'settings', 'fontface', 'reset', 'typography';
 
+table {
+  width: 100%;
+  font-family: $steinbeck;
+  //border: 1px solid color('cloud');
+  text-align: center;
+  th, td {
+    padding: 10px;
+  }
+  th {
+    font-weight: 600;
+  }
+  th, tr:nth-child(even) {
+    background-color: color('sky');
+  }
+}
+
 .inner-content-max-width {
   max-width: $inner-content-max-width;
 }
@@ -493,7 +509,7 @@ button {
 
 // Case Study Article
 .article {
-  .callout-card {
+  table, .callout-card {
     @include media('lg-up') {
       width: 66.6666666667%;
     }
@@ -752,7 +768,7 @@ button {
         }
       }
 
-      p {
+      > p, main {
         @extend .text-body-light;
         color: color('gray');
 

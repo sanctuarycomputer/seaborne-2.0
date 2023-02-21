@@ -52,6 +52,14 @@ export default function Home() {
         <div className="site-padding-x mt4 md:col-10 mxauto">
           <CaseStudyCard
             type="Case Study"
+            image="img/studies/free-rain/hero.jpg"
+            title="Free Rain"
+            link="/studies/free-rain"
+            description="Assessing the environmental impacts of functional flavored water. Supporting a growing CPG company to make environmentally-responsible and informed decisions as they scale."
+          />
+
+          <CaseStudyCard
+            type="Case Study"
             image="img/studies/light-two/hero.jpeg"
             title="The Light Phone II"
             link="/studies/light-two"

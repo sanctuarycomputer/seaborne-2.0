@@ -20,6 +20,14 @@ export default function StudyIndex(props) {
 
       <section className="study-index__studies site-padding-x">
         <CaseStudyCard
+          type="Case Study"
+          image="img/studies/free-rain/hero.jpg"
+          title="Free Rain"
+          link="/studies/free-rain"
+          description="Assessing the environmental impacts of functional flavored water. Supporting a growing CPG company to make environmentally-responsible and informed decisions as they scale."
+        />
+
+        <CaseStudyCard
           type="Blog Post"
           image="img/writing/substantive-sustainability/hero.png"
           title="Substantive Sustainability"
