@@ -37,6 +37,9 @@ export default function Footer() {
           <Link href="/about">
             <a className="text-footer color-gray underline" aria-label="Our Process">Our Process</a>
           </Link>
+          <Link href="/pricing">
+            <a className="text-footer color-gray underline" aria-label="Pricing">Pricing</a>
+          </Link>
           <Link href="/studies">
             <a className="text-footer color-gray underline" aria-label="Our Work">Our Work & Writing</a>
           </Link>

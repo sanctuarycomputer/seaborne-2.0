@@ -438,13 +438,17 @@ button {
   }
 }
 
-// Callout card
-.callout-card {
-  display: block;
-  padding: 1.5rem;
-  width: 100%;
+.callout-card-border {
   border: 1px solid color('cloud');
   border-radius: 1.25rem;
+}
+
+// Callout card
+.callout-card {
+  @extend .callout-card-border;
+  padding: 1.5rem;
+  display: block;
+  width: 100%;
 
   .headshot {
     max-width: 100px;

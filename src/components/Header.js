@@ -45,6 +45,9 @@ export default function Header() {
           <Link href="/about">
             <a className="color-gray" aria-label="Our Process">Our Process</a>
           </Link>
+          <Link href="/pricing">
+            <a className="color-gray" aria-label="Pricing">Pricing</a>
+          </Link>
           <Link href="/studies">
             <a className="color-gray" aria-label="Our Work & Writing">Our Work & Writing</a>
           </Link>
@@ -67,6 +70,9 @@ export default function Header() {
         >
           <Link href="/about">
             <a onClick={handleMobileNavToggle} className="color-gray" aria-label="Our Process">Our Process</a>
+          </Link>
+          <Link href="/pricing">
+            <a onClick={handleMobileNavToggle} className="color-gray" aria-label="Pricing">Pricing</a>
           </Link>
           <Link href="/studies">
             <a onClick={handleMobileNavToggle} className="color-gray" aria-label="Case Studies and Writing">Studies &amp; Writing</a>
