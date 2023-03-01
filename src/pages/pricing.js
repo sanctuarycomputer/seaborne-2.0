@@ -204,7 +204,7 @@ export default function Pricing() {
           <div className="col col-12 md:col-6 md:pl1_5 pb1_5 md:pl0">
             <div className="callout-card-border p3">
               <h2 className="text-subheader-alt pb1">Build a Marketing<br /> Page</h2>
-              <code className="text-body-sm p_5 inline-block">$12,600 - $25,200</code>
+              <code className="text-body-sm p_5 inline-block">$14,040 - $28,080</code>
               <p className="text-body-sm color-gray pt3">Let us help you showcase your sustainable efforts with a dedicated webpage that shares your product&apos;s eco-friendly journey and provides transparency into its life cycle.</p>
             </div>
           </div>
