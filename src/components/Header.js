@@ -5,7 +5,10 @@ import Image from 'next/image';
 export default function Header() {
   const [isMobileNavActive, setMobileNavActive] = useState(false);
 
-  const handleMobileNavToggle = () => {
+  const handleMobileNavToggle = (e) => {
+    if (e.target.href === "mailto:hello@seaborne.nyc") {
+      window.fbq && window.fbq('track', 'Contact');
+    }
     setMobileNavActive(!isMobileNavActive);
   };
 
@@ -55,8 +58,9 @@ export default function Header() {
             <a
               aria-label="Get in touch with Seaborne"
               className="button--style-blue-border nav-button flex items-center"
+              onClick={() => window.fbq && window.fbq('track', 'Contact')}
             >
-              Get in touch
+              hello@seaborne.nyc
             </a>
           </Link>
         </nav>
@@ -82,7 +86,7 @@ export default function Header() {
               aria-label="Get in touch with Seaborne"
               className="color-blue"
             >
-              Get in touch
+              Email us
           </a>
           </Link>
         </nav>

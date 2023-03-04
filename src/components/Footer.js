@@ -13,8 +13,9 @@ export default function Footer() {
             aria-label="Get in touch with Seaborne"
             className="button--style-primary text-body flex items-center justify-center"
             href="mailto:hello@seaborne.nyc"
+            onClick={() => window.fbq && window.fbq('track', 'Contact')}
           >
-            Get in touch
+            Email us
           </a>
         </div>
       </section>
@@ -23,14 +24,14 @@ export default function Footer() {
         className="flex flex-col md:flex-row justify-between md:justify-center items-center inner-content-max-width mxauto pb2 md:pb2_5 site-padding-x text-center"
       >
         <p className="pb2 md:pb0 md:mr2 text-footer color-gray">
-          Seaborne is a sister company to
+          Seaborne is a member of
           <a
-            aria-label="Visit Sanctuary Computer"
-            href="http://www.sanctuary.computer"
+            aria-label="Visit garden3d"
+            href="http://www.garden3d.net"
             className="color-gray text-footer"
             target="_blank"
             rel="noopener noreferrer"
-          > Sanctuary Computer
+          > garden3d.net
           </a>
         </p>
         <nav className="footer__nav-section">
