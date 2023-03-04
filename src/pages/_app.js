@@ -3,8 +3,21 @@ import Header from 'components/Header';
 import Footer from 'components/Footer';
 import 'css/main.scss';
 import Script from 'next/script';
+import { useEffect } from 'react'
+import { useRouter } from 'next/router';
+
+const handleRouteChange = () => window.fbq && window.fbq('track', 'PageView');
 
 function MyApp({ Component, pageProps }) {
+  const router = useRouter()
+
+  useEffect(() => {
+    router.events.on('routeChangeComplete', handleRouteChange);
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange);
+    }
+  }, [router.events]);
+
   return (
     <>
       <Head>
