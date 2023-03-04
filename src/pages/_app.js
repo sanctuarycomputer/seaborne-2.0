@@ -57,7 +57,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="twitter:creator" content="@seaborne_nyc" key="twitter__creator" />
         <meta name="twitter:card" content="summary_large_image" key="twitter__card" />
         <link rel="icon" href="/img/seaborne-favicon.png" />
-
+        <meta name="facebook-domain-verification" content="g8mdnxwiqouku7gm784yqw2v3xzuvu" />
       </Head>
       <Script id="facebook-pixel">
         {`!function(f,b,e,v,n,t,s) {if(f.fbq)return;n=f.fbq=function(){n.callMethod? n.callMethod.apply(n,arguments):n.queue.push(arguments)}; if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0'; n.queue=[];t=b.createElement(e);t.async=!0; t.src=v;s=b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s)}(window, document,'script', 'https://connect.facebook.net/en_US/fbevents.js'); fbq('init', '143576115287857'); fbq('track', 'PageView');`}
