@@ -13,7 +13,10 @@ export default function Footer() {
             aria-label="Get in touch with Seaborne"
             className="button--style-primary text-body flex items-center justify-center"
             href="mailto:hello@seaborne.nyc"
-            onClick={() => window.fbq && window.fbq('track', 'Contact')}
+            onClick={() => {
+              window.fbq && window.fbq('track', 'Contact');
+              window.lintrk && window.lintrk('track', { conversion_id: 12551081 });
+            }}
           >
             Email us
           </a>

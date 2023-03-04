@@ -8,6 +8,7 @@ export default function Header() {
   const handleMobileNavToggle = (e) => {
     if (e.target.href === "mailto:hello@seaborne.nyc") {
       window.fbq && window.fbq('track', 'Contact');
+      window.lintrk && window.lintrk('track', { conversion_id: 12551081 });
     }
     setMobileNavActive(!isMobileNavActive);
   };
@@ -58,7 +59,10 @@ export default function Header() {
             <a
               aria-label="Get in touch with Seaborne"
               className="button--style-blue-border nav-button flex items-center"
-              onClick={() => window.fbq && window.fbq('track', 'Contact')}
+              onClick={() => {
+                window.fbq && window.fbq('track', 'Contact');
+                window.lintrk && window.lintrk('track', { conversion_id: 12551081 });
+              }}
             >
               hello@seaborne.nyc
             </a>
