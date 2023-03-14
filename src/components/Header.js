@@ -9,6 +9,7 @@ export default function Header() {
     if (e.target.href === "mailto:hello@seaborne.nyc") {
       window.fbq && window.fbq('track', 'Contact');
       window.lintrk && window.lintrk('track', { conversion_id: 12551081 });
+      window.gtag && gtag('event', 'conversion', {'send_to': 'AW-557434647/TZP6CIGC75EYEJeO54kC'});
     }
     setMobileNavActive(!isMobileNavActive);
   };
@@ -62,6 +63,7 @@ export default function Header() {
               onClick={() => {
                 window.fbq && window.fbq('track', 'Contact');
                 window.lintrk && window.lintrk('track', { conversion_id: 12551081 });
+                window.gtag && gtag('event', 'conversion', {'send_to': 'AW-557434647/TZP6CIGC75EYEJeO54kC'});
               }}
             >
               hello@seaborne.nyc

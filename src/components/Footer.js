@@ -16,6 +16,7 @@ export default function Footer() {
             onClick={() => {
               window.fbq && window.fbq('track', 'Contact');
               window.lintrk && window.lintrk('track', { conversion_id: 12551081 });
+              window.gtag && gtag('event', 'conversion', {'send_to': 'AW-557434647/TZP6CIGC75EYEJeO54kC'});
             }}
           >
             Email us

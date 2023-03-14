@@ -75,6 +75,13 @@ function MyApp({ Component, pageProps }) {
           b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
           s.parentNode.insertBefore(b, s);})(window.lintrk);`}
       </Script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=AW-557434647"></script>
+      <Script id="google-pixel">
+        {`window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'AW-557434647');`}
+      </Script>
       <noscript><img height="1" width="1" style={{display: "none"}} alt="facebook-pixel" src="https://www.facebook.com/tr?id=143576115287857&ev=PageView&noscript=1" /></noscript>
       <noscript><img height="1" width="1" style={{display: "none"}} alt="linkedin-pixel" src="https://px.ads.linkedin.com/collect/?pid=5173601&fmt=gif" /></noscript>
 
