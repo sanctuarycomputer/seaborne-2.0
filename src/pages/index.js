@@ -51,6 +51,14 @@ export default function Home() {
 
         <div className="site-padding-x mt4 md:col-10 mxauto">
           <CaseStudyCard
+            type="Blog Post"
+            image="img/writing/gets-more-clicks/hero.jpeg"
+            title="Substantive Sustainability Gets More Clicks"
+            link="https://garden3d.substack.com/p/substantive-sustainability-gets-more"
+            description="How we proved the Seaborne hypothesis."
+          />
+          
+          <CaseStudyCard
             type="Case Study"
             image="img/studies/free-rain/hero.jpg"
             title="Free Rain"
