@@ -27,16 +27,14 @@ export default function Footer() {
       <section
         className="flex flex-col md:flex-row justify-between md:justify-center items-center inner-content-max-width mxauto pb2 md:pb2_5 site-padding-x text-center"
       >
-        <p className="pb2 md:pb0 md:mr2 text-footer color-gray">
-          Seaborne is a member of
-          <a
-            aria-label="Visit garden3d"
-            href="http://www.garden3d.net"
-            className="color-gray text-footer"
-            target="_blank"
-            rel="noopener noreferrer"
-          > garden3d.net
-          </a>
+        <p className="footer__g3d-link pb2 md:pb0 md:mr2 text-footer color-gray">
+          A proud member of
+          <Link href="http://www.garden3d.net" target="_blank" rel="noopener noreferrer">
+            <a
+              aria-label="Visit garden3d"
+              className="color-gray text-footer underline ml_25"
+            >garden3d</a>
+          </Link>
         </p>
         <nav className="footer__nav-section">
           <Link href="/about">
