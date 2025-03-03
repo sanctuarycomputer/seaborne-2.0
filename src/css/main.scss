@@ -190,6 +190,12 @@ button {
     color: rgba(color('gray'), 0.7);
   }
 
+  .footer__g3d-link {
+    a:hover {
+      color: color('gray-darker');
+    }
+  }
+
   // Footer > Bottom Nav
   &__nav-section {
     a {
