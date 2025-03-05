@@ -211,13 +211,13 @@ button {
 
   .footer__nav-section-list-left {
     li {
+      &:not(:last-of-type) {
+        margin-right: 1rem;
+      }
       @include media('md-up') {
         &:not(:last-of-type) {
           margin-right: 1.75rem;
         }
-      }
-      &:not(:last-of-type) {
-        margin-right: 1rem;
       }
     }
   }
