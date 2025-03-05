@@ -208,6 +208,25 @@ button {
       }
     }
   }
+
+  .footer__nav-section-list-left {
+    li {
+      @include media('md-up') {
+        &:not(:last-of-type) {
+          margin-right: 1.75rem;
+        }
+      }
+      &:not(:last-of-type) {
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 // Homepage
