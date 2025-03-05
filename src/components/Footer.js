@@ -24,41 +24,52 @@ export default function Footer() {
         </div>
       </section>
 
-      <section
-        className="flex flex-col md:flex-row justify-between md:justify-center items-center inner-content-max-width mxauto pb2 md:pb2_5 site-padding-x text-center"
-      >
-        <p className="footer__g3d-link pb2 md:pb0 md:mr2 text-footer color-gray">
-          A proud member of
-          <Link href="http://www.garden3d.net" target="_blank" rel="noopener noreferrer">
+      <nav className="flex flex-col md:flex-row w-full justify-between items-center mxauto pb2 md:pb2_5 px2 text-center footer__nav-section">
+        <ul className="flex flex-row footer__nav-section-list-left">
+          <li>
+            <Link href="/about">
+              <a className="text-footer color-gray underline" aria-label="Our Process">Our Process</a>  
+            </Link>
+          </li>
+          <li>
+            <Link href="/pricing">
+              <a className="text-footer color-gray underline" aria-label="Pricing">Pricing</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/studies">
+              <a className="text-footer color-gray underline" aria-label="Our Work">Our Work & Writing</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="https://twitter.com/seaborne_nyc">
+              <a
+                aria-label="Visit Seaborne's Twitter"
+                className="text-footer color-gray underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Twitter
+              </a>
+            </Link>
+          </li>
+        </ul>
+        <ul className="mt1 md:mt0">
+          <li className="footer__g3d-link pb2 md:pb0 md:mr2 text-footer color-gray">
+            <span>A proud member of</span>
+            <Link href="http://www.garden3d.net">
             <a
               aria-label="Visit garden3d"
               className="color-gray text-footer underline ml_25"
-            >garden3d</a>
-          </Link>
-        </p>
-        <nav className="footer__nav-section">
-          <Link href="/about">
-            <a className="text-footer color-gray underline" aria-label="Our Process">Our Process</a>
-          </Link>
-          <Link href="/pricing">
-            <a className="text-footer color-gray underline" aria-label="Pricing">Pricing</a>
-          </Link>
-          <Link href="/studies">
-            <a className="text-footer color-gray underline" aria-label="Our Work">Our Work & Writing</a>
-          </Link>
-          <Link href="https://twitter.com/seaborne_nyc">
-            <a
-              aria-label="Visit Seaborne's Twitter"
-              className="text-footer color-gray underline"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Twitter
+              garden3d
             </a>
-          </Link>
-
-        </nav>
-      </section>
+            </Link>
+          </li>
+        </ul>
+      </nav>
     </footer>
   );
 }
